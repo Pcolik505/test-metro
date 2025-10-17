@@ -282,7 +282,7 @@
   - type: PointLight
     radius: 5
     energy: 3
-    color: "#cf882b#"
+    color: "#FFC90C"
   - type: AmbientSound
     volume: -7
     range: 4
