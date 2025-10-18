@@ -192,3 +192,37 @@
   components:
   - type: Sprite
     sprite: Objects/Consumable/Food/Tins/meat.rsi
+
+- type: entity
+  parent: FoodTinBase
+  id: CannedFish
+  name: Рыбная Консерва
+  description: Стандартное консервированная рыба с удобным кольцом.
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/fish.rsi
+  # the convenient pull tab
+  - type: Openable
+    openableByHand: true
+  - type: FlavorProfile
+    flavors:
+    - солёное
+    - рыбное
+    - дешёвое
+  - type: Food
+    trash: 
+    - CannedFishTrash
+  - type: Tag
+    tags:
+    - Fish
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: CannedFishTrash
+  name: Рыбная Консерва
+  description: Стандартное консервированная рыба с удобным кольцом.
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/fish.rsi
+  
+    
