@@ -1,0 +1,25 @@
+- type: entity
+  name: буханка
+  parent: FoodBreadBase
+  id: LLFoodBreadPlain
+  description: Хлеб, испеченный в тунелях метро из зерен, что удалось собрать с поверхности.
+  components:
+  - type: Food
+  - type: Sprite
+    sprite: _LL/Objects/Consumable/Food/Baked/bread.rsi
+    layers:
+    - state: plain
+  - type: SliceableFood
+    slice: LLFoodBreadPlainSlice
+
+- type: entity
+  name: кусочек буханки
+  parent: FoodBreadSliceBase
+  id: LLFoodBreadPlainSlice
+  description: Хлеб, испеченный в тунелях метро из зерен, что удалось собрать с поверхности.
+  components:
+  - type: Food
+  - type: Sprite
+    sprite: _LL/Objects/Consumable/Food/Baked/bread.rsi
+    layers:
+    - state: plain-slice

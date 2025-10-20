@@ -1,0 +1,115 @@
+- type: entity
+  parent: FoodTinBase
+  id: LLCannedFish
+  name: рыбная консерва
+  description: Стандартное консервированная рыба с удобным кольцом.
+  components:
+  - type: Sprite
+    sprite: _LL/Objects/Consumable/Food/Tins/fish.rsi 
+  - type: Openable
+    openableByHand: true
+  - type: FlavorProfile
+    flavors:
+    - salty
+    - fish
+    - cheap
+  - type: Food
+    trash: 
+    - LLCannedFishTrash
+  - type: Tag
+    tags:
+    - Fish
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: LLCannedFishTrash
+  name: рыбная консерва
+  description: Стандартное консервированная рыба с удобным кольцом.
+  components:
+  - type: Sprite
+    sprite: _LL/Objects/Consumable/Food/Tins/fish.rsi
+
+- type: entity
+  parent: FoodTinBase
+  id: LLCannedBeans
+  name: консервированные бобы
+  description: Стандартные консервированные бобы с удобным кольцом.
+  components:
+  - type: Sprite
+    sprite: _LL/Objects/Consumable/Food/Tins/pea.rsi
+  - type: Openable
+    openableByHand: true
+  - type: FlavorProfile
+    flavors:
+    - salty
+    - legume
+    - cheap
+  - type: Food
+    trash: 
+    - LLCannedBeansTrash
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: LLCannedBeansTrash
+  name: консервированные бобы
+  description: Стандартные консервированные бобы с удобным кольцом.
+  components:
+  - type: Sprite
+    sprite: _LL/Objects/Consumable/Food/Tins/pea.rsi
+
+- type: entity
+  parent: FoodTinBase
+  id: LLCannedStew
+  name: консервированное мясо
+  description: Старая баночка тушенки, срок годности вышел уже во всем, даже в ней.
+  components:
+  - type: Sprite
+    sprite: _LL/Objects/Consumable/Food/Tins/stew.rsi
+  - type: FlavorProfile
+    flavors:
+    - meaty
+  - type: Food
+    trash: 
+    - LLCannedStewTrash
+  - type: Tag
+    tags:
+    - Meat
+    - Soup
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: LLCannedStewTrash
+  name: консервированное мясо
+  description: Старая баночка тушенки, срок годности вышел уже во всем, даже в ней.
+  components:
+  - type: Sprite
+    sprite: _LL/Objects/Consumable/Food/Tins/stew.rsi  
+
+- type: entity
+  parent: FoodTinBase
+  id: LLCannedCaviar
+  name: баночка икры
+  description: Крайне редкий экземпляр былой роскоши, трудно найти и хранится не долго.
+  components:
+  - type: Sprite
+    sprite: _LL/Objects/Consumable/Food/Tins/caviar.rsi
+  - type: FlavorProfile
+    flavors:
+    - Fish
+  - type: Food
+    trash: 
+    - LLCannedCaviarTrash
+  - type: Tag
+    tags:
+    - Salty
+    - Fish
+    - Strange
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: LLCannedCaviarTrash
+  name: баночка икры
+  description: Крайне редкий экземпляр былой роскоши, трудно найти и хранится не долго.
+  components:
+  - type: Sprite
+    sprite: _LL/Objects/Consumable/Food/Tins/caviar.rsi   
