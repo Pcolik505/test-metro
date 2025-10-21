@@ -1,0 +1,84 @@
+- type: entity
+  parent: BaseItem
+  id: LLMetruble
+  name: Метрубль
+  description: Валюта принятая за единый стандарт организацией Бурса, на ощупь как туалетная бумага.
+  components:
+  - type: Cash
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Credit: 1
+  - type: StaticPrice
+    price: 0
+  - type: Tag
+    tags:
+      - Currency
+  - type: Stack
+    stackType: Metruble
+    count: 1
+    baseLayer: base
+    layerStates:
+    - metruble
+    - metruble2
+    - metruble3
+  - type: Sprite
+    sprite: _LL/Objects/Trade/Сurrency/Metruble.rsi
+    state: metruble
+    scale: 0.6, 0.6
+  - type: Physics
+    bodyType: Dynamic
+  - type: Fixtures
+    fixtures:
+      fix1:
+        density: 30
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.2,0.25,0.1"
+        mask:
+        - ItemMask
+  - type: Appearance
+  - type: Item
+    size: Tiny
+
+- type: stack
+  id: Metruble
+  name: МетрублЬ
+  icon: { sprite: _LL/Objects/Trade/Currency/Metruble.rsi, state: metruble3 }
+  spawn: LLMetruble
+
+- type: entity
+  parent: LLMetruble
+  id: LLMetruble10
+  suffix: 10
+  components:
+  - type: Icon
+    sprite: _LL/Objects/Trade/Сurrency/Metruble.rsi
+    state: metruble2
+  - type: Stack
+    stackType: Metruble
+    count: 10
+
+- type: entity
+  parent: LLMetruble
+  id: LLMetruble50
+  suffix: 50
+  components:
+  - type: Icon
+    sprite: _LL/Objects/Trade/Сurrency/Metruble.rsi
+    state: metruble3
+  - type: Stack
+    stackType: Metruble
+    count: 50
+
+- type: entity
+  parent: LLMetruble
+  id: LLMetruble100
+  suffix: 100
+  components:
+  - type: Icon
+    sprite: _LL/Objects/Trade/Сurrency/Metruble.rsi
+    state: metruble3
+  - type: Stack
+    stackType: Metruble
+    count: 100

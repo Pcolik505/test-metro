@@ -1,0 +1,59 @@
+- type: entity
+  id: LLMetroMat
+  name: Метромат
+  description: Все ресурсы, что будут проданы тут, пойдут на развитие следуйщих станции.
+  suffix: vendor, normal
+  components:
+  - type: NcStore
+    preset: LLMetroMat
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: NcStoreStructuredBoundUi
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Transform
+    anchored: true
+    noRot: true
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        density: 300
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Sprite
+    sprite: _LL/Objects/Trade/Trade.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "normal-unshaded"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+  - type: PointLight
+    radius: 2.5
+    energy: 1
+    color: "#d44c0d"
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+
+- type: storePresetStructured
+  id: LLMetroMat
+  currency: Metruble
+  catalog:
+    Buy:
+      Оружие:
+      - proto: N14WeaponRevolver10mm
+        price: 60
+    Sell:
+      Оружие:
+      - proto: N14WeaponRevolver9mm
+        price: 10
