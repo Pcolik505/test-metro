@@ -1,0 +1,31 @@
+- type: entity
+  name: ТОЗ-34
+  parent: [BaseWeaponShotgun, BaseGunWieldable]
+  id: LLWeaponShotgunDoubleBarreled
+  description: Бессмертная классика. Используются патроны для дробовика 50-го калибра.
+  components:
+  - type: Sprite
+    sprite: _LL/Entities/Weapons/Guns/Shotguns/doublebarrel.rsi
+    state: icon
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,4,0
+    sprite: _LL/Entities/Weapons/Guns/Shotguns/doublebarrel.rsi
+  - type: GunRequiresWield
+  - type: Gun
+    fireRate: 2
+    fireOnDropChance: 0.5
+  - type: Wieldable
+  - type: BallisticAmmoProvider
+    capacity: 2
+  - type: Construction
+    graph: ShotgunSawn
+    node: start
+    deconstructionTarget: null
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 8.5
+  - type: DamageOtherOnHit
+    staminaCost: 7.5

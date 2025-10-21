@@ -1,3 +1,248 @@
+- type: storePresetStructured
+  id: LLMetroMat
+  currency: Metruble
+  catalog:
+    Buy:
+      Огнестрел:
+      - proto: N14WeaponPistol9mm
+        price: 100
+      - proto: WeaponShotgunImprovised
+        price: 350
+      Ближнее:
+      - proto: SurvivalKnife
+        price: 35
+      - proto: Cane
+        price: 5
+      Магазины:
+      - proto: N14MagazinePistol9mm
+        price: 15
+      Боеприпасы:
+      - proto: MagazineBox9mm
+        price: 80
+      - proto: LLBoxLethalshot
+        price: 80
+      Шляпы:
+      - proto: N14ClothingHeadHatEnclavePeacekeeperCap
+        price: 10
+      - proto: N14ClothingHeadHatBrotherhoodFieldCap
+        price: 10
+      - proto: N14ClothingHeadHatArmyCap
+        price: 10
+      - proto: ClothingHeadHatSyndie
+        price: 10
+      - proto: N14ClothingHeadHatCowboyBrown
+        price: 10
+      - proto: ClothingHeadHatPlaguedoctor
+        price: 10
+      Верхняя одежда:
+      - proto: ClothingOuterCoatInspector
+        price: 20
+      - proto: ClothingOuterCoatJensen
+        price: 20
+      - proto: ClothingOuterCoatGentle
+        price: 20
+      - proto: ClothingOuterPlagueSuit
+        price: 20
+      - proto: N14ClothingOuterBrotherhoodMidwestFieldScribeCoat
+        price: 170
+      - proto: N14ClothingOuterCoatLeatherCoat
+        price: 100
+      - proto: N14ClothingOuterCoatDuster
+        price: 70
+      - proto: ClothingOuterCoatOvercoat
+        price: 50
+      Одежда:
+      - proto: N14ClothingUniformJumpsuitRags
+        price: 5
+      - proto: N14ClothingUniformJumpsuitSettlerRags
+        price: 5
+      - proto: ClothingUniformJumpsuitSalvageSpecialist
+        price: 20
+      - proto: ClothingUniformJumpsuitCargo
+        price: 20
+      - proto: N14ClothingUniformJumpsuitdrylanderTribal
+        price: 20
+      - proto: ClothingUniformJumpskirtColorBrown
+        price: 20
+      Обувь:
+      - proto: N14ClothingBootsLeather
+        price: 15
+      - proto: N14ClothingShoesRaider
+        price: 10
+      - proto: N14ClothingShoesRags
+        price: 5
+      Маски:
+      - proto: ClothingMaskGasFire
+        price: 100
+      - proto: ClothingMaskGasMiner
+        price: 200
+      - proto: ClothingMaskPlague
+        price: 25
+      - proto: ClothingMaskSterile
+        price: 5
+      Очки:
+      - proto: N14ClothingEyesGlassesWelding
+        price: 100
+      - proto: N14ClothingEyesGlasses
+        price: 15
+      Сумки:
+      - proto: LLSmallHandbagLeather
+        price: 150
+      - proto: ClothingBeltStorageWaistbag
+        price: 50
+      Продовольствие:
+      - proto: FoodTinPeaches
+        price: 150
+      - proto: FoodTinBeans
+        price: 150
+      - proto: N14FoodDogfood
+        price: 100
+      - proto: LLCannedStew
+        price: 200
+      - proto: FoodTinMRE
+        price: 180
+      - proto: LLCannedFish
+        price: 160
+      - proto: LLCannedCaviar
+        price: 300
+      - proto: LLFoodBreadPlain
+        price: 75
+      - proto: DrinkWaterBottleFull
+        price: 100
+      Сигареты:
+      - proto: N14CigarettePackRepublics
+        price: 50
+      - proto: N14CigarettePackSalem
+        price: 50
+      - proto: N14CigarettePackKool
+        price: 50
+      - proto: N14CigarettePackWinston
+        price: 75
+      - proto: N14CigarettePackMarlboro
+        price: 75
+      - proto: FlippoLighter
+        price: 5
+    Sell:
+      Огнестрел:
+      - proto: N14WeaponPistol9mm
+        price: 25
+      - proto: WeaponShotgunImprovised
+        price: 55
+      Ближнее:
+      - proto: SurvivalKnife
+        price: 5
+      - proto: Cane
+        price: 5
+      Магазины:
+      - proto: N14MagazinePistol9mm
+        price: 5
+      Боеприпасы:
+      - proto: MagazineBox9mm
+        price: 5
+      - proto: LLBoxLethalshot
+        price: 5
+      Шляпы:
+      - proto: N14ClothingHeadHatEnclavePeacekeeperCap
+        price: 1
+      - proto: N14ClothingHeadHatBrotherhoodFieldCap
+        price: 1
+      - proto: N14ClothingHeadHatArmyCap
+        price: 1
+      - proto: ClothingHeadHatSyndie
+        price: 1
+      - proto: N14ClothingHeadHatCowboyBrown
+        price: 1
+      - proto: ClothingHeadHatPlaguedoctor
+        price: 1
+      Верхняя одежда:
+      - proto: ClothingOuterCoatInspector
+        price: 5
+      - proto: ClothingOuterCoatJensen
+        price: 5
+      - proto: ClothingOuterCoatGentle
+        price: 5
+      - proto: ClothingOuterPlagueSuit
+        price: 5
+      - proto: N14ClothingOuterBrotherhoodMidwestFieldScribeCoat
+        price: 65
+      - proto: N14ClothingOuterCoatLeatherCoat
+        price: 35
+      - proto: N14ClothingOuterCoatDuster
+        price: 25
+      - proto: ClothingOuterCoatOvercoat
+        price: 15
+      Одежда:
+      - proto: N14ClothingUniformJumpsuitRags
+        price: 1
+      - proto: N14ClothingUniformJumpsuitSettlerRags
+        price: 1
+      - proto: ClothingUniformJumpsuitSalvageSpecialist
+        price: 5
+      - proto: ClothingUniformJumpsuitCargo
+        price: 5
+      - proto: N14ClothingUniformJumpsuitdrylanderTribal
+        price: 5
+      - proto: ClothingUniformJumpskirtColorBrown
+        price: 5
+      Обувь:
+      - proto: N14ClothingBootsLeather
+        price: 1
+      - proto: N14ClothingShoesRaider
+        price: 1
+      - proto: N14ClothingShoesRags
+        price: 1
+      Маски:
+      - proto: ClothingMaskGasFire
+        price: 15
+      - proto: ClothingMaskGasMiner
+        price: 25
+      - proto: ClothingMaskPlague
+        price: 5
+      - proto: ClothingMaskSterile
+        price: 1
+      Очки:
+      - proto: N14ClothingEyesGlassesWelding
+        price: 25
+      - proto: N14ClothingEyesGlasses
+        price: 5
+      Сумки:
+      - proto: LLSmallHandbagLeather
+        price: 45
+      - proto: ClothingBeltStorageWaistbag
+        price: 15
+      Продовольствие:
+      - proto: FoodTinPeaches
+        price: 15
+      - proto: FoodTinBeans
+        price: 15
+      - proto: N14FoodDogfood
+        price: 10
+      - proto: LLCannedStew
+        price: 20
+      - proto: FoodTinMRE
+        price: 18
+      - proto: LLCannedFish
+        price: 16
+      - proto: LLCannedCaviar
+        price: 30
+      - proto: LLFoodBreadPlain
+        price: 15
+      - proto: DrinkWaterBottleFull
+        price: 10
+      Сигареты:
+      - proto: N14CigarettePackRepublics
+        price: 5
+      - proto: N14CigarettePackSalem
+        price: 5
+      - proto: N14CigarettePackKool
+        price: 5
+      - proto: N14CigarettePackWinston
+        price: 7
+      - proto: N14CigarettePackMarlboro
+        price: 7
+      - proto: FlippoLighter
+        price: 1
+
 - type: entity
   id: LLMetroMat
   name: Метромат
@@ -44,16 +289,3 @@
     color: "#d44c0d"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
-
-- type: storePresetStructured
-  id: LLMetroMat
-  currency: Metruble
-  catalog:
-    Buy:
-      Оружие:
-      - proto: N14WeaponRevolver10mm
-        price: 60
-    Sell:
-      Оружие:
-      - proto: N14WeaponRevolver9mm
-        price: 10

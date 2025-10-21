@@ -1,0 +1,20 @@
+- type: entity
+  parent: ClothingBackpack
+  id: LLSmallHandbag
+  name: маленькая сумочка
+  description: Модная на вид сумка.
+  components:
+  - type: Sprite
+    sprite: _LL/Clothing/Back/satchel.rsi
+  - type: Storage
+    grid:
+    - 0,0,6,4    # Слот 6 на 4
+
+- type: entity
+  parent: LLSmallHandbag  # ← Исправлено наследование
+  id: LLSmallHandbagLeather
+  name: кожаная сумочка  # ← Уникальное имя
+  description: Модная сумка из ушедшей эпохи.
+  components:
+  - type: Sprite
+    sprite: _LL/Clothing/Back/leather.rsi

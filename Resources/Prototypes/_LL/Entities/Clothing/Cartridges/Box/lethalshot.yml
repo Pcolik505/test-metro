@@ -1,0 +1,11 @@
+- type: entity
+  name: коробочка дроби
+  parent: AmmoProviderShotgunShell
+  id: LLBoxLethalshot
+  description: Коробка-дозатор, полная смертоносных дробинок, предназначенных для огнестрельного оружия.
+  components:
+    - type: BallisticAmmoProvider
+      proto: ShellShotgun
+    - type: Sprite
+      sprite: _LL/Objects/Cartridges/Box/lethalshot.rsi
+      state: boxwide
