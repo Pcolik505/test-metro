@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": "null. Resprited by demzne (discord) for metro-14",
+  "size": {
+    "x": 64,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": "default",
+      "directions": 4
+    },
+    {
+      "name": "crit"
+    },
+    {
+      "name": "dead"
+    }
+  ]
+}

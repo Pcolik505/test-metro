@@ -1,0 +1,72 @@
+- type: entity
+  name: Лемминг
+  id: LLFototoxisch
+  parent: N14MobBaseHostile
+  description: Нет ума штурмуй дома!
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: hamster-0
+      sprite: _LL/Entities/Mobs/NPCs/fototoxisch.rsi
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: N14ToughAnimal
+  - type: MobState
+    allowedStates:
+      - Alive
+      - Critical
+      - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      30: Critical
+      40: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: hamster-0
+      Critical:
+        Base: hamster-0
+      Dead:
+        Base: dead-0
+  - type: MeleeWeapon
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: AlienClaw
+    angle: 60
+    animation: WeaponArcClaw
+    wideAnimation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 1
+    range: 1.5
+    attackRate: 0.6
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2.5
+    baseSprintSpeed: 4
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+            radius: 0.25
+        density: 100
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: HTN
+    rootTask:
+      task: N14HostileCompound
+  - type: Butcherable
+    spawned:
+    - id: N14FoodMeatRadRaw
+      amount: 1
+    - id: N14MaterialRawLeather1
+      amount: 1
+  - type: Tag
+    tags:
+    - Fototoxisch
