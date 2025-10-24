@@ -1,0 +1,58 @@
+- type: storePresetStructured
+  id: LLKontraMat
+  currency: Metruble
+  catalog:
+    Buy:
+      В-разработке:
+      - proto: ToyFigurineThief
+        price: 20
+    Sell:
+      Снабжение:
+      - proto: LLProvisions4
+        price: 200
+
+
+- type: entity
+  id: LLKontraMat
+  name: КонтраМат
+  description: Все ресурсы, что будут проданы тут, пойдут на уничтожение станций.
+  suffix: vendor, normal
+  components:
+  - type: NcStore
+    preset: LLKontraMat
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: NcStoreStructuredBoundUi
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Transform
+    anchored: true
+    noRot: true
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        density: 300
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Sprite
+    sprite: _LL/Objects/Trade/Black.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+  - type: PointLight
+    radius: 2.5
+    energy: 1
+    color: "#d44c0d"
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+    

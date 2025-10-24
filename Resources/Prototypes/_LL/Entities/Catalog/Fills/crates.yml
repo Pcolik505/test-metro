@@ -1,0 +1,279 @@
+- type: entity
+  parent: CrateBaseWeldable
+  id: LLBoxTimedResupply
+  name: старый ящик
+  description: в нём явно, что-то будет.
+  components:
+  - type: Sprite
+    sprite: _LL/Objects/Box/box1.rsi
+  - type: EntityStorage
+    maxSlots: 15
+    maxWeight: 500
+    openOnActivate: true
+    occludesLight: false
+  - type: TimedStorageFill
+    contents:
+        - id: FoodTinBeans
+          prob: 0.1
+        - id: LLCannedStew
+          prob: 0.1
+        - id: LLCannedBeans
+          prob: 0.1
+        - id: FoodTinPeaches
+          prob: 0.1
+        - id: LLCannedFish
+          prob: 0.1
+        - id: FoodTinMRE
+          prob: 0.1
+        - id: LLCannedBeansTrash
+          prob: 0.1
+        - id: FoodTinMRETrash
+          prob: 0.1
+        - id: LLCannedFishTrash
+          prob: 0.1
+        - id: N14JunkTincan
+          prob: 0.1
+        - id: LLCannedStewTrash
+          prob: 0.1
+        - id: FoodTinPeachesTrash
+          prob: 0.1
+        - id: N14FoodDogFoodTrash
+          prob: 0.1
+        - id: SheetPlastic10
+          prob: 0.2
+        - id: SheetGlass10
+          prob: 0.2
+        - id: SheetSteel10
+          prob: 0.2
+        - id: PartRodMetal10
+          prob: 0.2
+        - id: PowerCellSmallPrinted
+          prob: 0.2
+        - id: PowerCellMediumPrinted
+          prob: 0.2
+        - id: PowerCellHighPrinted
+          prob: 0.2
+        - id: CapacitorStockPart
+          prob: 0.2
+        - id: MicroManipulatorStockPart
+          prob: 0.2
+        - id: MatterBinStockPart
+          prob: 0.2
+        - id: AdvancedCapacitorStockPart
+          prob: 0.2
+        - id: NanoManipulatorStockPart
+          prob: 0.2
+        - id: AdvancedMatterBinStockPart
+          prob: 0.2
+        - id: SuperCapacitorStockPart
+          prob: 0.2
+        - id: PicoManipulatorStockPart
+          prob: 0.2
+        - id: SuperMatterBinStockPart
+          prob: 0.2
+        - id: ClothingBeltUtility
+          prob: 0.2
+        - id: Multitool
+          prob: 0.2
+        - id: ClothingHeadHatWelding
+          prob: 0.2
+        - id: Screwdriver
+          prob: 0.2
+        - id: Wirecutter
+          prob: 0.2
+        - id: Welder
+          prob: 0.2
+        - id: Crowbar
+          prob: 0.2
+        - id: Wrench
+          prob: 0.2
+        - id: DrinkWaterBottleFull
+          prob: 0.2
+        - id: N14CigarettePackWinston
+          prob: 0.2
+        - id: N14CigarettePackKool
+          prob: 0.2
+        - id: N14CigarettePackMarlboro
+          prob: 0.2
+        - id: N14CigarettePackRepublics
+          prob: 0.2
+        - id: N14CigarettePackSalem
+          prob: 0.2
+        - id: N14CigarettePackCustom
+          prob: 0.2
+        - id: FlippoLighter
+          prob: 0.2
+        - id: N14JunkComponentMainboard
+          prob: 0.2
+        - id: N14JunkComponentSensor
+          prob: 0.2
+        - id: ClothingHeadBrotherhoodScribeHeadset
+          prob: 0.2
+        - id: EmptyFlashlightLantern
+          prob: 0.2
+        - id: CellRechargerCircuitboard
+          prob: 0.2
+        - id: ReagentGrinderMachineCircuitboard
+          prob: 0.2
+        - id: BiomassReclaimerMachineCircuitboard
+          prob: 0.2
+        - id: MicrowaveMachineCircuitboard
+          prob: 0.2
+        - id: OreProcessorMachineCircuitboard
+          prob: 0.2
+        - id: PortableGeneratorJrPacmanMachineCircuitboard
+          prob: 0.2
+        - id: APCElectronics
+          prob: 0.2
+        - id: SubstationMachineCircuitboard
+          prob: 0.2
+        - id: SMESMachineCircuitboard
+          prob: 0.2
+        - id: LLProvisions1
+          prob: 0.08
+        - id: LLProvisions2
+          prob: 0.010
+        - id: LLProvisions3
+          prob: 0.025
+        - id: LLProvisions4
+          prob: 0.030
+
+- type: entity
+  parent: CrateBaseWeldable
+  id: LLBoxTimedResupply2
+  name: старый ящик
+  description: в нём явно, что-то будет.
+  components:
+  - type: Sprite
+    sprite: _LL/Objects/Box/box2.rsi
+  - type: EntityStorage
+    maxSlots: 15
+    maxWeight: 500
+    openOnActivate: true
+    occludesLight: false
+  - type: TimedStorageFill
+    contents:
+        - id: FoodTinBeans
+          prob: 0.1
+        - id: LLCannedStew
+          prob: 0.1
+        - id: LLCannedBeans
+          prob: 0.1
+        - id: FoodTinPeaches
+          prob: 0.1
+        - id: LLCannedFish
+          prob: 0.1
+        - id: FoodTinMRE
+          prob: 0.1
+        - id: LLCannedBeansTrash
+          prob: 0.1
+        - id: FoodTinMRETrash
+          prob: 0.1
+        - id: LLCannedFishTrash
+          prob: 0.1
+        - id: N14JunkTincan
+          prob: 0.1
+        - id: LLCannedStewTrash
+          prob: 0.1
+        - id: FoodTinPeachesTrash
+          prob: 0.1
+        - id: N14FoodDogFoodTrash
+          prob: 0.1
+        - id: SheetPlastic10
+          prob: 0.2
+        - id: SheetGlass10
+          prob: 0.2
+        - id: SheetSteel10
+          prob: 0.2
+        - id: PartRodMetal10
+          prob: 0.2
+        - id: PowerCellSmallPrinted
+          prob: 0.2
+        - id: PowerCellMediumPrinted
+          prob: 0.2
+        - id: PowerCellHighPrinted
+          prob: 0.2
+        - id: CapacitorStockPart
+          prob: 0.2
+        - id: MicroManipulatorStockPart
+          prob: 0.2
+        - id: MatterBinStockPart
+          prob: 0.2
+        - id: AdvancedCapacitorStockPart
+          prob: 0.2
+        - id: NanoManipulatorStockPart
+          prob: 0.2
+        - id: AdvancedMatterBinStockPart
+          prob: 0.2
+        - id: SuperCapacitorStockPart
+          prob: 0.2
+        - id: PicoManipulatorStockPart
+          prob: 0.2
+        - id: SuperMatterBinStockPart
+          prob: 0.2
+        - id: ClothingBeltUtility
+          prob: 0.2
+        - id: Multitool
+          prob: 0.2
+        - id: ClothingHeadHatWelding
+          prob: 0.2
+        - id: Screwdriver
+          prob: 0.2
+        - id: Wirecutter
+          prob: 0.2
+        - id: Welder
+          prob: 0.2
+        - id: Crowbar
+          prob: 0.2
+        - id: Wrench
+          prob: 0.2
+        - id: DrinkWaterBottleFull
+          prob: 0.2
+        - id: N14CigarettePackWinston
+          prob: 0.2
+        - id: N14CigarettePackKool
+          prob: 0.2
+        - id: N14CigarettePackMarlboro
+          prob: 0.2
+        - id: N14CigarettePackRepublics
+          prob: 0.2
+        - id: N14CigarettePackSalem
+          prob: 0.2
+        - id: N14CigarettePackCustom
+          prob: 0.2
+        - id: FlippoLighter
+          prob: 0.2
+        - id: N14JunkComponentMainboard
+          prob: 0.2
+        - id: N14JunkComponentSensor
+          prob: 0.2
+        - id: ClothingHeadBrotherhoodScribeHeadset
+          prob: 0.2
+        - id: EmptyFlashlightLantern
+          prob: 0.2
+        - id: CellRechargerCircuitboard
+          prob: 0.2
+        - id: ReagentGrinderMachineCircuitboard
+          prob: 0.2
+        - id: BiomassReclaimerMachineCircuitboard
+          prob: 0.2
+        - id: MicrowaveMachineCircuitboard
+          prob: 0.2
+        - id: OreProcessorMachineCircuitboard
+          prob: 0.2
+        - id: PortableGeneratorJrPacmanMachineCircuitboard
+          prob: 0.2
+        - id: APCElectronics
+          prob: 0.2
+        - id: SubstationMachineCircuitboard
+          prob: 0.2
+        - id: SMESMachineCircuitboard
+          prob: 0.2
+        - id: LLProvisions1
+          prob: 0.08
+        - id: LLProvisions2
+          prob: 0.010
+        - id: LLProvisions3
+          prob: 0.025
+        - id: LLProvisions4
+          prob: 0.030

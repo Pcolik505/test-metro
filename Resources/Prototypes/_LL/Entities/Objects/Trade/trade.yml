@@ -242,10 +242,23 @@
         price: 7
       - proto: FlippoLighter
         price: 1
+      Снабжение:
+      - proto: LLProvisions1
+        price: 35
+      - proto: LLProvisions2
+        price: 75
+      - proto: LLProvisions3
+        price: 125
+      Разное:
+      - proto: N14JunkComponentSensor
+        price: 15
+      - proto: N14JunkComponentMainboard
+        price: 15
+
 
 - type: entity
   id: LLMetroMat
-  name: Метромат
+  name: МетроМат
   description: Все ресурсы, что будут проданы тут, пойдут на развитие следуйщих станции.
   suffix: vendor, normal
   components:

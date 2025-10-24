@@ -6,3 +6,4 @@
   background: /Textures/_LL/LobbyScreens/2.webp
 - type: lobbyBackground
   id: LL3
+  background: /Textures/_LL/LobbyScreens/3.webp

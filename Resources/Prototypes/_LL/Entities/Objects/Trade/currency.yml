@@ -2,7 +2,7 @@
   parent: BaseItem
   id: LLMetruble
   name: Марка
-  description: Валюта принятая за единый стандарт организацией Бурса, на ощупь как туалетная бумага.
+  description: Валюта принятая за единый стандарт Правительством Новой России, на ощупь как туалетная бумага.
   components:
   - type: Cash
   - type: Material

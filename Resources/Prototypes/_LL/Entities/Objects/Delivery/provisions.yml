@@ -1,0 +1,67 @@
+- type: entity
+  name: Брикет Снабжения Станции
+  parent: SnapPop
+  id: LLProvisions1
+  description: Этот важный брикет в срочном порядке нужно доставить к метромату, думаю за него хорошо заплатят.
+  components:
+  - type: Sprite
+    sprite: _LL/Entities/Delivery/provisions.rsi
+    state: icon-1
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,6,0
+    - 0,1,6,1
+    - 0,2,6,2
+    sprite: _LL/Entities/Delivery/provisions.rsi
+
+- type: entity
+  name: Брикет Снабжения Военных
+  parent: SnapPop
+  id: LLProvisions2
+  description: Этот важный брикет в срочном порядке нужно доставить к метромату, думаю за него хорошо заплатят.
+  components:
+  - type: Sprite
+    sprite: _LL/Entities/Delivery/provisions.rsi
+    state: icon-2
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,6,0
+    - 0,1,6,1
+    - 0,2,6,2
+    sprite: _LL/Entities/Delivery/provisions.rsi
+
+- type: entity
+  name: Брикет Снабжения Новой России
+  parent: SnapPop
+  id: LLProvisions3
+  description: Этот важный брикет в срочном порядке нужно доставить к метромату, думаю за него хорошо заплатят.
+  components:
+  - type: Sprite
+    sprite: _LL/Entities/Delivery/provisions.rsi
+    state: icon-3
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,6,0
+    - 0,1,6,1
+    - 0,2,6,2
+    sprite: _LL/Entities/Delivery/provisions.rsi
+
+- type: entity
+  name: Брикет Снабжения Контрабандистов
+  parent: SnapPop
+  id: LLProvisions4
+  description: Этот важный брикет в срочном порядке нужно доставить к метромату, думаю за него хорошо заплатят.
+  components:
+  - type: Sprite
+    sprite: _LL/Entities/Delivery/provisions.rsi
+    state: icon-4
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,6,0
+    - 0,1,6,1
+    - 0,2,6,2
+    sprite: _LL/Entities/Delivery/provisions.rsi

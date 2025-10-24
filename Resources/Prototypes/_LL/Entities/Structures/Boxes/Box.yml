@@ -1,0 +1,39 @@
+- type: entity
+  parent: CrateBaseWeldable
+  id: LLBox
+  name: Деревянный ящик
+  components:
+  - type: Icon
+    sprite: _LL/Objects/Box/box1.rsi
+  - type: Sprite
+    sprite: _LL/Objects/Box/box1.rsi
+  - type: Reflect
+    reflects:
+    - Energy
+    reflectProb: 0.2
+    spread: 90
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 16
+    staminaCost: 45
+
+- type: entity
+  parent: CrateBaseWeldable
+  id: LLBox2
+  name: Деревянный ящик
+  components:
+  - type: Icon
+    sprite: _LL/Objects/Box/box2.rsi
+  - type: Sprite
+    sprite: _LL/Objects/Box/box2.rsi
+  - type: Reflect
+    reflects:
+    - Energy
+    reflectProb: 0.2
+    spread: 90
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 16
+    staminaCost: 45

@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon-2"
+    },
+    {
+      "name": "icon-3"
+    },
+    {
+      "name": "icon-4"
+    },
+    {
+      "name": "icon-1"
+    }
+  ]
+}
