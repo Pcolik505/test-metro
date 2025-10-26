@@ -1,0 +1,78 @@
+- type: entity
+  parent: N14WorkbenchBase
+  id: LLWorkbenchArmorbench
+  description: Верстак для создания брони, рабочими инструментами для крафта.
+  name: верстак для брони
+  components:
+  - type: Sprite
+    state: armorbench
+  - type: MaterialStorage
+    whitelist:
+      tags:
+      - Sheet
+      - RawMaterial
+      - Ingot
+      - RawLeather # move it to the tanning machine
+  - type: Lathe
+    idleState: icon
+    runningState: icon # change this
+    staticRecipes:
+    # Armor
+    - N14ClothingOuterReinforcedLeatherArmor
+    - N14ClothingOuterLightLeatherArmor
+    - N14ClothingOuterMetalArmor
+    - N14ClothingOuterLeatherArmor
+    - N14ClothingOuterCoatWinterArmored
+    - N14ClothingOuterInsectArmor
+    # Other
+    - N14MaterialLeather
+
+- type: entity
+  parent: N14WorkbenchBase
+  id: LLWorkbenchWeaponbench
+  description: Верстак с рабочими инструментами для крафта оружия.
+  name: верстак для оружия
+  components:
+  - type: Sprite
+    state: weaponbench
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+      enum.LatheUiKey.Key:
+        type: LatheBoundUserInterface
+  - type: Craftable
+  - type: Storage
+    craft: true
+    maxItemSize: Ginormous
+    grid:
+    - 0,0,12,9
+  - type: MaterialStorage
+    whitelist:
+      tags:
+      - Sheet
+      - RawMaterial
+      - Ingot
+      - Scrap
+  - type: Lathe
+    idleState: icon
+    runningState: icon # change this
+    staticRecipes: # Guns or melee weapons related only.
+    # Guns
+    - N14JunkGunpartsFrame
+    - N14JunkGunpartsFramePistol
+    - N14JunkGunpartsRifleFrame
+    - N14JunkGunpartsBarrel
+    - N14JunkGunpartsReceiver
+    - N14JunkGunpartsRecoilComp
+    - N14JunkGunpartsTrigger
+    - N14JunkGunpartsAction
+    - N14JunkGunpartsBolt
+    - N14JunkGunpartsRifleScope
+    - N14JunkGunpartsStock
+    - N14JunkGunpartsStockWood
+    - N14JunkGunpartsRifleStock
+    - N14BrassKnife

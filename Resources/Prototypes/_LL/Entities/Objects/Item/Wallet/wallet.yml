@@ -1,0 +1,32 @@
+- type: entity
+  name: wallet
+  id: LLWallet
+  parent: BaseStorageItem
+  description: A wallet for storing lots of money.
+  components:
+  - type: Sprite
+    sprite: _LL/Objects/Item/wallet.rsi
+    state: wallet_new
+    offset: "0.0,-0.02"
+    # scale: 0.8, 0.8
+  - type: Item
+    storedRotation: -90
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - belt
+    - idcard
+  - type: Storage
+    grid:
+    - 0,0,2,1
+    maxItemSize: Normal
+    quickInsert: true
+    areaInsert: true
+    whitelist:
+      tags:
+      - Currency
+      - DoorBumpOpener
+  - type: Dumpable
+  - type: Construction
+    graph: N14Wallet
+    node: wallet
