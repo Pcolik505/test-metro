@@ -8,19 +8,7 @@
   },
   "states": [
     {
-      "name": "icon"
-    },
-    {
-      "name": "base"
-    },
-    {
-      "name": "closed"
-    },
-    {
-      "name": "open"
-    },
-    {
-      "name": "welded"
+      "name": "wallet_new"
     }
   ]
 }
