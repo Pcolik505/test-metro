@@ -122,6 +122,33 @@
         price: 75
       - proto: FlippoLighter
         price: 5
+      Разное:
+      - proto: LLWallet
+        price: 20
+      - proto: N14Wallet
+        price: 20
+      Медецина:
+      - proto: Defibrillator
+        price: 100
+      - proto: Brutepack
+        price: 50
+      - proto: N14CleanGauze10
+        price: 15
+      - proto: N14Ointment10
+        price: 50
+      - proto: PillCanisterDylovene
+        price: 25
+      - proto: PillCanisterBicaridine
+        price: 25
+      - proto: PillCanisterHyronalin
+        price: 25
+      - proto: PillCanisterDexalin
+        price: 25
+      - proto: SyringeInaprovaline
+        price: 35
+      - proto: BodyBagFolded
+        price: 5
+      
     Sell:
       Огнестрел:
       - proto: N14WeaponPistol9mm
@@ -254,6 +281,17 @@
         price: 15
       - proto: N14JunkComponentMainboard
         price: 15
+      - proto: N14FoodMeatRadRaw
+        price: 20
+      - proto: N14FoodMeatRadscorpion
+        price: 20
+      - proto: N14MaterialRadscorpionTail
+        price: 20
+      - proto: LLWallet
+        price: 10
+      - proto: N14Wallet
+        price: 10
+     
 
 
 - type: entity
