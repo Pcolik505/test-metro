@@ -79,7 +79,7 @@
     - doors
     base: metal
   - type: Construction
-    graph: CMGirder
+    graph: Girder
     node: wall
 
 - type: entity
@@ -222,7 +222,7 @@
     - doors
     base: rwall
   - type: Construction
-    graph: CMGirder
+    graph: Girder
     node: reinforcedWall
   - type: StaticPrice
     price: 150
