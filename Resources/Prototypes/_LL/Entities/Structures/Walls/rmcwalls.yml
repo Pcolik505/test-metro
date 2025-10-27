@@ -1,0 +1,3111 @@
+#TODO localisation
+# BaseWall
+- type: entity
+  abstract: true
+  id: RMCBaseWallInvincibleNoIcon
+  description: A huge chunk of metal used to separate rooms.
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Sprite
+    drawdepth: Walls
+  - type: PlacementReplacement
+    key: walls
+  - type: Occluder
+  - type: Airtight
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+        density: 1000
+  - type: IsRoof
+  - type: Tag
+    tags:
+    - Wall
+
+- type: entity
+  abstract: true
+  parent: RMCBaseWallInvincibleNoIcon
+  id: CMBaseWallInvincible
+  description: A huge chunk of metal used to separate rooms.
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Icon
+    state: full
+
+# Standard
+- type: entity
+  parent: BaseWall
+  id: CMWallMetal
+  name: wall
+  description: A huge chunk of metal used to separate rooms.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/metal.rsi
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/metal.rsi
+  - type: Tag
+    tags:
+    - Wall
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 3000
+      behaviors:
+        - !type:ChangeConstructionNodeBehavior
+          node: girder
+        - !type:DoActsBehavior
+          acts: ["Breakage"]
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: metal
+  - type: Construction
+    graph: CMGirder
+    node: wall
+
+- type: entity
+  parent: CMWallMetal
+  id: CMWallMetalAlmayer
+  name: wall
+  description: A huge chunk of metal used to separate rooms.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/almayer_black.rsi
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/almayer_black.rsi
+    state: wall
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: wall
+
+- type: entity
+  parent: CMWallMetal
+  id: RMCWallAlmayerDeco1
+  name: wall
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/almayer_black.rsi
+    state: almayer_deco_wall0
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/almayer_black.rsi
+    state: almayer_deco_wall0
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
+
+- type: entity
+  parent: RMCWallAlmayerDeco1
+  id: RMCWallAlmayerDeco2
+  components:
+  - type: Sprite
+    state: almayer_deco_wall1
+  - type: Icon
+    state: almayer_deco_wall1
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
+
+- type: entity
+  parent: RMCWallAlmayerDeco1
+  id: RMCWallAlmayerDeco3
+  components:
+  - type: Sprite
+    state: almayer_deco_wall2
+  - type: Icon
+    state: almayer_deco_wall2
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
+
+- type: entity
+  parent: RMCWallAlmayerDeco1
+  id: RMCWallAlmayerDeco4
+  components:
+  - type: Sprite
+    state: almayer_deco_wall3
+  - type: Icon
+    state: almayer_deco_wall3
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
+
+- type: entity
+  parent: RMCWallAlmayerDeco1
+  id: RMCWallAlmayerDecoElevator
+  components:
+  - type: Sprite
+    state: almayer_elevator
+  - type: Icon
+    state: almayer_elevator
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
+
+- type: entity
+  parent: RMCWallAlmayerDeco1
+  id: RMCWallAlmayerDecoFreight
+  components:
+  - type: Sprite
+    state: almayer_friegt
+  - type: Icon
+    state: almayer_friegt
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
+
+- type: entity
+  parent: CMWallMetal
+  id: CMWallMetalAlmayerWhite
+  name: wall
+  description: A huge chunk of metal used to separate rooms.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/almayer_white.rsi
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/almayer_white.rsi
+    state: wall
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: wall
+
+# Reinforced
+- type: entity
+  parent: BaseWall
+  id: CMWallReinforced
+  name: reinforced wall
+  description: A huge chunk of reinforced metal used to separate rooms.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/rwall.rsi
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/rwall.rsi
+  - type: Tag
+    tags:
+    - Wall
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 9000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: rwall
+  - type: Construction
+    graph: CMGirder
+    node: reinforcedWall
+  - type: StaticPrice
+    price: 150
+
+- type: entity
+  parent: BaseWall
+  name: reinforced wall
+  id: CMWallSuperReinforced
+  description: A huge chunk of reinforced metal used to separate rooms. Looks very robust.
+  suffix: Super Reinforced
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/rwall.rsi
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/rwall.rsi
+  - type: Tag
+    tags:
+    - Wall
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 9000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: rwall
+
+- type: entity
+  parent: CMWallReinforced
+  id: CMWallReinforcedAlmayer
+  name: reinforced hull
+  description: A reinforced metal wall used to separate rooms and make up the ship.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/almayer_black.rsi
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/almayer_black.rsi
+    state: reinforced
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: wall
+
+- type: entity
+  parent: CMWallReinforced
+  id: RMCWallAlmayerReinforcedDeco1
+  name: reinforced hull
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/almayer_black.rsi
+    state: almayer_deco_wall0
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/almayer_black.rsi
+    state: almayer_deco_wall0
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
+
+- type: entity
+  parent: RMCWallAlmayerReinforcedDeco1
+  id: RMCWallAlmayerReinforcedDeco2
+  components:
+  - type: Sprite
+    state: almayer_deco_wall1
+  - type: Icon
+    state: almayer_deco_wall1
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
+
+- type: entity
+  parent: RMCWallAlmayerReinforcedDeco1
+  id: RMCWallAlmayerReinforcedDeco3
+  components:
+  - type: Sprite
+    state: almayer_deco_wall2
+  - type: Icon
+    state: almayer_deco_wall2
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
+
+- type: entity
+  parent: RMCWallAlmayerReinforcedDeco1
+  id: RMCWallAlmayerReinforcedDeco4
+  components:
+  - type: Sprite
+    state: almayer_deco_wall3
+  - type: Icon
+    state: almayer_deco_wall3
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
+
+- type: entity
+  parent: RMCWallAlmayerReinforcedDeco1
+  id: RMCWallAlmayerReinforcedDecoElevator
+  components:
+  - type: Sprite
+    state: almayer_elevator
+  - type: Icon
+    state: almayer_elevator
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
+
+- type: entity
+  parent: RMCWallAlmayerReinforcedDeco1
+  id: RMCWallAlmayerReinforcedDecoFreight
+  components:
+  - type: Sprite
+    state: almayer_friegt
+  - type: Icon
+    state: almayer_friegt
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
+
+- type: entity
+  parent: CMWallReinforced
+  id: CMWallReinforcedAlmayerWhite
+  name: reinforced hull
+  description: A reinforced metal wall used to separate rooms and make up the ship.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/almayer_white.rsi
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/almayer_white.rsi
+    state: reinforced
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: wall
+
+- type: entity
+  parent: CMWallReinforced
+  id: CMWallReinforcedAlmayerAI
+  name: reinforced hull
+  description: A reinforced metal wall used to isolate potentially dangerous areas.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/almayer_aicore.rsi
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/almayer_aicore.rsi
+    state: reinforced
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: aiwall
+
+# Indestructible
+- type: entity
+  parent: CMBaseWallInvincible
+  id: CMWallReinforcedHeavy
+  name: heavy reinforced hull
+  description: A huge chunk of ultra-reinforced metal used to separate rooms. Looks virtually indestructible.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/rwall.rsi
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/rwall.rsi
+  - type: Tag
+    tags:
+      - Wall
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: rwall
+
+- type: entity
+  parent: CMWallReinforcedHeavy
+  id: CMWallReinforcedHeavyAlmayer
+  name: heavy reinforced hull
+  description: A highly reinforced metal wall used to separate rooms and make up the ship. It would take a great impact to weaken this wall.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/almayer_black.rsi
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/almayer_black.rsi
+    state: hull
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: wall
+
+- type: entity
+  parent: CMWallReinforcedHeavyAlmayer
+  id: RMCWallAlmayerReinforcedHeavyDeco1
+  name: heavy reinforced hull
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/almayer_black.rsi
+    state: almayer_deco_wall0
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/almayer_black.rsi
+    state: almayer_deco_wall0
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
+
+- type: entity
+  parent: RMCWallAlmayerReinforcedHeavyDeco1
+  id: RMCWallAlmayerReinforcedHeavyDeco2
+  components:
+  - type: Sprite
+    state: almayer_deco_wall1
+  - type: Icon
+    state: almayer_deco_wall1
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
+
+- type: entity
+  parent: RMCWallAlmayerReinforcedHeavyDeco1
+  id: RMCWallAlmayerReinforcedHeavyDeco3
+  components:
+  - type: Sprite
+    state: almayer_deco_wall2
+  - type: Icon
+    state: almayer_deco_wall2
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
+
+- type: entity
+  parent: RMCWallAlmayerReinforcedHeavyDeco1
+  id: RMCWallAlmayerReinforcedHeavyDeco4
+  components:
+  - type: Sprite
+    state: almayer_deco_wall3
+  - type: Icon
+    state: almayer_deco_wall3
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
+
+- type: entity
+  parent: RMCWallAlmayerReinforcedHeavyDeco1
+  id: RMCWallAlmayerReinforcedHeavyDecoElevator
+  components:
+  - type: Sprite
+    state: almayer_elevator
+  - type: Icon
+    state: almayer_elevator
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
+
+- type: entity
+  parent: RMCWallAlmayerReinforcedHeavyDeco1
+  id: RMCWallAlmayerReinforcedHeavyDecoFreight
+  components:
+  - type: Sprite
+    state: almayer_friegt
+  - type: Icon
+    state: almayer_friegt
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
+
+- type: entity
+  parent: CMWallReinforcedHeavy
+  id: CMWallReinforcedHeavyAlmayerWhite
+  name: heavy reinforced hull
+  description: A highly reinforced metal wall used to separate rooms and make up the ship. It would take a great impact to weaken this wall.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/almayer_white.rsi
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/almayer_white.rsi
+    state: hull
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: wall
+
+- type: entity
+  parent: CMWallReinforcedHeavy
+  id: CMWallReinforcedHeavyAlmayerAI
+  name: heavy reinforced hull
+  description: An extremely reinforced metal wall used to isolate potentially dangerous areas. Looks virtually indestructible.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/almayer_aicore.rsi
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/almayer_aicore.rsi
+    state: hull
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: aiwall
+
+# TODO RMC14 temp hull, breakable only after hijack
+
+# Shuttle
+- type: entity
+  parent: CMBaseWallInvincible
+  id: CMWallShuttleBlack
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/shuttle.rsi
+    state: wall3
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/shuttle.rsi
+    state: wall3
+
+- type: entity
+  parent: CMWallShuttleBlack
+  id: CMWallShuttleOrange
+  components:
+  - type: Sprite
+    state: pwall
+  - type: Icon
+    state: pwall
+
+- type: entity
+  parent: CMWallShuttleBlack
+  id: CMWallShuttleWhite
+  components:
+  - type: Sprite
+    state: wall1
+  - type: Icon
+    state: wall1
+
+# Cave
+- type: entity
+  parent: CMBaseWallInvincible
+  id: CMWallRock
+  name: rock wall
+  description: A rough wall of hardened rock.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/cave.rsi
+    color: "#826161"
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/cave.rsi
+    state: cavewall
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: cavewall
+
+# Cult
+- type: entity
+  parent: BaseWall
+  id: CMWallCult
+  name: wall
+  description: The patterns engraved on the wall seem to shift as you try to focus on them. You feel sick.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/cult.rsi
+    color: "#3C3434"
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/cult.rsi
+    state: cult0
+  - type: Tag
+    tags:
+    - Wall
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 3000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: cult
+
+# Wood
+- type: entity
+  parent: BaseWall
+  id: CMWallWood
+  name: wood wall
+  description: A wooden wall used to separate rooms.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/wood.rsi
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/wood.rsi
+    state: wood0
+  - type: Tag
+    tags:
+    - Wall
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 3000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: wood
+
+# Jungle
+- type: entity
+  parent: CMBaseWallInvincible
+  id: CMWallJungle
+  name: jungle vegetation
+  description: Exceptionally dense vegetation that you can't see through.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/jungle.rsi
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/jungle.rsi
+    state: jungle_veg0
+  - type: Tag
+    tags:
+    - Wall
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: jungle_veg
+
+- type: entity
+  parent: CMWallJungle
+  id: RMCWallJungleStrata
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/strata_jungle.rsi
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/strata_jungle.rsi
+    state: strata_jungle0
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: strata_jungle
+
+# Elevator
+
+- type: entity
+  parent: CMBaseWallInvincible
+  id: RMCWallElevator
+  name: elevator wall
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/elevator.rsi
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/elevator.rsi
+    state: full
+  - type: Tag
+    tags:
+    - Wall
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: wall
+
+- type: entity
+  parent: CMBaseWallInvincible
+  id: RMCWallElevatorBroken
+  name: elevator wall
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/elevator.rsi
+    state: wall_broke
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/elevator.rsi
+    state: wall_broke
+  - type: Occluder
+    enabled: false
+
+- type: entity
+  parent: CMBaseWallInvincible
+  id: RMCWallElevatorNoConnect1
+  name: elevator wall
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/elevator_single.rsi
+    state: elevator_1
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/elevator_single.rsi
+    state: elevator_1
+
+- type: entity
+  parent: RMCWallElevatorNoConnect1
+  id: RMCWallElevatorNoConnect2
+  name: elevator wall
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/elevator_single.rsi
+    state: elevator_2
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/elevator_single.rsi
+    state: elevator_2
+
+- type: entity
+  parent: RMCWallElevatorNoConnect1
+  id: RMCWallElevatorNoConnect3
+  name: elevator wall
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/elevator_single.rsi
+    state: elevator_3
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/elevator_single.rsi
+    state: elevator_3
+
+- type: entity
+  parent: RMCWallElevatorNoConnect1
+  id: RMCWallElevatorNoConnect4
+  name: elevator wall
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/elevator_single.rsi
+    state: elevator_4
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/elevator_single.rsi
+    state: elevator_4
+
+- type: entity
+  parent: RMCWallElevatorNoConnect1
+  id: RMCWallElevatorNoConnect5
+  name: elevator wall
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/elevator_single.rsi
+    state: elevator_5
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/elevator_single.rsi
+    state: elevator_5
+
+- type: entity
+  parent: RMCWallElevatorNoConnect1
+  id: RMCWallElevatorNoConnect6
+  name: elevator wall
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/elevator_single.rsi
+    state: elevator_6
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/elevator_single.rsi
+    state: elevator_6
+
+- type: entity
+  parent: RMCWallElevatorNoConnect1
+  id: RMCWallElevatorNoConnect7
+  name: elevator wall
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/elevator_single.rsi
+    state: elevator_7
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/elevator_single.rsi
+    state: elevator_7
+
+- type: entity
+  parent: RMCWallElevatorNoConnect1
+  id: RMCWallElevatorNoConnect8
+  name: elevator wall
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/elevator_single.rsi
+    state: elevator_8
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/elevator_single.rsi
+    state: elevator_8
+
+- type: entity
+  parent: RMCWallElevatorNoConnect1
+  id: RMCWallElevatorButtonArrivals
+  name: elevator wall
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/elevator.rsi
+    state: wall_button_arrivals
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/elevator.rsi
+    state: wall_button_arrivals
+
+- type: entity
+  parent: RMCWallElevatorNoConnect1
+  id: RMCWallElevatorButtonDorm
+  name: elevator wall
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/elevator.rsi
+    state: wall_button_dorm
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/elevator.rsi
+    state: wall_button_dorm
+
+- type: entity
+  parent: RMCWallElevatorNoConnect1
+  id: RMCWallElevatorButtonFreight
+  name: elevator wall
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/elevator.rsi
+    state: wall_button_freight
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/elevator.rsi
+    state: wall_button_freight
+
+- type: entity
+  parent: RMCWallElevatorNoConnect1
+  id: RMCWallElevatorButtonResearch
+  name: elevator wall
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/elevator.rsi
+    state: wall_button_research
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/elevator.rsi
+    state: wall_button_research
+
+- type: entity
+  parent: RMCWallElevatorNoConnect1
+  id: RMCWallElevatorArrivals
+  name: elevator wall
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/elevator.rsi
+    state: wall_arrivals
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/elevator.rsi
+    state: wall_arrivals
+
+- type: entity
+  parent: RMCWallElevatorNoConnect1
+  id: RMCWallElevatorDorm
+  name: elevator wall
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/elevator.rsi
+    state: wall_dorm
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/elevator.rsi
+    state: wall_dorm
+
+- type: entity
+  parent: RMCWallElevatorNoConnect1
+  id: RMCWallElevatorFreight
+  name: elevator wall
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/elevator.rsi
+    state: wall_freight
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/elevator.rsi
+    state: wall_freight
+
+- type: entity
+  parent: RMCWallElevatorNoConnect1
+  id: RMCWallElevatorResearch
+  name: elevator wall
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/elevator.rsi
+    state: wall_research
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/elevator.rsi
+    state: wall_research
+
+- type: entity
+  parent: RMCWallElevatorNoConnect1
+  id: RMCWallElevatorGear
+  name: elevator wall
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/elevator.rsi
+    state: wall_gear
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/elevator.rsi
+    state: wall_gear
+
+- type: entity
+  parent: RMCWallElevatorNoConnect1
+  id: RMCWallElevatorGearAnimated
+  name: elevator wall
+  suffix: animated
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/elevator.rsi
+    state: wall_gear_animated
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/elevator.rsi
+    state: wall_gear_animated
+
+# Containment
+
+- type: entity
+  parent: CMBaseWallInvincible
+  id: RMCWallContainment
+  name: cell wall
+  description : A metal wall used to separate rooms and make up the ship
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/containment.rsi
+    state: containment_wall_south
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/containment.rsi
+    state: containment_wall_south
+
+- type: entity
+  parent: RMCWallContainment
+  id: RMCWallContainmentCorner
+  components:
+  - type: Sprite
+    state: containment_wall_corner
+  - type: Icon
+    state: containment_wall_corner
+
+- type: entity
+  parent: RMCWallContainment
+  id: RMCWallContainmentWest
+  components:
+  - type: Sprite
+    state: containment_wall_w
+  - type: Icon
+    state: containment_wall_w
+
+- type: entity
+  parent: RMCWallContainment
+  id: RMCWallContainmentEast
+  components:
+  - type: Sprite
+    state: containment_wall_e
+  - type: Icon
+    state: containment_wall_e
+
+- type: entity
+  parent: RMCWallContainment
+  id: RMCWallContainmentNorth
+  components:
+  - type: Sprite
+    state: containment_wall_n
+  - type: Icon
+    state: containment_wall_n
+
+- type: entity
+  parent: RMCWallContainment
+  id: RMCWallContainmentConnect1
+  components:
+  - type: Sprite
+    state: containment_wall_connect_e
+  - type: Icon
+    state: containment_wall_connect_e
+
+- type: entity
+  parent: RMCWallContainment
+  id: RMCWallContainmentConnect2
+  components:
+  - type: Sprite
+    state: containment_wall_connect3
+  - type: Icon
+    state: containment_wall_connect3
+
+- type: entity
+  parent: RMCWallContainment
+  id: RMCWallContainmentConnect3
+  components:
+  - type: Sprite
+    state: containment_wall_connect_w
+  - type: Icon
+    state: containment_wall_connect_w
+
+- type: entity
+  parent: RMCWallContainment
+  id: RMCWallContainmentConnect4
+  components:
+  - type: Sprite
+    state: containment_wall_connect_w2
+  - type: Icon
+    state: containment_wall_connect_w2
+
+- type: entity
+  parent: RMCWallContainment
+  id: RMCWallContainmentConnect5
+  components:
+  - type: Sprite
+    state: containment_wall_connect_e2
+  - type: Icon
+    state: containment_wall_connect_e2
+
+- type: entity
+  parent: RMCWallContainment
+  id: RMCWallContainmentConnect6
+  components:
+  - type: Sprite
+    state: containment_wall_connect_s1
+  - type: Icon
+    state: containment_wall_connect_s1
+
+- type: entity
+  parent: RMCWallContainment
+  id: RMCWallContainmentConnect7
+  components:
+  - type: Sprite
+    state: containment_wall_connect_s2
+  - type: Icon
+    state: containment_wall_connect_s2
+
+# Hunter Walls
+
+- type: entity
+  parent: CMBaseWallInvincible
+  id: RMCWallHunter
+  name: hunter wall
+  description: Nigh indestructible walls that make up the hull of a hunter ship.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/hunter.rsi
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/hunter.rsi
+    state: metal
+  - type: Tag
+    tags:
+    - Wall
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: metal
+
+- type: entity
+  parent: CMBaseWallInvincible
+  id: RMCWallHunterDegraded
+  name: degraded hunter wall
+  description: Ancient beyond measure, these walls make up the hull of a vessel of non human origin. Despite this, they can be felled with plastic explosives like any other opaque blocker.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/hunter_degraded.rsi
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/hunter_degraded.rsi
+    state: metal
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: metal
+  - type: Tag
+    tags:
+    - Wall
+
+- type: entity
+  parent: CMWallMetal
+  id: RMCWallHangar
+  name: hangar wall
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/hangar.rsi
+    state: hangar
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/hangar.rsi
+    state: hangar
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: hangar
+
+- type: entity
+  parent: CMWallReinforced
+  id: RMCWallBunker
+  name: bunker wall
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/bunker.rsi
+    state: bunker
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/bunker.rsi
+    state: bunker
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: bunker
+
+- type: entity
+  parent: CMWallReinforced
+  id: RMCWallChigusa
+  name: facility wall
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/chigusa.rsi
+    state: chigusa
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/chigusa.rsi
+    state: chigusa
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: chigusa
+
+- type: entity
+  parent: CMWallRock
+  id: RMCWallRockTrijent
+  components:
+  - type: Sprite
+    color: "#994a16"
+
+- type: entity
+  parent: CMWallMetal
+  id: RMCWallStrata
+  name: bare outpost wall
+  description: A thick and chunky metal wall. The surface is barren and imposing.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/strata_wall.rsi
+    state: strata_bare_outpost_
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/strata_wall.rsi
+    state: strata_bare_outpost_
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: strata_bare_outpost_
+
+- type: entity
+  parent: CMWallReinforced
+  id: RMCWallStrataReinforced
+  name: ribbed outpost wall
+  description: A thick and chunky metal wall covered in jagged ribs.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/strata_rwall.rsi
+    state: strata_ribbed_outpost_
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/strata_rwall.rsi
+    state: strata_ribbed_outpost_
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: strata_ribbed_outpost_
+
+- type: entity
+  parent: CMBaseWallInvincible
+  id: RMCWallStrataHull
+  name: heavy ribbed outpost wall
+  description: A thick and chunky metal wall that is, just by virtue of its placement and imposing presence, entirely indestructible.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/strata_rwall.rsi
+    state: strata_ribbed_outpost_
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/strata_rwall.rsi
+    state: strata_hull
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: strata_ribbed_outpost_
+
+- type: entity
+  parent: CMBaseWallInvincible
+  id: RMCWallStrataIce
+  name: ice columns
+  description: An absolutely massive collection of columns made of ice. The longer you stare, the deeper the ice seems to go.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/strata_ice.rsi
+    state: strata_ice
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/strata_ice.rsi
+    state: strata_ice
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: strata_ice
+
+- type: entity
+  parent: RMCWallStrataIce
+  id: RMCWallStrataIceDirty
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/strata_ice_dirty.rsi
+    state: strata_ice_dirty
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/strata_ice_dirty.rsi
+    state: strata_ice_dirty
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: strata_ice_dirty
+
+- type: entity
+  parent: RMCWallStrataIce
+  id: RMCWallStrataRock
+  name: rock wall
+  description: A rough wall of hardened rock.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/strata_rock.rsi
+    state: strata_rock
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/strata_rock.rsi
+    state: strata_rock
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: strata_rock
+
+- type: entity
+  parent: CMWallReinforced
+  id: RMCWallSPPReinforced
+  name: reinforced walls
+  description: A thick and chunky metal wall. The surface is barren and imposing.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/spp_wall.rsi
+    state: uppwall_interior
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/spp_wall.rsi
+    state: uppwall_interior
+  - type: IconSmooth
+    key: walls
+    base: uppwall_interior
+
+- type: entity
+  parent: RMCWallSPPReinforced
+  id: RMCWallSPPGreyReinforced
+  suffix: Grey
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/spp_grey_wall.rsi
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/spp_grey_wall.rsi
+
+- type: entity
+  parent: RMCWallSPPReinforced
+  id: RMCWallSPPWhiteReinforced
+  suffix: White
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/spp_white_wall.rsi
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/spp_white_wall.rsi
+
+- type: entity
+  parent: CMBaseWallInvincible
+  id: RMCWallSPPHull
+  name: ribbed hull walls
+  description: "A thick and chunky metal wall. The surface is barren and imposing."
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/spp_wall.rsi
+    state: uppwall_interior
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/spp_wall.rsi
+    state: uppwall_interior
+  - type: IconSmooth
+    key: walls
+    base: uppwall_interior
+
+- type: entity
+  parent: RMCWallSPPHull
+  id: RMCWallSPPGreyHull
+  suffix: Grey
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/spp_grey_wall.rsi
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/spp_grey_wall.rsi
+
+- type: entity
+  parent: RMCWallSPPHull
+  id: RMCWallSPPWhiteHull
+  suffix: White
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/spp_white_wall.rsi
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/spp_white_wall.rsi
+
+
+- type: entity
+  parent: CMWallMetal
+  id: CMWallSolaris
+  name: colony wall
+  description: Tough looking walls that have been blasted by sand since the day they were erected. A testament to human willpower.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/solaris_wall.rsi
+    state: solaris_interior
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/solaris_wall.rsi
+    state: solaris_interior
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: solaris_interior
+
+- type: entity
+  parent: CMWallReinforced
+  id: CMWallSolarisReinforced
+  name: reinforced colony wall
+  description: Tough looking walls that have been blasted by sand since the day they were erected. A testament to human willpower.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/solaris_rwall.rsi
+    state: solaris_interior_r
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/solaris_rwall.rsi
+    state: solaris_interior_r
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: solaris_interior_r
+
+- type: entity
+  parent: CMBaseWallInvincible
+  id: CMWallSolarisHull
+  name: heavy reinforced colony wall
+  description: Tough looking walls that have been blasted by sand since the day they were erected. A testament to human willpower.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/solaris_rwall.rsi
+    state: solaris_interior_r
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/solaris_rwall.rsi
+    state: solaris_interior_h
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: solaris_interior_r
+
+- type: entity
+  parent: CMBaseWallInvincible
+  id: CMWallSolarisRock
+  name: rock wall
+  description: Tough looking walls that have been blasted by sand since the day they were erected. A testament to human willpower.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/solaris_rock.rsi
+    state: solaris_rock
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/solaris_rock.rsi
+    state: solaris_rock
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: solaris_rock
+
+- type: entity
+  parent: CMWallSolarisRock
+  id: RMCWallSolarisRockTimed
+  suffix: Timed
+  components:
+  - type: TimedDespawn
+    lifetime: 2400
+
+
+- type: entity
+  parent: CMBaseWallInvincible
+  id: RCMWallShivaIce
+  name: black ice slabs
+  description: Slabs on slabs of dirty black ice crusted over ancient rock formations. The permafrost fluctuates between 20in and 12in during the summer months.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/shiva_ice.rsi
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/shiva_ice.rsi
+    state: shiva_ice
+  - type: Tag
+    tags:
+    - Wall
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: shiva_ice
+
+- type: entity
+  parent: CMBaseWallInvincible
+  id: RCMWallShivaInvincibleFab
+  name: reinforced prefabricated structure wall
+  description: It cannot be destroyed by any means you have available. Perhaps praying to the gods may help.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/shiva_fab_r.rsi
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/shiva_fab_r.rsi
+    state: shiva_fab_r_h
+  - type: Tag
+    tags:
+    - Wall
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: shiva_fab_r
+
+- type: entity
+  parent: CMWallMetal
+  id: RCMWallShivaFab
+  name: prefabricated structure wall
+  description: This structure is made of metal support rods and robust poly-kevlon plastics. A derivative of the stuff used in UN ballistics vests, UNMC and SPP uniforms. These walls are pulled taut and have been reinforced into a more permanent structure.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/shiva_fab.rsi
+    state: shiva_fab
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/shiva_fab.rsi
+    state: shiva_fab
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: shiva_fab
+
+- type: entity
+  parent: CMWallReinforced
+  id: RCMWallShivaReinforcedFab
+  name: reinforced prefabricated structure wall
+  description: This structure is made of metal support rods. The poly-kevlon has been replaced with sheet metal, reinforcing it.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/shiva_fab_r.rsi
+    state: shiva_fab_r
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/shiva_fab_r.rsi
+    state: shiva_fab_r
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: shiva_fab_r
+
+- type: entity
+  parent: CMWallReinforced
+  id: RCMWallShivaReinforcedFabOrange
+  name: reinforced prefabricated structure wall
+  description: This structure is made of metal support rods. The poly-kevlon has been replaced with sheet metal, reinforcing it.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/shiva_fab_oj.rsi
+    state: shiva_fab_oj
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/shiva_fab_oj.rsi
+    state: shiva_fab_oj
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: shiva_fab_oj
+
+- type: entity
+  parent: CMWallReinforced
+  id: RCMWallShivaReinforcedFabBlue
+  name: reinforced prefabricated structure wall
+  description: This structure is made of metal support rods. The poly-kevlon has been replaced with sheet metal, reinforcing it.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/shiva_fab_blu.rsi
+    state: shiva_fab_blu
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/shiva_fab_blu.rsi
+    state: shiva_fab_blu
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: shiva_fab_blu
+
+- type: entity
+  parent: CMWallReinforced
+  id: RCMWallShivaReinforcedFabPink
+  name: reinforced prefabricated structure wall
+  description: This structure is made of metal support rods. The poly-kevlon has been replaced with sheet metal, reinforcing it.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/shiva_fab_pnk.rsi
+    state: shiva_fab_pnk
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/shiva_fab_pnk.rsi
+    state: shiva_fab_pnk
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: shiva_fab_pnk
+
+- type: entity
+  parent: CMWallReinforced
+  id: RCMWallShivaReinforcedFabWhite
+  name: reinforced prefabricated structure wall
+  description: This structure is made of metal support rods. The poly-kevlon has been replaced with sheet metal, reinforcing it.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/shiva_fab_wht.rsi
+    state: shiva_fab_wht
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/shiva_fab_wht.rsi
+    state: shiva_fab_wht
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: shiva_fab_wht
+
+- type: entity
+  parent: CMWallReinforced
+  id: RCMWallShivaReinforcedFabRed
+  name: reinforced prefabricated structure wall
+  description: This structure is made of metal support rods. The poly-kevlon has been replaced with sheet metal, reinforcing it.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/shiva_fab_red.rsi
+    state: shiva_fab_red
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/shiva_fab_red.rsi
+    state: shiva_fab_red
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: shiva_fab_red
+
+# River
+
+- type: entity
+  abstract: true
+  id: RMCWallRiverBase
+  description: A huge chunk of metal used to separate rooms.
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Sprite
+    drawdepth: Walls
+  - type: PlacementReplacement
+    key: walls
+  - type: Airtight
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+        density: 1000
+  - type: IsRoof
+  - type: Tag
+    tags:
+    - Wall
+
+- type: entity
+  parent: RMCWallRiverBase
+  id: RMCWallRiver
+  name: river wall
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/river_wall.rsi
+    state: river_1
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/river_wall.rsi
+    state: river_1
+- type: entity
+  parent: RMCWallRiver
+  id: RMCWallRiver2
+  components:
+  - type: Sprite
+    state: river_2
+  - type: Icon
+    state: river_2
+
+- type: entity
+  parent: RMCWallRiver
+  id: RMCWallRiver3
+  components:
+  - type: Sprite
+    state: river_3
+  - type: Icon
+    state: river_3
+
+- type: entity
+  parent: RMCWallRiver
+  id: RMCWallRiver4
+  components:
+  - type: Sprite
+    state: river_4
+  - type: Icon
+    state: river_4
+
+- type: entity
+  parent: RMCWallRiver
+  id: RMCWallRiver5
+  components:
+  - type: Sprite
+    state: river_5
+  - type: Icon
+    state: river_5
+
+- type: entity
+  parent: RMCWallRiver
+  id: RMCWallRiver6
+  components:
+  - type: Sprite
+    state: river_6
+  - type: Icon
+    state: river_6
+
+- type: entity
+  parent: RMCWallRiver
+  id: RMCWallRiver7
+  components:
+  - type: Sprite
+    state: river_7
+  - type: Icon
+    state: river_7
+
+- type: entity
+  parent: RMCWallRiver
+  id: RMCWallRiver8
+  suffix: alternative
+  components:
+  - type: Sprite
+    state: river_8
+  - type: Icon
+    state: river_8
+
+- type: entity
+  parent: RMCWallRiver
+  id: RMCWallRiver9
+  suffix: alternative
+  components:
+  - type: Sprite
+    state: river_9
+  - type: Icon
+    state: river_9
+
+- type: entity
+  parent: RMCWallRiver
+  id: RMCWallRiver10
+  components:
+  - type: Sprite
+    state: river_10
+  - type: Icon
+    state: river_10
+
+- type: entity
+  parent: RMCWallRiver
+  id: RMCWallRiver11
+  components:
+  - type: Sprite
+    state: river_11
+  - type: Icon
+    state: river_11
+
+- type: entity
+  parent: RMCWallRiver
+  id: RMCWallRiver12
+  components:
+  - type: Sprite
+    state: river_12
+  - type: Icon
+    state: river_12
+
+- type: entity
+  parent: RMCWallRiver
+  id: RMCWallRiver13
+  components:
+  - type: Sprite
+    state: river_13
+  - type: Icon
+    state: river_13
+
+- type: entity
+  parent: RMCWallRiver
+  id: RMCWallRiver14
+  components:
+  - type: Sprite
+    state: river_14
+  - type: Icon
+    state: river_14
+
+- type: entity
+  parent: CMWallMetal
+  id: RMCWallPrison
+  name: metal wall
+  description: A huge chunk of metal used to separate rooms.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/prison_wall.rsi
+    state: metal
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/prison_wall.rsi
+    state: metal
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: metal
+
+- type: entity
+  parent: CMWallReinforced
+  id: RMCWallPrisonReinforced
+  name: reinforced metal wall
+  description: A huge chunk of ultra-reinforced metal used to separate rooms.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/prison_rwall.rsi
+    state: rwall
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/prison_rwall.rsi
+    state: rwall
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: rwall
+
+- type: entity
+  parent: CMBaseWallInvincible
+  id: RMCWallPrisonHull
+  name: heavy reinforced wall
+  description: A huge chunk of ultra-reinforced metal used to separate rooms. Looks virtually indestructible.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/prison_rwall.rsi
+    state: rwall
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/prison_rwall.rsi
+    state: hwall
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: rwall
+
+- type: entity
+  parent: CMBaseWallInvincible
+  id: RMCWallBoneResin
+  name: skeletal resin
+  description: A wall made of molted old resin. This place is more alive than you are.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/bone_resin.rsi
+    state: bone_resin
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/bone_resin.rsi
+    state: bone_resin
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: bone_resin
+
+- type: entity
+  parent: CMWallReinforced
+  id: RMCWallSandstone
+  name: sandstone wall
+  description: A wall with sandstone plating.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/stone.rsi
+    state: stone
+    color: "#c6a480"
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/stone.rsi
+    state: stone
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    base: stone
+
+- type: entity
+  parent: RMCWallSandstone
+  id: RMCWallSandstoneTemple
+  name: sandstone temple wall
+  description: A heavy wall of sandstone.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/stone.rsi
+    state: stone
+    color: "#b29082"
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/stone.rsi
+    state: stone
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    base: stone
+
+- type: entity
+  parent: RMCWallSandstone
+  id: RMCWallSandstoneTempleRuned
+  name: runed sandstone temple wall
+  description: A heavy wall of sandstone, with elegant carvings and runes inscribed upon its face.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/runedstone.rsi
+    state: runedstone
+    color: "#b29082"
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/runedstone.rsi
+    state: runedstone
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    base: runedstone
+
+- type: entity
+  parent: BaseWall
+  id: RMCWallGold
+  name: gold wall
+  description:  A wall with gold plating. Swag!
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/gold.rsi
+    state: gold0
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/gold.rsi
+    state: gold0
+  - type: Tag
+    tags:
+    - Wall
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 9000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: StaticPrice
+    price: 150
+
+- type: entity
+  parent: RMCBaseWallInvincibleNoIcon
+  id: RMCWallLifeboat00
+  name: wall
+  description: Separates you from certain death.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Lifeboat/lifeboat_walls.rsi
+    state: 0,0
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat01
+  components:
+  - type: Sprite
+    state: 0,1
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat02
+  components:
+  - type: Sprite
+    state: 0,2
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat03
+  components:
+  - type: Sprite
+    state: 0,3
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat04
+  components:
+  - type: Sprite
+    state: 0,4
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat05
+  components:
+  - type: Sprite
+    state: 0,5
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat06
+  components:
+  - type: Sprite
+    state: 0,6
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat10
+  components:
+  - type: Sprite
+    state: 1,0
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat11
+  components:
+  - type: Sprite
+    state: 1,1
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat12
+  components:
+  - type: Sprite
+    state: 1,2
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat13
+  components:
+  - type: Sprite
+    state: 1,3
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat14
+  components:
+  - type: Sprite
+    state: 1,4
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat15
+  components:
+  - type: Sprite
+    state: 1,5
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat16
+  components:
+  - type: Sprite
+    state: 1,6
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat20
+  components:
+  - type: Sprite
+    state: 2,0
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat21
+  components:
+  - type: Sprite
+    state: 2,1
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat22
+  components:
+  - type: Sprite
+    state: 2,2
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat23
+  components:
+  - type: Sprite
+    state: 2,3
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat24
+  components:
+  - type: Sprite
+    state: 2,4
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat25
+  components:
+  - type: Sprite
+    state: 2,5
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat26
+  components:
+  - type: Sprite
+    state: 2,6
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat30
+  components:
+  - type: Sprite
+    state: 3,0
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat31
+  components:
+  - type: Sprite
+    state: 3,1
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat35
+  components:
+  - type: Sprite
+    state: 3,5
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat36
+  components:
+  - type: Sprite
+    state: 3,6
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat60
+  components:
+  - type: Sprite
+    state: 6,0
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat61
+  components:
+  - type: Sprite
+    state: 6,1
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat65
+  components:
+  - type: Sprite
+    state: 6,5
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat66
+  components:
+  - type: Sprite
+    state: 6,6
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat70
+  components:
+  - type: Sprite
+    state: 7,0
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat71
+  components:
+  - type: Sprite
+    state: 7,1
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat75
+  components:
+  - type: Sprite
+    state: 7,5
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat76
+  components:
+  - type: Sprite
+    state: 7,6
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat110
+  components:
+  - type: Sprite
+    state: 11,0
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat111
+  components:
+  - type: Sprite
+    state: 11,1
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat115
+  components:
+  - type: Sprite
+    state: 11,5
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat116
+  components:
+  - type: Sprite
+    state: 11,6
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat120
+  components:
+  - type: Sprite
+    state: 12,0
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat121
+  components:
+  - type: Sprite
+    state: 12,1
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat125
+  components:
+  - type: Sprite
+    state: 12,5
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat126
+  components:
+  - type: Sprite
+    state: 12,6
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat160
+  components:
+  - type: Sprite
+    state: 16,0
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat161
+  components:
+  - type: Sprite
+    state: 16,1
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat165
+  components:
+  - type: Sprite
+    state: 16,5
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat166
+  components:
+  - type: Sprite
+    state: 16,6
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat170
+  components:
+  - type: Sprite
+    state: 17,0
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat171
+  components:
+  - type: Sprite
+    state: 17,1
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat175
+  components:
+  - type: Sprite
+    state: 17,5
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat176
+  components:
+  - type: Sprite
+    state: 17,6
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat180
+  components:
+  - type: Sprite
+    state: 18,0
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat181
+  components:
+  - type: Sprite
+    state: 18,1
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat185
+  components:
+  - type: Sprite
+    state: 18,5
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat186
+  components:
+  - type: Sprite
+    state: 18,6
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat220
+  components:
+  - type: Sprite
+    state: 22,0
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat221
+  components:
+  - type: Sprite
+    state: 22,1
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat225
+  components:
+  - type: Sprite
+    state: 22,5
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat226
+  components:
+  - type: Sprite
+    state: 22,6
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat230
+  components:
+  - type: Sprite
+    state: 23,0
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat231
+  components:
+  - type: Sprite
+    state: 23,1
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat235
+  components:
+  - type: Sprite
+    state: 23,5
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat236
+  components:
+  - type: Sprite
+    state: 23,6
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat240
+  components:
+  - type: Sprite
+    state: 24,0
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat241
+  components:
+  - type: Sprite
+    state: 24,1
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat242
+  components:
+  - type: Sprite
+    state: 24,2
+  - type: Occluder
+    enabled: false
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat243
+  components:
+  - type: Sprite
+    state: 24,3
+  - type: Occluder
+    enabled: false
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat244
+  components:
+  - type: Sprite
+    state: 24,4
+  - type: Occluder
+    enabled: false
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat245
+  components:
+  - type: Sprite
+    state: 24,5
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat246
+  components:
+  - type: Sprite
+    state: 24,6
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat250
+  components:
+  - type: Sprite
+    state: 25,0
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat251
+  components:
+  - type: Sprite
+    state: 25,1
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat252
+  components:
+  - type: Sprite
+    state: 25,2
+  - type: Occluder
+    enabled: false
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat253
+  components:
+  - type: Sprite
+    state: 25,3
+  - type: Occluder
+    enabled: false
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat254
+  components:
+  - type: Sprite
+    state: 25,4
+  - type: Occluder
+    enabled: false
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat255
+  components:
+  - type: Sprite
+    state: 25,5
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat256
+  components:
+  - type: Sprite
+    state: 25,6
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat261
+  components:
+  - type: Sprite
+    state: 26,1
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat262
+  components:
+  - type: Sprite
+    state: 26,2
+  - type: Occluder
+    enabled: false
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat263
+  components:
+  - type: Sprite
+    state: 26,3
+  - type: Occluder
+    enabled: false
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat264
+  components:
+  - type: Sprite
+    state: 26,4
+  - type: Occluder
+    enabled: false
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboat265
+  components:
+  - type: Sprite
+    state: 26,5
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboatWindow1
+  components:
+  - type: Sprite
+    state: window1
+  - type: Occluder
+    enabled: false
+
+- type: entity
+  parent: RMCWallLifeboat00
+  id: RMCWallLifeboatWindow2
+  components:
+  - type: Sprite
+    state: window2
+  - type: Occluder
+    enabled: false
+
+- type: entity
+  parent: CMBaseWallInvincible
+  id: RMCWallKutjevoRock
+  name: rock wall
+  description: Tall sandy rocks. Imposing. Impressive. Attention grabbing.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/kutjevo_rock.rsi
+    state: rock
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/kutjevo_rock.rsi
+    state: rock
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: rock
+
+- type: entity
+  parent: RMCWallKutjevoRock
+  id: RMCWallKutjevoRockBorder
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/kutjevo_rock.rsi
+    state: rock_border
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/kutjevo_rock.rsi
+    state: rock_border
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: rock_border
+
+
+- type: entity
+  parent: CMWallMetal
+  id: RMCWallKutjevo
+  name: colony wall
+  description: Dusty worn down walls that were once built to last.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/kutjevo_wall.rsi
+    state: colony
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/kutjevo_wall.rsi
+    state: colony
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: colony
+
+- type: entity
+  parent: CMWallReinforced
+  id: RMCWallKutjevoReinforced
+  name: reinforced colony wall
+  description: Dusty worn down walls that were once built to last. This one is reinforced
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/kutjevo_rwall.rsi
+    state: colonyr
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/kutjevo_rwall.rsi
+    state: colonyr
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: colonyr
+
+- type: entity
+  parent: CMBaseWallInvincible
+  id: RMCWallKutjevoHull
+  name: heavy reinforced colony wall
+  description: Dusty worn down walls that were once built to last. This one is indestructible.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/kutjevo_rwall.rsi
+    state: colonyr
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/kutjevo_rwall.rsi
+    state: colonyh
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: colonyr
+
+# Rocks
+
+- type: entity
+  parent: CMBaseWallInvincible
+  id: RMCWallHybrisaRock
+  name: rock wall
+  description: Massive columns comprised of anicent sedimentary rocks loom before you.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/hybrisa_rock.rsi
+    state: rock
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/hybrisa_rock.rsi
+    state: rock
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: rock
+
+- type: entity
+  parent: RMCWallHybrisaRock
+  id: RMCWallHybrisaRockBorder
+  suffix: border
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/hybrisa_rock.rsi
+    state: rock_border
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/hybrisa_rock.rsi
+    state: rock_border
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: rock_border
+
+- type: entity
+  parent: RMCWallHybrisaRock
+  id: RMCWallHybrisaRockTimed
+  suffix: TIMED
+  components:
+  - type: TimedDespawn
+    lifetime: 2400
+
+# Engineer Ship
+
+- type: entity
+  parent: CMBaseWallInvincible
+  id: RMCWallEngineer
+  name: strange metal wall
+  description: Nigh indestructible walls that make up the hull of an unknown ancient ship, looks like nothing you can do will penetrate the hull.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/hybrisa_engineership.rsi
+    state: metal
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/hybrisa_engineership.rsi
+    state: metal
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: metal
+
+# Colony
+
+- type: entity
+  parent: CMWallMetal
+  id: RMCWallHybrisa
+  name: bare metal walls
+  description: A thick and chunky metal wall. The surface is barren and imposing.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/hybrisa_wall.rsi
+    state: strata_bare_outpost_
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/hybrisa_wall.rsi
+    state: strata_bare_outpost_
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: strata_bare_outpost_
+
+- type: entity
+  parent: CMWallReinforced
+  id: RMCWallHybrisaReinforced
+  name: ribbed metal walls
+  description: A thick and chunky metal wall covered in jagged ribs.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/hybrisa_rwall.rsi
+    state: strata_ribbed_outpost_
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/hybrisa_rwall.rsi
+    state: strata_ribbed_outpost_
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: strata_ribbed_outpost_
+
+- type: entity
+  parent: CMBaseWallInvincible
+  id: RMCWallHybrisaHull
+  name: ribbed metal walls
+  suffix: hull
+  description: A thick and chunky metal wall that is, just by virtue of its placement and imposing presence, entirely indestructible.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/hybrisa_rwall.rsi
+    state: strata_ribbed_outpost_
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/hybrisa_rwall.rsi
+    state: strata_hull
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: strata_ribbed_outpost_
+
+# Medical
+
+- type: entity
+  parent: RMCWallHybrisa
+  id: RMCWallHybrisaMedical
+  suffix: medical
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/hybrisa_wall_medical.rsi
+    state: strata_bare_outpost_
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/hybrisa_wall_medical.rsi
+    state: strata_bare_outpost_
+
+- type: entity
+  parent: RMCWallHybrisaReinforced
+  id: RMCWallHybrisaMedicalReinforced
+  suffix: medical
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/hybrisa_rwall_medical.rsi
+    state: strata_ribbed_outpost_
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/hybrisa_rwall_medical.rsi
+    state: strata_ribbed_outpost_
+
+- type: entity
+  parent: RMCWallHybrisaHull
+  id: RMCWallHybrisaMedicalHull
+  suffix: medical, hull
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/hybrisa_rwall_medical.rsi
+    state: strata_ribbed_outpost_
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/hybrisa_rwall_medical.rsi
+    state: strata_hull
+
+# Engineering
+
+- type: entity
+  parent: RMCWallHybrisa
+  id: RMCWallHybrisaEngi
+  suffix: engineering
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/hybrisa_wall_engineering.rsi
+    state: strata_bare_outpost_
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/hybrisa_wall_engineering.rsi
+    state: strata_bare_outpost_
+
+- type: entity
+  parent: RMCWallHybrisaReinforced
+  id: RMCWallHybrisaEngiReinforced
+  suffix: engineering
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/hybrisa_rwall_engineering.rsi
+    state: strata_ribbed_outpost_
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/hybrisa_rwall_engineering.rsi
+    state: strata_ribbed_outpost_
+
+- type: entity
+  parent: RMCWallHybrisaHull
+  id: RMCWallHybrisaEngiHull
+  suffix: engineering, hull
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/hybrisa_rwall_engineering.rsi
+    state: strata_ribbed_outpost_
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/hybrisa_rwall_engineering.rsi
+    state: strata_hull
+
+# Office
+
+- type: entity
+  parent: RMCWallHybrisa
+  id: RMCWallHybrisaOffice
+  suffix: office
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/hybrisa_wall_office.rsi
+    state: strata_bare_outpost_
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/hybrisa_wall_office.rsi
+    state: strata_bare_outpost_
+
+# Space Port
+
+- type: entity
+  parent: RMCWallHybrisa
+  id: RMCWallHybrisaSpacePort
+  name: metal wall
+  description: A huge chunk of metal used to separate rooms.
+  suffix: space port
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/hybrisa_spaceport.rsi
+    state: metal
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/hybrisa_spaceport.rsi
+    state: metal
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: metal
+
+- type: entity
+  parent: RMCWallHybrisaReinforced
+  id: RMCWallHybrisaSpacePortReinforced
+  suffix: space port
+  name: reinforced metal wall
+  description: A huge chunk of metal used to separate rooms.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/hybrisa_spaceport_reinforced.rsi
+    state: rwall
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/hybrisa_spaceport_reinforced.rsi
+    state: rwall
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: rwall
+
+- type: entity
+  parent: RMCWallHybrisaHull
+  id: RMCWallHybrisaSpacePortHull
+  suffix: space port, hull
+  name: heavy reinforced wall
+  description: A huge chunk of ultra-reinforced metal used to separate rooms. Looks virtually indestructible.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/hybrisa_spaceport_reinforced.rsi
+    state: rwall
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/hybrisa_spaceport_reinforced.rsi
+    state: hwall
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: rwall
+
+# Research
+
+- type: entity
+  parent: RMCWallHybrisa
+  id: RMCWallHybrisaResearch
+  suffix: research
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/hybrisa_wall_research.rsi
+    state: strata_bare_outpost_
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/hybrisa_wall_research.rsi
+    state: strata_bare_outpost_
+
+- type: entity
+  parent: RMCWallHybrisaReinforced
+  id: RMCWallHybrisaResearchReinforced
+  suffix: research
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/hybrisa_rwall_research.rsi
+    state: strata_ribbed_outpost_
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/hybrisa_rwall_research.rsi
+    state: strata_ribbed_outpost_
+
+- type: entity
+  parent: RMCWallHybrisaHull
+  id: RMCWallHybrisaResearchHull
+  suffix: research, hull
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/hybrisa_rwall_research.rsi
+    state: strata_ribbed_outpost_
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/hybrisa_rwall_research.rsi
+    state: strata_hull
+
+- type: entity
+  parent: RMCBaseWallInvincibleNoIcon
+  id: RMCWallEscapePod0
+  name: wall
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/escape_pod.rsi
+    state: wall0
+
+- type: entity
+  parent: RMCWallEscapePod0
+  id: RMCWallEscapePod1
+  components:
+  - type: Sprite
+    state: wall1
+
+- type: entity
+  parent: RMCWallEscapePod0
+  id: RMCWallEscapePod2
+  components:
+  - type: Sprite
+    state: wall2
+
+- type: entity
+  parent: RMCWallEscapePod0
+  id: RMCWallEscapePod3
+  components:
+  - type: Sprite
+    state: wall3
+
+- type: entity
+  parent: RMCWallEscapePod0
+  id: RMCWallEscapePod4
+  components:
+  - type: Sprite
+    state: wall4
+
+- type: entity
+  parent: RMCWallEscapePod0
+  id: RMCWallEscapePod5
+  components:
+  - type: Sprite
+    state: wall5
+
+- type: entity
+  parent: RMCWallEscapePod0
+  id: RMCWallEscapePod6
+  components:
+  - type: Sprite
+    state: wall6
+
+- type: entity
+  parent: RMCWallEscapePod0
+  id: RMCWallEscapePod7
+  components:
+  - type: Sprite
+    state: wall7
+
+- type: entity
+  parent: RMCWallEscapePod0
+  id: RMCWallEscapePod8
+  components:
+  - type: Sprite
+    state: wall8
+
+- type: entity
+  parent: RMCWallEscapePod0
+  id: RMCWallEscapePod9
+  components:
+  - type: Sprite
+    state: wall9
+
+- type: entity
+  parent: RMCWallEscapePod0
+  id: RMCWallEscapePod10
+  components:
+  - type: Sprite
+    state: wall10
+
+- type: entity
+  parent: RMCWallEscapePod0
+  id: RMCWallEscapePod11
+  components:
+  - type: Sprite
+    state: wall11
+
+- type: entity
+  parent: RMCWallEscapePod0
+  id: RMCWallEscapePod12
+  components:
+  - type: Sprite
+    state: wall12
+
+- type: entity
+  parent: RMCWallEscapePod0
+  id: RMCWallEscapePod13
+  components:
+  - type: Sprite
+    state: wall13
+
+- type: entity
+  parent: RMCWallEscapePod0
+  id: RMCWallEscapePod14
+  components:
+  - type: Sprite
+    state: wall14
+
+- type: entity
+  parent: RMCWallEscapePod0
+  id: RMCWallEscapePod15
+  components:
+  - type: Sprite
+    state: wall15
+
+- type: entity
+  parent: CMWallMetal
+  id: RMCWallCorsat
+  name: metal wall
+  description: A huge chunk of metal used to separate rooms.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/corsat_wall.rsi
+    state: dome
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/corsat_wall.rsi
+    state: dome
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: dome
+
+- type: entity
+  parent: CMWallReinforced
+  id: RMCWallCorsatReinforced
+  name: reinforced metal wall
+  description: A huge chunk of ultra-reinforced metal used to separate rooms.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/corsat_rwall.rsi
+    state: r_dome
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/corsat_rwall.rsi
+    state: r_dome
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: r_dome
+
+- type: entity
+  parent: CMBaseWallInvincible
+  id: RMCWallCorsatHull
+  name: heavy reinforced wall
+  description: A huge chunk of ultra-reinforced metal used to separate rooms. Looks virtually indestructible.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/corsat_rwall.rsi
+    state: r_dome
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/corsat_rwall.rsi
+    state: h_dome
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: r_dome
