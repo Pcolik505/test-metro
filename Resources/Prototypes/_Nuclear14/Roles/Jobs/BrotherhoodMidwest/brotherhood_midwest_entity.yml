@@ -1,6 +1,7 @@
 - type: entity
   parent: MobHuman
   id: BoSMidPaladinCommander
+  setPreference: false #LL
   name: BoSMidPaladinCommander
   components:
     - type: Icon
@@ -18,6 +19,7 @@
 - type: entity
   parent: BoSMidPaladinCommander
   id: N14MobHumanBoSMidKnight
+  setPreference: false #LL
   name: BoSMidKnight
   components:
     - type: Icon
@@ -28,6 +30,7 @@
 - type: entity
   parent: BoSMidPaladinCommander
   id: N14MobHumanBoSMidPaladin
+  setPreference: false #LL
   name: BoSMidPaladin
   components:
     - type: Icon
@@ -38,6 +41,7 @@
 - type: entity
   parent: BoSMidPaladinCommander
   id: N14MobHumanBoSMidScribe
+  setPreference: false #LL
   name: BoSMidScribe
   components:
     - type: Icon
@@ -48,6 +52,7 @@
 - type: entity
   parent: BoSMidPaladinCommander
   id: N14MobHumanBoSMidSquire
+  setPreference: false #LL
   name: BoSMidSquire
   components:
     - type: Icon
@@ -58,6 +63,7 @@
 - type: entity # Forge-Add-Start
   parent: BoSMidPaladinCommander
   id: N14MobHumanBoSMidInquisitor
+  setPreference: false #LL
   name: BoSMidInquisitor
   components:
     - type: Icon

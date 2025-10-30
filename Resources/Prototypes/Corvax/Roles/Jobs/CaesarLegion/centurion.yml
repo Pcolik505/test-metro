@@ -1,6 +1,6 @@
 - type: job
   id: CaesarLegionCenturion
-  setPreference: true
+  setPreference: false #LL
   name: job-name-caesar-legion-centurion
   description: job-description-caesar-legion-centurion
   playTimeTracker: CaesarLegionCenturion

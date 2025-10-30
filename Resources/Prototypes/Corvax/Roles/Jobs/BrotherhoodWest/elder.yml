@@ -1,6 +1,6 @@
 - type: job
   id: BoSWestElderCommander
-  setPreference: true
+  setPreference: false #LL
   name: job-name-bos-west-elder-comm
   description: job-description-bos-west-elder-comm
   playTimeTracker: BoSWestElderCommander

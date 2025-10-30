@@ -9,7 +9,7 @@
   - !type:CharacterDepartmentTimeRequirement
     department: Vault
     min: 7200 # 2 hours
-  setPreference: true
+  setPreference: false #LL
   overrideConsoleVisibility: true
   canBeAntag: false
   playTimeTracker: VaultEngineer

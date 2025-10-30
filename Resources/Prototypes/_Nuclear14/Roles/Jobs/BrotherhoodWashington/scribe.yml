@@ -1,6 +1,6 @@
 - type: job
   id: BoSWashingtonScribe
-  setPreference: true
+  setPreference: false #LL
   overrideConsoleVisibility: true
   canBeAntag: false
   name: job-name-bos-washington-scribe

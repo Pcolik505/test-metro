@@ -1,6 +1,7 @@
 - type: entity
   parent: MobHuman
   id: N14BoSWestElderCommander
+  setPreference: false #LL
   name: BoSWestElderCommander
   components:
     - type: Icon

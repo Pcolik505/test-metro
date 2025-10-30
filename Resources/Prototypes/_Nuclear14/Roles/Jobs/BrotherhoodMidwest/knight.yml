@@ -1,6 +1,6 @@
 - type: job
   id: BoSMidKnight
-  setPreference: true
+  setPreference: false #LL
   overrideConsoleVisibility: true
   canBeAntag: false
   name: job-name-bos-mid-knight

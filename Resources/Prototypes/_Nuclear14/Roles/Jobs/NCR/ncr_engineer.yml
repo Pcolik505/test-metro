@@ -1,6 +1,6 @@
 - type: job
   id: NCREngineer
-  setPreference: true
+  setPreference: false #LL
   overrideConsoleVisibility: false
   canBeAntag: false
   name: job-name-ncr-engineer

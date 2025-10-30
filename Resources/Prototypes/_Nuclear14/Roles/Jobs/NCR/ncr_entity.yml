@@ -1,6 +1,7 @@
 - type: entity
   parent: MobHuman
   id: N14MobHumanNCRCadet
+  setPreference: false #LL
   name: NCRCadet
   components:
     - type: Icon

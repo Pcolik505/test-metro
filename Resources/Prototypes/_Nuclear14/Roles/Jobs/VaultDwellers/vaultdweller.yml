@@ -6,7 +6,7 @@
   - !type:CharacterSpeciesRequirement
     species:
     - Human
-  setPreference: true
+  setPreference: false #LL
   overrideConsoleVisibility: true
   canBeAntag: false
   playTimeTracker: VaultDweller

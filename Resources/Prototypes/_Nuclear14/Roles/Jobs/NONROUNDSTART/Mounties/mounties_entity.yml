@@ -1,6 +1,7 @@
 - type: entity
   parent: MobHuman
   id: N14MobHumanRCMPSergeant
+  setPreference: false #LL
   name: RCMP mountie sergeant
   components:
     - type: Icon

@@ -3,68 +3,49 @@
   id: BrotherhoodMidwest
   description: department-BrotherhoodMidwest-description
   color: "#3B72BF"
-  roles:
-  - BoSMidPaladinCommander
-  - BoSMidPaladin
-  - BoSMidScribe
-  - BoSMidKnight
-  - BoSMidSquire
-  - BoSMidInquisitor # Forge-Change
+  roles: []
+  available: false
+  editorHidden: true
 
 - type: department
   id: BrotherhoodWashington
   description: department-BrotherhoodWashington-description
   color: "#a2000f"
-  roles:
-  - BoSWashingtonCommander
-  - BoSWashingtonPaladin
-  - BoSWashingtonScribe
-  - BoSWashingtonKnight
-  - BoSWashingtonInitiate
+  roles: []
+  available: false
+  editorHidden: true
 
-#- type: department
-#  id: CaravanCompany
-#  description: department-CaravanCompany-description
-#  color: "#a1887f"
-#  roles:
-#  - CaravanLeader
-#  - CaravanTrader
-#  - CaravanGuard
+- type: department
+  id: CaravanCompany
+  description: department-CaravanCompany-description
+  color: "#a1887f"
+  roles: []
+  available: false
+  editorHidden: true
 
 - type: department
   id: NCR
   description: department-NCR-description
   color: "#fbc02d"
-  roles:
-  - NCRLT
-  - NCRRangerVeteran
-  - NCRSGT
-  - NCRRanger
-  - NCRMedic
-  - NCRWS
-  - NCREngineer
-  - NCRSoldier
-  - NCRCadet
+  roles: []
+  available: false
+  editorHidden: true
 
-#- type: department # Disabled until roles are implemented
-#  id: Rangers
-#  description: department-Ranger-description
-#  color: "#3ab700"
-#  roles:
-#  - RangerRecruit
-#  - Ranger
-#  - RangerVeteran
-#  - RangerChief
+- type: department
+  id: Rangers
+  description: department-Ranger-description
+  color: "#3ab700"
+  roles: []
+  available: false
+  editorHidden: true
 
 - type: department
   id: Tribe
   description: department-Tribe-description
   color: "#d69b3d"
-  roles:
-  - TribalElder
-  - TribalHealer
-  - TribalFarmer
-  - Tribal
+  roles: []
+  available: false
+  editorHidden: true
 
 - type: department
   id: Vault
@@ -81,40 +62,30 @@
   id: Wastelander
   description: department-Wastelander-description
   color: "#81c784"
-  roles:
-  - Survivor
-  - Wastelander
-  - WastelandFarmer
-  - WastelandMusician
-  - WastelandScavenger
+  roles: []
+  available: false
+  editorHidden: true
 
 - type: department
   id: Townsfolk
   description: department-Townsfolk-description
   color: "#5c733a"
-  roles:
-  - TownMayor
-  - TownSheriff
-  - TownDeputy
-  - TownDoctor
-  - TownShopkeeper
-  - TownShopkeeperHelper # Forge-Add
-  - WastelandChaplain # Forge-Change
-  - WastelandBartender # Moved from the Wastelander department, ID unchanged to avoid glitches for players who have it selected.
-  - WastelandReporter # Moved from the Wastelander department, ID unchanged to avoid glitches for players who have it selected.
-  - TownMechanic
-  - Townsperson
+  roles: []
+  available: false
+  editorHidden: true
 
-#- type: department #Disabled until roles are implemented.
-#  id: Zetan
-#  description: department-Zetan-description
-#  color: "#7ec133"
-#  roles:
-#  - Zetan
+- type: department
+  id: Zetan
+  description: department-Zetan-description
+  color: "#7ec133"
+  roles: []
+  available: false
+  editorHidden: true
 
-#- type: department #Disabled until roles are implemented.
-#  id: Followers
-#  description: department-Followers-description
-#  color: "#33a1c1"
-#  roles:
-#  - Followers
+- type: department
+  id: Followers
+  description: department-Followers-description
+  color: "#33a1c1"
+  roles: []
+  available: false
+  editorHidden: true

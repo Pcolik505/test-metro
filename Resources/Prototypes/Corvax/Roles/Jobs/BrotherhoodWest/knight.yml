@@ -1,6 +1,6 @@
 - type: job
   id: BoSWestKnight
-  setPreference: true
+  setPreference: false #LL
   name: job-name-bos-west-knight
   description: job-description-bos-west-knight
   playTimeTracker: BoSWestKnight

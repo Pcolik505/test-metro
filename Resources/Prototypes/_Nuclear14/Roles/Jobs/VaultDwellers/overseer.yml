@@ -16,7 +16,7 @@
   icon: "JobIconVaultOverseer" # Forge-Change
   requireAdminNotify: true
   joinNotifyCrew: true
-  setPreference: true
+  setPreference: false #LL
   overrideConsoleVisibility: false
   canBeAntag: false
   supervisors: job-supervisors-vault-overseer

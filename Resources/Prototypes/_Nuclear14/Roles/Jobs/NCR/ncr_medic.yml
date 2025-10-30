@@ -1,6 +1,6 @@
 - type: job
   id: NCRMedic
-  setPreference: true
+  setPreference: false #LL
   overrideConsoleVisibility: true
   canBeAntag: false
   name: job-name-ncr-medic
@@ -29,6 +29,7 @@
           - Wastelander
           - NCR
       - type: CPRTraining
+
 
 - type: startingGear
   id: NCRMedicGear

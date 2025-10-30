@@ -1,6 +1,6 @@
 - type: job
   id: Survivor
-  setPreference: true
+  setPreference: false #LL
   overrideConsoleVisibility: false
   canBeAntag: false
   name: job-name-survivor

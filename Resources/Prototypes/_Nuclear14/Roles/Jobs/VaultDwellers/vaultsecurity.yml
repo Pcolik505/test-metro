@@ -10,7 +10,7 @@
   - !type:CharacterDepartmentTimeRequirement
     department: Vault
     min: 18000 # 5 hours
-  setPreference: true
+  setPreference: false #LL
   overrideConsoleVisibility: true
   canBeAntag: false
   startingGear: VaultSecurityGear

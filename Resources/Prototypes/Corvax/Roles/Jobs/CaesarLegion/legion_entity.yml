@@ -1,6 +1,7 @@
 - type: entity
   parent: MobHuman
   id: N14MobHumanCaesarLegionCenturion
+  setPreference: false #LL
   name: Centurion
   components:
     - type: RandomHumanoidAppearance
