@@ -120,17 +120,17 @@
           prob: 0.1
         - id: LLProvisions1
           prob: 0.08
-        - id: LLProvisions2
-          prob: 0.023
         - id: LLProvisions3
           prob: 0.020
         - id: LLProvisions4
           prob: 0.010
-        - id: LLClothingOuterHiveVest
-          prob: 0.1
         - id: N14Gunpowder10
           prob: 0.1
         - id: N14JunkDuctTape
+          prob: 0.1
+        - id: N14SackCompostFull
+          prob: 0.1
+        - id: N14SackFertilizerFull
           prob: 0.1
 
 - type: entity
@@ -161,3 +161,119 @@
           prob: 0.3
         - id: N14Scrap1
           prob: 0.3
+        - id: N14JunkComponentGearLarge
+          prob: 0.3
+        - id: N14JunkComponentScrew
+          prob: 0.3
+        - id: N14JunkComponentGearSmall
+          prob: 0.3
+        - id: N14IronOre1
+          prob: 0.3
+        - id: N14GoldOre1
+          prob: 0.3
+        - id: N14CopperOre1
+          prob: 0.3
+        - id: N14LeadOre1
+          prob: 0.3
+        - id: N14SilverOre1
+          prob: 0.3
+        - id: SulfurOre1
+          prob: 0.3
+
+- type: entity
+  abstract: true
+  id: LLStorageFillMedicalTimed
+  components:
+  - type: TimedStorageFill
+    contents:
+        - id: PillCanisterDylovene
+          prob: 0.5
+        - id: PillCanisterHyronalin
+          prob: 0.5
+        - id: PillCanisterDermaline
+          prob: 0.5
+        - id: PillCanisterBicaridine
+          prob: 0.5
+        - id: PillCanisterDexalin
+          prob: 0.5
+        - id: N14CleanGauze10
+          prob: 0.4
+        - id: N14DirtyGauze10
+          prob: 0.4
+        - id: N14Ointment10
+          prob: 0.4
+        - id: Brutepack
+          prob: 0.4
+        - id: BoxSyringe
+          prob: 0.4
+        - id: BoxBeaker
+          prob: 0.4
+        - id: LargeBeaker
+          prob: 0.4
+        - id: Beaker
+          prob: 0.4
+        - id: PortafibEmpty
+          prob: 0.001
+        - id: BodyBagFolded
+          prob: 0.3
+
+- type: entity
+  abstract: true
+  id: LLStorageFillMilitaryTimed
+  components:
+  - type: TimedStorageFill
+    contents:
+        - id: N14ClothingHeadHatCombatHelmet
+          prob: 0.05
+        - id: LLClothingOuterHiveVest
+          prob: 0.05
+        - id: LLProvisions2
+          prob: 0.05
+        - id: N14ClothingBootsCombatMK2
+          prob: 0.1
+        - id: N14ClothingHandsGlovesCombat
+          prob: 0.1
+        - id: N14TinNade
+          prob: 0.02
+        - id: GrenadeShrapnel
+          prob: 0.02
+        - id: N14ClothingUniformJumpsuitCombat
+          prob: 0.7
+        - id: N14ClothingUniformJumpsuitMilUniform
+          prob: 0.7
+        - id: ClothingHandsGlovesCombat
+          prob: 0.7
+        - id: LLCannedStew
+          prob: 0.7
+        - id: ClothingBeltRevolver
+          prob: 0.1
+        - id: N14ClothingBackpackMilitary
+          prob: 0.1
+        - id: ClothingBeltMilitary
+          prob: 0.1
+        - id: ClothingBeltMilitaryWebbing
+          prob: 0.1
+        - id: WeaponSubMachineGunTypewriter
+          prob: 0.1
+        - id: N14WeaponShotgunSawedOff
+          prob: 0.5
+        - id: N14WeaponPistol45Colt
+          prob: 0.5
+        - id: N14WeaponShotgunLever
+          prob: 0.2
+        - id: MobHuman
+          prob: 0.7
+        - id: MagazinePistolSubMachineGun
+          prob: 0.2
+        - id: N14MagazinePistol45
+          prob: 0.2
+        - id: N14MagazineShotgun20
+          prob: 0.2
+        - id: N14MagazineShotgun12
+          prob: 0.2
+        - id: LLBoxLethalshot
+          prob: 0.2
+        - id: MagazineBox20gauge
+          prob: 0.2
+        - id: MagazineBox12gauge
+          prob: 0.2
