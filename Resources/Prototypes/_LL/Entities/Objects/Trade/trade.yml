@@ -4,23 +4,33 @@
   catalog:
     Buy:
       Огнестрел:
+      - proto: LLWeaponSMGBastard
+        price: 350
       - proto: N14WeaponPistol9mm
         price: 100
-      - proto: WeaponShotgunImprovised
-        price: 350
       Ближнее:
       - proto: SurvivalKnife
         price: 35
       - proto: Cane
         price: 5
+      - proto: N14WastelandSpear
+        price: 45
+      - proto: N14ScrapMachete
+        price: 30
       Магазины:
-      - proto: N14MagazinePistol9mm
-        price: 15
+      - proto: LLMagazine9х18Pistol
+        price: 25
+      - proto: LLMagazine545х39Bastard
+        price: 45
       Боеприпасы:
-      - proto: MagazineBox9mm
-        price: 80
-      - proto: LLBoxLethalshot
-        price: 80
+      - proto: MagazineBox9х18
+        price: 45
+      - proto: MagazineBox545х39
+        price: 90
+      - proto: MagazineBox12gauge
+        price: 160
+      - proto: MagazineBox20gauge
+        price: 220
       Шляпы:
       - proto: N14ClothingHeadHatEnclavePeacekeeperCap
         price: 10
@@ -34,6 +44,26 @@
         price: 10
       - proto: ClothingHeadHatPlaguedoctor
         price: 10
+      - proto: N14ClothingHeadHatBeanie
+        price: 10
+      - proto: N14ClothingHeadHatWoodBoonie
+        price: 10
+      - proto: ClothingHeadHatBeretSecurity
+        price: 10
+      - proto: N14ClothingHeadHatArmyBeretSpecial
+        price: 10
+      - proto: ClothingHeadHatBeret
+        price: 10
+      - proto: ClothingHeadHatBeretLogi
+        price: 10
+      - proto: ClothingHeadHatGreyFlatcap
+        price: 10
+      - proto: ClothingHeadHatTophat
+        price: 10
+      - proto: ClothingHeadHatBowlerHat
+        price: 10
+      - proto: ClothingHeadHatFlatSyndie
+        price: 50
       Верхняя одежда:
       - proto: ClothingOuterCoatInspector
         price: 20
@@ -44,12 +74,14 @@
       - proto: ClothingOuterPlagueSuit
         price: 20
       - proto: N14ClothingOuterBrotherhoodMidwestFieldScribeCoat
-        price: 170
-      - proto: N14ClothingOuterCoatLeatherCoat
         price: 100
+      - proto: N14ClothingOuterCoatLeatherCoat
+        price: 90
       - proto: N14ClothingOuterCoatDuster
         price: 70
       - proto: ClothingOuterCoatOvercoat
+        price: 50
+      - proto: N14ClothingOuterCoatSoldierCoat
         price: 50
       Одежда:
       - proto: N14ClothingUniformJumpsuitRags
@@ -64,6 +96,33 @@
         price: 20
       - proto: ClothingUniformJumpskirtColorBrown
         price: 20
+      - proto: ClothingUniformJumpsuitOperative
+        price: 20
+      - proto: ClothingUniformJumpsuitTacticool
+        price: 20
+      - proto: ClothingUniformJumpsuitChaplain
+        price: 20
+      - proto: N14ClothingUniformJumpsuitCombat
+        price: 20
+      - proto: ClothingUniformJumpsuitColorBlack
+        price: 20
+      - proto: N14ClothingUniformJumpsuitMechanic
+        price: 20
+      - proto: ClothingUniformJumpsuitRepairmanNT
+        price: 20
+      - proto: ClothingUniformJumpsuitSeniorPhysician
+        price: 20
+      - proto: ClothingUniformJumpsuitRecruitNT
+        price: 20
+      Плащи:
+      - proto: N14ClothingNeckCloakGhillie
+        price: 25
+      - proto: N14ClothingNeckCloakLeather
+        price: 25
+      - proto: N14ClothingNeckTownGuardCloak
+        price: 25
+      - proto: N14ClothingNeckShawl
+        price: 25
       Обувь:
       - proto: N14ClothingBootsLeather
         price: 15
@@ -71,22 +130,67 @@
         price: 10
       - proto: N14ClothingShoesRags
         price: 5
+      - proto: N14ClothingBootsBlack
+        price: 15
+      - proto: ClothingShoesEnclosedChem
+        price: 15
+      - proto: N14ClothingBootsCombat
+        price: 15
       Маски:
       - proto: ClothingMaskGasFire
-        price: 100
+        price: 35
       - proto: ClothingMaskGasMiner
-        price: 200
+        price: 35
       - proto: ClothingMaskPlague
-        price: 25
+        price: 10
       - proto: ClothingMaskSterile
         price: 5
+      - proto: N14ClothingMaskHockey
+        price: 20
+      - proto: N14ClothingMaskBlackBalaclava
+        price: 10
+      - proto: N14ClothingMaskBrownBalaclava
+        price: 10
+      - proto: N14ClothingMaskWhiteBalaclava
+        price: 10
+      Перчатки:
+      - proto: N14ClothingHandsGlovesDriver
+        price: 10
+      - proto: N14ClothingHandsGlovesBrownBiker
+        price: 10
+      - proto: ClothingHandsGlovesColorYellow
+        price: 10
+      - proto: N14ClothingHandsGlovesBlackBiker
+        price: 10
+      - proto: N14ClothingHandsGlovesPatrol
+        price: 10
+      - proto: N14ClothingHandsGlovesCloth
+        price: 10
+      - proto: N14ClothingHandsGlovesLeather
+        price: 10
+      - proto: N14ClothingHandsGlovesBlackLeather
+        price: 10
       Очки:
       - proto: N14ClothingEyesGlassesWelding
-        price: 100
+        price: 45
       - proto: N14ClothingEyesGlasses
+        price: 15
+      - proto: ClothingEyesGlassesCheapSunglasses
+        price: 15
+      - proto: N14ClothingEyesGlassesMachinegun
+        price: 15
+      - proto: ClothingEyesGlassesChemist
         price: 15
       Сумки:
       - proto: LLSmallHandbagLeather
+        price: 200
+      - proto: N14ClothingBackpackHiking
+        price: 150
+      - proto: N14ClothingBackpackMilitary
+        price: 150
+      - proto: N14ClothingBackpackTrekker
+        price: 150
+      - proto: ClothingBackpackMedical
         price: 150
       - proto: ClothingBeltStorageWaistbag
         price: 50
@@ -128,12 +232,12 @@
       - proto: N14Wallet
         price: 20
       Медецина:
-      - proto: Defibrillator
+      - proto: Portafib
         price: 100
       - proto: Brutepack
         price: 50
       - proto: N14CleanGauze10
-        price: 15
+        price: 35
       - proto: N14Ointment10
         price: 50
       - proto: PillCanisterDylovene
@@ -148,25 +252,41 @@
         price: 35
       - proto: BodyBagFolded
         price: 5
-      
+
     Sell:
       Огнестрел:
+      - proto: LLWeaponSMGBastard
+        price: 35
       - proto: N14WeaponPistol9mm
-        price: 25
-      - proto: WeaponShotgunImprovised
-        price: 55
+        price: 15
       Ближнее:
       - proto: SurvivalKnife
         price: 5
       - proto: Cane
         price: 5
+      - proto: N14WastelandSpear
+        prite: 5
+      - proto: N14ScrapMachete
+        prite: 5
       Магазины:
       - proto: N14MagazinePistol9mm
         price: 5
       Боеприпасы:
-      - proto: MagazineBox9mm
+      - proto: MagazineBox9х18
         price: 5
-      - proto: LLBoxLethalshot
+      - proto: MagazineBox545х39
+        price: 5
+      - proto: MagazineBox762x39
+        price: 5
+      - proto: MagazineBox762х38
+        price: 5
+      - proto: MagazineBox762х25
+        price: 5
+      - proto: MagazineBox762х54R
+        price: 5
+      - proto: MagazineBox12gauge
+        price: 5
+      - proto: MagazineBox20gauge
         price: 5
       Шляпы:
       - proto: N14ClothingHeadHatEnclavePeacekeeperCap
@@ -181,6 +301,26 @@
         price: 1
       - proto: ClothingHeadHatPlaguedoctor
         price: 1
+      - proto: N14ClothingHeadHatBeanie
+        price: 1
+      - proto: N14ClothingHeadHatWoodBoonie
+        price: 1
+      - proto: ClothingHeadHatBeretSecurity
+        price: 1
+      - proto: N14ClothingHeadHatArmyBeretSpecial
+        price: 1
+      - proto: ClothingHeadHatBeret
+        price: 1
+      - proto: ClothingHeadHatBeretLogi
+        price: 1
+      - proto: ClothingHeadHatGreyFlatcap
+        price: 1
+      - proto: ClothingHeadHatTophat
+        price: 1
+      - proto: ClothingHeadHatBowlerHat
+        price: 1
+      - proto: ClothingHeadHatFlatSyndie
+        price: 5
       Верхняя одежда:
       - proto: ClothingOuterCoatInspector
         price: 5
@@ -198,6 +338,8 @@
         price: 25
       - proto: ClothingOuterCoatOvercoat
         price: 15
+      - proto: N14ClothingOuterCoatSoldierCoat
+        price: 15
       Одежда:
       - proto: N14ClothingUniformJumpsuitRags
         price: 1
@@ -211,6 +353,33 @@
         price: 5
       - proto: ClothingUniformJumpskirtColorBrown
         price: 5
+      - proto: ClothingUniformJumpsuitOperative
+        price: 5
+      - proto: ClothingUniformJumpsuitTacticool
+        price: 5
+      - proto: ClothingUniformJumpsuitChaplain
+        price: 5
+      - proto: N14ClothingUniformJumpsuitCombat
+        price: 5
+      - proto: ClothingUniformJumpsuitColorBlack
+        price: 5
+      - proto: N14ClothingUniformJumpsuitMechanic
+        price: 5
+      - proto: ClothingUniformJumpsuitRepairmanNT
+        price: 5
+      - proto: ClothingUniformJumpsuitSeniorPhysician
+        price: 5
+      - proto: ClothingUniformJumpsuitRecruitNT
+        price: 5
+      Плащи:
+      - proto: N14ClothingNeckCloakGhillie
+        price: 5
+      - proto: N14ClothingNeckCloakLeather
+        price: 5
+      - proto: N14ClothingNeckTownGuardCloak
+        price: 5
+      - proto: N14ClothingNeckShawl
+        price: 5
       Обувь:
       - proto: N14ClothingBootsLeather
         price: 1
@@ -218,25 +387,70 @@
         price: 1
       - proto: N14ClothingShoesRags
         price: 1
+      - proto: N14ClothingBootsBlack
+        price: 1
+      - proto: ClothingShoesEnclosedChem
+        price: 1
+      - proto: N14ClothingBootsCombat
+        price: 1
       Маски:
       - proto: ClothingMaskGasFire
-        price: 15
+        price: 5
       - proto: ClothingMaskGasMiner
-        price: 25
+        price: 5
       - proto: ClothingMaskPlague
         price: 5
       - proto: ClothingMaskSterile
         price: 1
+      - proto: N14ClothingMaskHockey
+        price: 5
+      - proto: N14ClothingMaskBlackBalaclava
+        price: 5
+      - proto: N14ClothingMaskBrownBalaclava
+        price: 5
+      - proto: N14ClothingMaskWhiteBalaclava
+        price: 5
+      Перчатки:
+      - proto: N14ClothingHandsGlovesDriver
+        price: 5
+      - proto: N14ClothingHandsGlovesBrownBiker
+        price: 5
+      - proto: ClothingHandsGlovesColorYellow
+        price: 5
+      - proto: N14ClothingHandsGlovesBlackBiker
+        price: 5
+      - proto: N14ClothingHandsGlovesPatrol
+        price: 5
+      - proto: N14ClothingHandsGlovesCloth
+        price: 5
+      - proto: N14ClothingHandsGlovesLeather
+        price: 5
+      - proto: N14ClothingHandsGlovesBlackLeather
+        price: 5
       Очки:
       - proto: N14ClothingEyesGlassesWelding
-        price: 25
+        price: 5
       - proto: N14ClothingEyesGlasses
+        price: 5
+      - proto: ClothingEyesGlassesCheapSunglasses
+        price: 5
+      - proto: N14ClothingEyesGlassesMachinegun
+        price: 5
+      - proto: ClothingEyesGlassesChemist
         price: 5
       Сумки:
       - proto: LLSmallHandbagLeather
-        price: 45
+        price: 50
+      - proto: N14ClothingBackpackHiking
+        price: 25
+      - proto: N14ClothingBackpackMilitary
+        price: 25
+      - proto: N14ClothingBackpackTrekker
+        price: 25
+      - proto: ClothingBackpackMedical
+        price: 25
       - proto: ClothingBeltStorageWaistbag
-        price: 15
+        price: 5
       Продовольствие:
       - proto: FoodTinPeaches
         price: 15
@@ -256,6 +470,9 @@
         price: 15
       - proto: DrinkWaterBottleFull
         price: 10
+      - proto: FoodMushroom
+        price: 5
+
       Сигареты:
       - proto: N14CigarettePackRepublics
         price: 5
@@ -291,7 +508,23 @@
         price: 10
       - proto: N14Wallet
         price: 10
-     
+      Материалы:
+      - proto: SheetPlastic1
+        price: 15
+      - proto: N14MaterialLeather1
+        price: 10
+      - proto: N14IngotGold1
+        price: 20
+      - proto: N14IngotCopper1
+        price: 10
+      - proto: N14IngotSilver1
+        price: 20
+      - proto: N14IngotBrass1
+        price: 10
+      - proto: MaterialCloth1
+        price: 5
+
+
 
 
 - type: entity

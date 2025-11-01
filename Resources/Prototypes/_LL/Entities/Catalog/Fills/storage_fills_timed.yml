@@ -132,6 +132,10 @@
           prob: 0.1
         - id: N14SackFertilizerFull
           prob: 0.1
+        - id: LLCannedCaviar
+          prob: 0.1
+        - id: MaterialCloth1
+          prob: 0.1
 
 - type: entity
   abstract: true
@@ -254,15 +258,13 @@
         - id: ClothingBeltMilitaryWebbing
           prob: 0.1
         - id: WeaponSubMachineGunTypewriter
-          prob: 0.1
+          prob: 0.05
         - id: N14WeaponShotgunSawedOff
-          prob: 0.5
+          prob: 0.05
         - id: N14WeaponPistol45Colt
-          prob: 0.5
+          prob: 0.05
         - id: N14WeaponShotgunLever
-          prob: 0.2
-        - id: MobHuman
-          prob: 0.7
+          prob: 0.05
         - id: MagazinePistolSubMachineGun
           prob: 0.2
         - id: N14MagazinePistol45
@@ -277,3 +279,40 @@
           prob: 0.2
         - id: MagazineBox12gauge
           prob: 0.2
+        - id: N14WeaponPistol9mm
+          prob: 0.05
+        - id: LLWeaponSMGPPSh
+          prob: 0.05
+        - id: LLWeaponSMGBastard
+          prob: 0.05
+        - id: WeaponRifleAk
+          prob: 0.05
+        - id: N14WeaponRevolver45-70Hunter
+          prob: 0.05
+        - id: WeaponSniperMosin
+          prob: 0.05
+        - id: LLMagazine545х39Bastard
+          prob: 0.05
+        - id: LLMagazine9х18Pistol
+          prob: 0.05
+        - id: LLMagazine762x39Ak
+          prob: 0.05
+        - id: LLMagazine762х259PPSh
+          prob: 0.05
+        - id: MagazineBox9х18
+          prob: 0.05
+        - id: MagazineBox545х39
+          prob: 0.05
+        - id: MagazineBox762x39
+          prob: 0.05
+        - id: MagazineBox762х38
+          prob: 0.05
+        - id: MagazineBox762х25
+          prob: 0.05
+        - id: MagazineBox762х54R
+          prob: 0.05
+        - id: MagazineBox20gauge
+          prob: 0.05
+        - id: MagazineBox12gauge
+          prob: 0.05
+
