@@ -1,0 +1,50 @@
+- type: entity
+  id: BaseMagazine9х18
+  name: "magazine (9х18mm)"
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - LLMagazine9х18
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - LLCartridge9х18
+    proto: LLCartridge9х18
+    capacity: 30
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    netsync: false
+    sprite: _Nuclear14/Objects/Weapons/Guns/Ammunition/Magazines/5.56/mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+  - type: Craftable
+
+- type: entity
+  parent: BaseMagazine9х18
+  id: LLMagazine9х18Pistol
+  name: магазин пистолета
+  description: Магазин пистолета (9х18mm).
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: _Nuclear14/Objects/Weapons/Guns/Ammunition/Magazines/9mm/pistolmag.rsi
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - LLCartridge9х18
+    proto: LLCartridge9х18
+    capacity: 14

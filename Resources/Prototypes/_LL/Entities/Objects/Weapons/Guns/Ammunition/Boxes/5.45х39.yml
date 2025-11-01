@@ -1,0 +1,38 @@
+- type: entity
+  abstract: true
+  parent: BaseMagazineBox
+  id: BaseMagazineBox545х39 
+  name: коробка патрон (5.45х39mm)
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - LLCartridge545х39
+    proto: LLCartridge545х39
+    capacity: 60
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _LL/Objects/Weapons/Guns/Ammunition/Boxes/5.45х39.rsi
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: false
+  - type: Appearance
+
+# Boxes
+- type: entity
+  parent: BaseMagazineBox545х39
+  id: MagazineBox545х39
+  name: коробка патрон (5.45х39mm)
+  components:
+  - type: BallisticAmmoProvider
+    proto: LLCartridge545х39
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]

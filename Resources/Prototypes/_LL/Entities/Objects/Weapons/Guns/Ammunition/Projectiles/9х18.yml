@@ -1,0 +1,10 @@
+- type: entity
+  id: LLBullet9х18
+  name: bullet (9х18mm)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 10

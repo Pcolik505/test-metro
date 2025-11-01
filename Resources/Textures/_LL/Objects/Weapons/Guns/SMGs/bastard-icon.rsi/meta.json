@@ -1,0 +1,32 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-4.0",
+    "copyright": "Made by kys_t (discord) for Metro14. Style inspired by WD team's hristov(https://github.com/WWhiteDreamProject/wwdpublic/pull/58/files#diff-fd89648b953d9a11f4906fbb901109b78e345d558b19825587e4897833af3938)",
+    "size": {
+        "x": 48,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "base"
+        },
+        {
+            "name": "bolt-open"
+        },
+        {
+            "name": "icon"
+        },
+        {
+            "name": "mag-0"
+        },
+        {
+            "name": "mag-1"
+        },
+        {
+            "name": "mag-2"
+        },
+        {
+            "name": "mag-3"
+        }
+    ]
+}

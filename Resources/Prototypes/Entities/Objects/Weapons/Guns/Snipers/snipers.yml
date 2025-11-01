@@ -76,6 +76,12 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
     fireOnDropChance: 1
+  - type: BallisticAmmoProvider
+    capacity: 10
+    proto: LLCartridge762х54R
+    whitelist:
+      tags:
+      - LLCartridge762х54R
   - type: MeleeWeapon
     range: 1.75
     damage:

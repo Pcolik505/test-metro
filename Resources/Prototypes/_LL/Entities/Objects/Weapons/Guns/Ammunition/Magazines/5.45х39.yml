@@ -1,0 +1,67 @@
+- type: entity
+  id: BaseMagazine545х39
+  name: "magazine (5.45х39mm)"
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - LLMagazine545х39
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - LLCartridge545х39
+    proto: LLCartridge545х39
+    capacity: 30
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    netsync: false
+    sprite: _LL/Objects/Weapons/Guns/Ammunition/Magazine/5.45х39/bastard.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+  - type: Craftable
+
+- type: entity
+  parent: BaseMagazine545х39
+  id: LLMagazine545х39Bastard
+  name: магазин ублюдка
+  description: Ублюдок младший.
+  components:
+  - type: BallisticAmmoProvider
+    proto: LLCartridge545х39
+    capacity: 15
+  - type: Sprite
+    netsync: false
+    sprite: _LL/Objects/Weapons/Guns/Ammunition/Magazine/5.45х39/bastard.rsi
+  - type: MagazineVisuals
+    magState: mag
+    steps: 6
+    zeroVisible: false
+
+- type: entity
+  id: Magazine545х39Rifle
+  name: "магазин (5.45х39mm)"
+  parent: BaseMagazine545х39
+  components:
+  - type: BallisticAmmoProvider
+    proto: LLCartridge545х39
+    capacity: 25
+  - type: Sprite
+    netsync: false
+    sprite: _Nuclear14/Objects/Weapons/Guns/Ammunition/Magazines/5.56/mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]

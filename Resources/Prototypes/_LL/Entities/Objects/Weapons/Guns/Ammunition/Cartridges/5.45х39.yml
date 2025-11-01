@@ -1,0 +1,23 @@
+- type: entity
+  id: LLCartridge545х39
+  name: cartridge (5.45х39mm)
+  parent: BaseCartridgeLightRifle
+  components:
+  - type: CartridgeAmmo
+    proto: LLBullet545х39
+    soundEject:
+      collection: N14RifleCasingEject
+  - type: Tag
+    tags:
+      - Cartridge
+      - LLCartridge545х39
+  - type: EmitSoundOnLand
+    sound:
+      collection: N14RifleCasingEject
+      params:
+        volume: -1
+  - type: EmitSoundOnCollide
+    sound:
+      collection: N14RifleCasingEject
+      params:
+        volume: -1

@@ -1,0 +1,46 @@
+- type: entity
+  id: BaseMagazine762х25
+  name: "magazine (7.62х25mm)"
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - LLMagazine762х25
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - LLCartridge762х25
+    proto: LLCartridge762х25
+    capacity: 30
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    netsync: false
+    sprite: _LL/Objects/Weapons/Guns/Ammunition/Magazine/7.62х25/ppsh.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+  - type: Craftable
+
+- type: entity
+  parent: BaseMagazine762х25
+  id: LLMagazine762х259PPSh
+  name: магазин ППШ
+  description: Магазин ППШ (7.62х25mm).
+  components:
+  - type: BallisticAmmoProvider
+    proto: LLCartridge762х25
+    capacity: 35
+  - type: Sprite
+    netsync: false
+    sprite: _LL/Objects/Weapons/Guns/Ammunition/Magazine/7.62х25/ppsh.rsi

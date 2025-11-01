@@ -1,0 +1,36 @@
+#Weapon tags (cartridge-magazine)
+- type: Tag
+  id: LLCartridge762x39
+
+- type: Tag
+  id: LLMagazine762x39
+
+- type: Tag
+  id: LLCartridge545х39
+
+- type: Tag
+  id: LLMagazine545х39
+
+- type: Tag
+  id: LLCartridge762х25
+
+- type: Tag
+  id: LLMagazine762х25
+
+- type: Tag
+  id: LLCartridge762х38
+
+- type: Tag
+  id: LLMagazine762х38
+
+- type: Tag
+  id: LLCartridge762х54R
+
+- type: Tag
+  id: LLMagazine762х54R
+
+- type: Tag
+  id: LLCartridge9х18
+
+- type: Tag
+  id: LLMagazine9х18

@@ -147,17 +147,17 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: N14MagazinePistol9mm
+        startingItem: LLMagazine9х18Pistol
         whitelist:
           tags:
-            - N14MagazinePistol9mm
+            - LLMagazine9х18
       gun_chamber:
         name: Chamber
-        startingItem: N14CartridgePistol9
+        startingItem: LLCartridge9х18
         priority: 1
         whitelist:
           tags:
-            - N14CartridgePistol9
+            - LLCartridge9х18
   - type: StaticPrice
     price: 10
 

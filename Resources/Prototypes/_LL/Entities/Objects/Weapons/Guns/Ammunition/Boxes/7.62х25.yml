@@ -1,0 +1,38 @@
+- type: entity
+  abstract: true
+  parent: BaseMagazineBox
+  id: BaseMagazineBox762х25
+  name: коробка патрон (7.62х25mm)
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - LLCartridge762х25
+    proto: LLCartridge762х25
+    capacity: 60
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _LL/Objects/Weapons/Guns/Ammunition/Boxes/7.62.rsi
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: false
+  - type: Appearance
+
+# Boxes
+- type: entity
+  parent: BaseMagazineBox762х25 
+  id: MagazineBox762х25
+  name: коробка патрон (7.62х25mm)
+  components:
+  - type: BallisticAmmoProvider
+    proto: LLCartridge762х25
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]

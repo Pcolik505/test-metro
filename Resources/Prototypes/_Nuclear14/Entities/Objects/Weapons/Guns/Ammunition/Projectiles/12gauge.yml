@@ -10,7 +10,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 10
+        Piercing: 12 #LL
 
 - type: entity
   id: PelletShotgun12Spread
