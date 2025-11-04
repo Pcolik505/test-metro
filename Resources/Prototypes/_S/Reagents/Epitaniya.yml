@@ -1,0 +1,20 @@
+- type: reagent
+  id: Adrenaline
+  name: "Эпитания"
+  group: Biological
+  desc: "Сильный синтезированный стимулятор основанный на эпинефрине"
+  physicalDesc: "A clear, red liquid."
+  flavor: "tastes like powder"
+  color: "#FF4444"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:Adrenaline
+        duration: 1
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Cellular: 0 #Дебаг значение проверял нужен ли урон для обновления состояния
+            

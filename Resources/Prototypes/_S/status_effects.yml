@@ -1,0 +1,4 @@
+﻿- type: statusEffect #в MobStateSystem.StateMachine есть проверка на этот эффект выключает переход в крит
+  id: NoCrit
+  alwaysAllowed: true
+  

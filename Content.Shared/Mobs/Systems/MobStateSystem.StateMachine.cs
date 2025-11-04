@@ -2,6 +2,8 @@
 using Content.Shared.Mobs.Components;
 using Content.Shared.Body.Organ;
 using Content.Shared._Shitmed.Body.Organ; // Shitmed Change
+using Content.Shared.StatusEffect;
+using Robust.Shared.Prototypes;
 namespace Content.Shared.Mobs.Systems;
 
 public partial class MobStateSystem
@@ -105,7 +107,12 @@ public partial class MobStateSystem
 
         if (oldState == MobState.Dead && HasComp<DebrainedComponent>(target))
             return;
-
+		
+		var statusSys = EntitySystem.Get<StatusEffectsSystem>();
+		var adrenalineProto = new EntProtoId("NoCrit"); //Если есть статусный эффект "NoCrit" в компоненте статусных эффетов не падаем в крит
+		if (statusSys.HasStatusEffect(target, adrenalineProto) && newState == MobState.Critical)
+			newState = MobState.Alive;
+		
         OnExitState(target, component, oldState);
         component.CurrentState = newState;
         OnEnterState(target, component, newState);
