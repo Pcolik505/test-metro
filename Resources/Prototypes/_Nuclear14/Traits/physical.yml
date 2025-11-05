@@ -359,7 +359,7 @@
 #    - !type:TraitAddArmor
 #      damageModifierSets:
 #        - N14GammaShield
-
+#
 # Agumentations and implants start here
 #- type: trait
 #  id: N14HandyTools
@@ -375,12 +375,7 @@
 #    - !type:TraitAddComponent
 #      components:
 #        - type: Prying
-#          speedModifier: 0.75
-
-- type: trait
-  id: N14DermalArmorWaster
-  category: Physical
-  points: -8
+#          speedModifier: 0.75##- type: trait#  id: N14DermalArmorWaster#  category: Physical#  points: -8
 #  requirements:
 #    - !type:CharacterJobRequirement #LL change start
 #      inverted: true
@@ -405,16 +400,8 @@
 #        - N14PhoenixArmor
 #    - !type:CharacterSpeciesRequirement
 #      species:
-#        - Human #LL change end
-  functions:
-    - !type:TraitAddArmor
-      damageModifierSets:
-        - N14DermalArmor
-
-- type: trait
-  id: N14DermalArmor
-  category: Physical
-  points: -6
+#        - Human
+#  functions:#    - !type:TraitAddArmor#      damageModifierSets:#        - N14DermalArmor##- type: trait#  id: N14DermalArmor#  category: Physical#  points: -6
 #  requirements:
 #    - !type:CharacterJobRequirement #LL change start
 #      jobs:
@@ -431,12 +418,7 @@
 #        - N14PhoenixArmor
 #    - !type:CharacterSpeciesRequirement
 #      species:
-#        - Human #LL change end
-  functions:
-    - !type:TraitAddArmor
-      damageModifierSets:
-        - N14DermalArmor
-#LL change start
+#        - Human#  functions:#    - !type:TraitAddArmor#      damageModifierSets:#        - N14DermalArmor#
 # Midwestern chapter-only augmentations
 #- type: trait
 #  id: N14PhoenixArmor
@@ -460,7 +442,7 @@
 #    - !type:TraitAddArmor
 #      damageModifierSets:
 #        - N14PhoenixArmor
-
+#
 # Washington chapter-only augmentations
 #- type: trait
 #  id: N14ExtremeAugKnight
@@ -498,7 +480,7 @@
 #        - N14BrotherBeep
 #      languagesUnderstood:
 #        - N14BrotherBeep
-
+#
 #- type: trait
 #  id: N14ExtremeAugScribe
 #  category: Physical

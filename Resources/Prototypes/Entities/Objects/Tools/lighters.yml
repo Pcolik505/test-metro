@@ -97,7 +97,7 @@
   - type: PointLight
     enabled: false
     netsync: false
-    radius: 1.1 #smallest possible
+    radius: 2 #LL
     color: orange
   # Shitmed Change
   - type: Cautery
@@ -236,7 +236,7 @@
   - type: PointLight
     enabled: false
     netsync: false
-    radius: 1.2 #slightly stronger than the other lighters
+    radius: 2 #LL
     color: orange
   - type: ItemTogglePointLight
   - type: UseDelay

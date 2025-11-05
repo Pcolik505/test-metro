@@ -253,3 +253,36 @@
   spawn: LLMaterialAsbestos1
   maxCount: 15
   itemSize: 1
+#todo: fucking structurise it
+#самодельный броник
+- type: material
+  id: LLMakeshiftVest
+  stackEntity: LLClothingOuterMakeshiftVest
+  name: Самодельный бронежилет
+  icon: { sprite: /Textures/_LL/Clothing/OuterClothing/Armor/makeshiftvest.rsi, state: icon }
+  color: "#D3D3D3"
+  price: 0.05
+
+- type: stack
+  id: LLMakeshiftVest
+  name: Самодельный бронежилет
+  icon: { sprite: _LL/Clothing/OuterClothing/Armor/makeshiftvest.rsi, state: icon }
+  spawn: LLClothingOuterMakeshiftVest
+  maxCount: 1
+  itemSize: 1
+#плитник
+- type: material
+  id: LLHiveVest
+  stackEntity: LLClothingOuterHiveVest
+  name: Советский плитник
+  icon: { sprite: /Textures/_LL/Clothing/OuterClothing/Armor/hivevest.rsi, state: icon }
+  color: "#D3D3D3"
+  price: 0.05
+
+- type: stack
+  id: LLHiveVest
+  name: Советский плитник
+  icon: { sprite: _LL/Clothing/OuterClothing/Armor/makeshiftvest.rsi, state: icon }
+  spawn: LLClothingOuterMakeshiftVest
+  maxCount: 1
+  itemSize: 1
