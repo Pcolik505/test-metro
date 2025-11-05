@@ -1,0 +1,17 @@
+﻿- type: construction
+  name: верстак для брони
+  id: LLWorkbenchArmorbench
+  graph: LLWorkbenchArmorbench
+  startNode: start
+  targetNode: LLWorkbenchArmorbench
+  category: construction-category-machines
+  description: Верстак для создания брони.
+  icon:
+    sprite: _Nuclear14/Structures/Misc/workbenches.rsi
+    state: armorbench
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  hide: false

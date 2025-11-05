@@ -1,11 +1,13 @@
-# Обнови станок чтобы принимал entity
 - type: entity
   parent: N14WorkbenchBase
-  id: LLWorkbenchArmorbench1
+  id: LLWorkbenchArmorbench
   description: Верстак для создания брони.
   name: верстак для брони
   suffix: metro
   components:
+  - type: Construction
+    graph: LLWorkbenchArmorbench
+    node: LLWorkbenchArmorbench
   - type: Sprite
     state: armorbench
   - type: MaterialStorage
@@ -18,16 +20,6 @@
       - Scrap
       - Cloth
       - ScrapSteel
-      - AntChitin
-      - Steel
-      - N14Iron
-      - LLFiberglass
-      - LLChainmail
-      - LLTitanium
-      - LLAramid
-      - LLAsbestos
-      - LLHiveVest
-
   - type: Lathe
     idleState: icon
     runningState: icon
@@ -45,14 +37,39 @@
 
 - type: entity
   parent: N14WorkbenchBase
+  id: LLWorkbenchArmorbenchFrame
+  description: Верстак для создания брони, рабочими инструментами для крафта. Этот, кажется, всё ещё в процессе сборки.
+  name: верстак для брони
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Misc/workbenches.rsi
+    layers:
+    - state: armorbenchframe0
+      map: [ "enum.ConstructionVisuals.Layer" ]
+    offset: 0.5, 0
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ConstructionVisuals.Key:
+        enum.ConstructionVisuals.Layer:
+          LLWorkbenchArmorbenchFrame: { state: armorbenchframe0 }
+          LLWorkbenchArmorbenchAluminum: { state: armorbenchframe1 }
+          LLWorkbenchArmorbenchScrews: { state: armorbenchframe3 }
+          LLWorkbenchArmorbenchUnwrenched: { state: armorbenchframe4 }
+          LLWorkbenchArmorbenchUnscrewed: { state: armorbenchframe2 }
+  - type: Construction
+    graph: LLWorkbenchArmorbench
+    node: LLWorkbenchArmorbenchFrame
+    defaultTarget: LLWorkbenchArmorbench
+
+
+- type: entity
+  parent: N14WorkbenchBase
   id: LLWorkbench
   description: Верстак для создания базовых компанентов.
-  name: верстак для компанентов
+  name: верстак для компонентов
   suffix: metro
   components:
-  - type: Construction
-    graph: N14WorkbenchMetal
-    node: WorkbenchMetal
   - type: MaterialStorage
     whitelist:
       tags:
@@ -63,14 +80,6 @@
       - Scrap
       - Cloth
       - ScrapSteel
-      - AntChitin
-      - Steel
-      - N14Iron
-      - LLFiberglass
-      - LLChainmail
-      - LLTitanium
-      - LLAramid
-      - LLAsbestos
   - type: Lathe
     idleState: icon
     runningState: icon
