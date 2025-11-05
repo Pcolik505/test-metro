@@ -5,7 +5,7 @@
   startNode: start
   targetNode: LLWorkbenchArmorbench
   category: construction-category-machines
-  description: Верстак для создания брони, рабочими инструментами для крафта.
+  description: Верстак для создания брони.
   icon:
     sprite: _Nuclear14/Structures/Misc/workbenches.rsi
     state: armorbench
