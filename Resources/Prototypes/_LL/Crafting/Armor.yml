@@ -12,6 +12,7 @@
   result: LLClothingOuterScavengerCloak
   completetime: 25
   materials:
+    LLMakeshiftVest: 100
     Leather: 3000
     N14Iron: 300
     Thread: 500
@@ -22,6 +23,7 @@
   result: LLClothingOuteMilitiamanArmor
   completetime: 25
   materials:
+    LLMakeshiftVest: 100
     LLTitanium: 100
     Leather: 3000
     LLFiberglass: 100
@@ -32,6 +34,7 @@
   result: LLClothingOuterHunterArmor
   completetime: 30
   materials:
+    LLMakeshiftVest: 100
     Leather: 4500
     LLChainmail: 300
     ScrapSteel: 400

@@ -1,0 +1,88 @@
+- type: constructionGraph
+  id: LLWorkbenchArmorbench
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: LLWorkbenchArmorbenchFrame
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          steps:
+            - material: Steel
+              amount: 20
+              doAfter: 5
+
+    - node: LLWorkbenchArmorbenchFrame
+      actions:
+      - !type:AppearanceChange
+      entity: LLWorkbenchArmorbenchFrame
+      edges:
+        - to: LLWorkbenchArmorbenchAluminum
+          steps:
+            - tag: Gear
+              icon:
+                sprite: _Nuclear14/Objects/Misc/crafting_junk.rsi
+                state: gear_large
+              name: Gears
+              doAfter: 1
+            - tag: Gear
+              icon:
+                sprite: _Nuclear14/Objects/Misc/crafting_junk.rsi
+                state: gear_large
+              name: Gears
+              doAfter: 1
+
+    - node: LLWorkbenchArmorbenchAluminum
+      actions:
+      - !type:AppearanceChange
+      entity: LLWorkbenchArmorbenchFrame
+      edges:
+        - to: LLWorkbenchArmorbenchScrews
+          steps: 
+            - material: Aluminum
+              amount: 3
+              doAfter: 4
+
+    - node: LLWorkbenchArmorbenchScrews
+      actions:
+      - !type:AppearanceChange
+      entity: LLWorkbenchArmorbenchFrame
+      edges:
+        - to: LLWorkbenchArmorbenchUnwrenched
+          steps:
+            - tag: Screw
+              icon:
+                sprite: _Nuclear14/Objects/Misc/crafting_junk.rsi
+                state: screw
+              name: Screws
+              doAfter: 1
+            - tag: Screw
+              icon:
+                sprite: _Nuclear14/Objects/Misc/crafting_junk.rsi
+                state: screw
+              name: Screws
+              doAfter: 1
+
+    - node: LLWorkbenchArmorbenchUnwrenched
+      actions:
+      - !type:AppearanceChange
+      entity: LLWorkbenchArmorbenchFrame
+      edges:
+        - to: LLWorkbenchArmorbenchUnscrewed
+          steps:
+            - tool: Welding
+              doAfter: 2
+
+    - node: LLWorkbenchArmorbenchUnscrewed
+      actions:
+      - !type:AppearanceChange
+      entity: LLWorkbenchArmorbenchFrame
+      edges:
+        - to: LLWorkbenchArmorbench
+          steps:
+            - tool: Screwing
+              doAfter: 2
+
+    - node: LLWorkbenchArmorbench
+      entity: LLWorkbenchArmorbench
