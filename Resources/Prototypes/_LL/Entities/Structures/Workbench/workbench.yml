@@ -1,8 +1,10 @@
+# Обнови станок чтобы принимал entity
 - type: entity
   parent: N14WorkbenchBase
-  id: LLWorkbenchArmorbench
-  description: Верстак для создания брони, рабочими инструментами для крафта.
+  id: LLWorkbenchArmorbench1
+  description: Верстак для создания брони.
   name: верстак для брони
+  suffix: metro
   components:
   - type: Sprite
     state: armorbench
@@ -16,6 +18,16 @@
       - Scrap
       - Cloth
       - ScrapSteel
+      - AntChitin
+      - Steel
+      - N14Iron
+      - LLFiberglass
+      - LLChainmail
+      - LLTitanium
+      - LLAramid
+      - LLAsbestos
+      - LLHiveVest
+
   - type: Lathe
     idleState: icon
     runningState: icon
@@ -25,5 +37,43 @@
     - LLClothingHeadHatSalvArmorHelmet
     - LLClothingOuterMakeshiftVest
     - LLClothingOuterScavengerCloak
-    # Other
+    - LLClothingOuteMilitiamanArmor
+    - LLClothingOuterHunterArmor
+    - LLClothingHeadHatHunterArmorHelmet
+    - LLClothingOuterBeastSlayerArmor
+    - CraftLLClothingOuterStormTrooperArmor
+
+- type: entity
+  parent: N14WorkbenchBase
+  id: LLWorkbench
+  description: Верстак для создания базовых компанентов.
+  name: верстак для компанентов
+  suffix: metro
+  components:
+  - type: Construction
+    graph: N14WorkbenchMetal
+    node: WorkbenchMetal
+  - type: MaterialStorage
+    whitelist:
+      tags:
+      - Sheet
+      - RawMaterial
+      - Ingot
+      - RawLeather
+      - Scrap
+      - Cloth
+      - ScrapSteel
+      - AntChitin
+      - Steel
+      - N14Iron
+      - LLFiberglass
+      - LLChainmail
+      - LLTitanium
+      - LLAramid
+      - LLAsbestos
+  - type: Lathe
+    idleState: icon
+    runningState: icon
+    staticRecipes:
     - N14MaterialLeather
+    - LLMaterialChainmail1

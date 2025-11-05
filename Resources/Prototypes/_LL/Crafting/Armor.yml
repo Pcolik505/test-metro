@@ -1,35 +1,109 @@
 - type: latheRecipe
-  id: LLClothingOuterSalvArmor
-  result: LLClothingOuterSalvArmor
-  completetime: 30
-  materials:
-    Leather: 4500
-    ScrapSteel: 400
-    Scrap: 800
-    Thread: 2000
-
-- type: latheRecipe
-  id: LLClothingHeadHatSalvArmorHelmet
-  result: LLClothingHeadHatSalvArmorHelmet
-  completetime: 20
-  materials:
-    Scrap: 1000
-
-- type: latheRecipe
   id: LLClothingOuterMakeshiftVest
   result: LLClothingOuterMakeshiftVest
-  completetime: 25
+  completetime: 20
   materials:
-    Leather: 4500
-    Scrap: 800
-    Thread: 2000
+    Leather: 3000
+    ScrapSteel: 300
+    Scrap: 500
 
 - type: latheRecipe
   id: LLClothingOuterScavengerCloak
   result: LLClothingOuterScavengerCloak
+  completetime: 25
+  materials:
+    Leather: 3000
+    N14Iron: 300
+    Thread: 500
+    Cloth: 1000
+
+- type: latheRecipe
+  id: LLClothingOuteMilitiamanArmor
+  result: LLClothingOuteMilitiamanArmor
+  completetime: 25
+  materials:
+    LLTitanium: 100
+    Leather: 3000
+    LLFiberglass: 100
+    N14Iron: 1200
+
+- type: latheRecipe
+  id: LLClothingOuterHunterArmor
+  result: LLClothingOuterHunterArmor
+  completetime: 30
+  materials:
+    Leather: 4500
+    LLChainmail: 300
+    ScrapSteel: 400
+    LLFiberglass: 100
+    LLAsbestos: 100
+
+- type: latheRecipe
+  id: LLClothingOuterSalvArmor
+  result: LLClothingOuterSalvArmor
   completetime: 35
   materials:
-    Leather: 7500
-    Scrap: 500
+    Leather: 4500
+    N14Iron: 2000
     Thread: 1000
-    Cloth: 6000
+    LLTitanium: 100
+
+- type: latheRecipe
+  id: LLClothingHeadHatSalvArmorHelmet
+  result: LLClothingHeadHatSalvArmorHelmet
+  completetime: 15
+  materials:
+    N14Iron: 500
+    Leather: 500
+
+# Крафт зверобоя с плитником как материалом
+- type: latheRecipe
+  id: LLClothingOuterBeastSlayerArmor
+  result: LLClothingOuterBeastSlayerArmor
+  completetime: 40
+  materials:
+    LLHiveVest: 100
+    AntChitin: 400
+    Leather: 2000
+    LLAramid: 200
+    LLAsbestos: 100
+    Thread: 1000
+
+- type: latheRecipe
+  id: LLClothingHeadHatHunterArmorHelmet
+  result: LLClothingHeadHatHunterArmorHelmet
+  completetime: 15
+  materials:
+    LLChainmail: 100
+    Scrap: 300
+    Leather: 500
+
+- type: latheRecipe
+  id: ClothingBeltMountie
+  result: ClothingBeltMountie
+  completetime: 15
+  materials:
+    Leather: 1000
+    Scrap: 200
+    Cloth: 500
+
+- type: latheRecipe
+  id: CraftLLClothingOuterStormTrooperArmor
+  result: LLClothingOuterStormTrooperArmor
+  completetime: 45
+  materials:
+    LLHiveVest: 100
+    LLTitanium: 200
+    N14Iron: 1200
+    LLAramid: 200
+    Leather: 4500
+    Thread: 400
+
+## materials
+
+- type: latheRecipe
+  id: LLMaterialChainmail1
+  result: LLMaterialChainmail1
+  completetime: 15
+  materials:
+    Scrap: 1000
