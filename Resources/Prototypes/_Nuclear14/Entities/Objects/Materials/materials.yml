@@ -299,6 +299,18 @@
   - type: Stack
     count: 1
 
+#LL Stack N14MaterialLeatherFull
+
+- type: entity
+  parent: N14MaterialLeather
+  id: N14MaterialLeatherFull
+  name: кожа
+  description: Обычный кусок кожи, ничего особенного. Может пригодиться для заплаток.
+  suffix: Full
+  components:
+  - type: Stack
+    count: 15
+
 #MARK: Raw leather
 - type: entity
   parent: N14MaterialBase
@@ -330,6 +342,18 @@
   components:
   - type: Stack
     count: 1
+
+#LL Stack N14MaterialRawLeatherFull
+
+- type: entity
+  parent: N14MaterialRawLeather
+  id: N14MaterialRawLeatherFull
+  name: необработанная кожа
+  description: Куски сырой, непригодной для использования кожи. Ничего особенного.
+  suffix: Full
+  components:
+  - type: Stack
+    count: 15
 
 #MARK: Ant-chitin
 - type: entity
@@ -421,6 +445,17 @@
   components:
   - type: Stack
     count: 1
+
+#LL stack 10 N14MaterialThreadFull
+
+- type: entity
+  parent: N14MaterialThread
+  id: N14MaterialThreadFull
+  name: нитки
+  suffix: Full
+  components:
+  - type: Stack
+    count: 10
 
 #MARK: Scrap
 - type: entity

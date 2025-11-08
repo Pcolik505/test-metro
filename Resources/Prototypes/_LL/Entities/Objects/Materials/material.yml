@@ -32,6 +32,14 @@
   - type: Stack
     count: 1
 
+- type: entity
+  parent: LLMaterialFiberglass
+  id: LLMaterialFiberglassFull
+  suffix: Full
+  components:
+  - type: Stack
+    count: 15
+
 #МАТЕРИАЛЫ (В РЕАГЕНТАХ)
 - type: material
   id: LLFiberglass
@@ -83,6 +91,14 @@
   components:
   - type: Stack
     count: 1
+
+- type: entity
+  parent: LLMaterialChainmail
+  id: LLMaterialChainmailFull
+  suffix: Full
+  components:
+  - type: Stack
+    count: 2
 
 #МАТЕРИАЛЫ (В РЕАГЕНТАХ)
 - type: material
@@ -182,6 +198,14 @@
   - type: Stack
     count: 1
 
+- type: entity
+  parent: LLMaterialAramid
+  id: LLMaterialAramidFull
+  suffix: Full
+  components:
+  - type: Stack
+    count: 15
+
 #МАТЕРИАЛЫ (В РЕАГЕНТАХ)
 - type: material
   id: LLAramid
@@ -235,6 +259,14 @@
   - type: Stack
     count: 1
 
+- type: entity
+  parent: LLMaterialAsbestos
+  id: LLMaterialAsbestosFull
+  suffix: Full
+  components:
+  - type: Stack
+    count: 15
+
 #МАТЕРИАЛЫ (В РЕАГЕНТАХ)
 - type: material
   id: LLAsbestos
@@ -284,5 +316,106 @@
   name: Советский плитник
   icon: { sprite: _LL/Clothing/OuterClothing/Armor/makeshiftvest.rsi, state: icon }
   spawn: LLClothingOuterMakeshiftVest
+  maxCount: 1
+  itemSize: 1
+
+- type: material
+  id: LLOrganLungs
+  stackEntity: OrganHumanLungs
+  name: легкие
+  icon:
+    sprite: /Textures/Mobs/Species/Human/organs.rsi
+    state: lung-l
+  color: "#E8B4B4"
+  price: 0.05
+
+- type: material
+  id: LLOrganHeart
+  stackEntity: OrganHumanHeart
+  name: сердце
+  icon:
+    sprite: /Textures/Mobs/Species/Human/organs.rsi
+    state: heart-on
+  color: "#B44A4A"
+  price: 0.05
+
+- type: material
+  id: LLOrganStomach
+  stackEntity: OrganHumanStomach
+  name: желудок
+  icon:
+    sprite: /Textures/Mobs/Species/Human/organs.rsi
+    state: stomach
+  color: "#D2B48C"
+  price: 0.05
+
+- type: material
+  id: LLOrganLiver
+  stackEntity: OrganHumanLiver
+  name: печень
+  icon:
+    sprite: /Textures/Mobs/Species/Human/organs.rsi
+    state: liver
+  color: "#8B4513"
+  price: 0.05
+
+- type: material
+  id: LLOrganKidneys
+  stackEntity: OrganHumanKidneys
+  name: почки
+  icon:
+    sprite: /Textures/Mobs/Species/Human/organs.rsi
+    state: kidney-l
+  color: "#A0522D"
+  price: 0.05
+
+# Stack prototypes для органов
+- type: stack
+  id: LLOrganLungs
+  name: легкие
+  icon:
+    sprite: /Textures/Mobs/Species/Human/organs.rsi
+    state: lung-l
+  spawn: OrganHumanLungs
+  maxCount: 1
+  itemSize: 1
+
+- type: stack
+  id: LLOrganHeart
+  name: сердце
+  icon:
+    sprite: /Textures/Mobs/Species/Human/organs.rsi
+    state: heart-on
+  spawn: OrganHumanHeart
+  maxCount: 1
+  itemSize: 1
+
+- type: stack
+  id: LLOrganStomach
+  name: желудок
+  icon:
+    sprite: /Textures/Mobs/Species/Human/organs.rsi
+    state: stomach
+  spawn: OrganHumanStomach
+  maxCount: 1
+  itemSize: 1
+
+- type: stack
+  id: LLOrganLiver
+  name: печень
+  icon:
+    sprite: /Textures/Mobs/Species/Human/organs.rsi
+    state: liver
+  spawn: OrganHumanLiver
+  maxCount: 1
+  itemSize: 1
+
+- type: stack
+  id: LLOrganKidneys
+  name: почки
+  icon:
+    sprite: /Textures/Mobs/Species/Human/organs.rsi
+    state: kidney-l
+  spawn: OrganHumanKidneys
   maxCount: 1
   itemSize: 1
