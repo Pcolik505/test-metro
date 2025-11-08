@@ -1,0 +1,39 @@
+- type: latheRecipe
+  id: LLCraftBricketFromLungs
+  result: LLProvisions5
+  completetime: 45
+  materials:
+    Cloth: 500
+    LLOrganLungs: 100
+
+- type: latheRecipe
+  id: LLCraftBricketFromHeart
+  result: LLProvisions5
+  completetime: 45
+  materials:
+    Cloth: 500
+    LLOrganHeart: 100
+
+- type: latheRecipe
+  id: LLCraftBricketFromStomach
+  result: LLProvisions5
+  completetime: 45
+  materials:
+    Cloth: 500
+    LLOrganStomach: 100
+
+- type: latheRecipe
+  id: LLCraftBricketFromLiver
+  result: LLProvisions5
+  completetime: 45
+  materials:
+    Cloth: 500
+    LLOrganLiver: 100
+
+- type: latheRecipe
+  id: LLCraftBricketFromKidneys
+  result: LLProvisions5
+  completetime: 45
+  materials:
+    Cloth: 500
+    LLOrganKidneys: 100
