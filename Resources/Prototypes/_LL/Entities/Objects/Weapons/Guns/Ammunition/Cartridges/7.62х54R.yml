@@ -1,6 +1,6 @@
 - type: entity
   id: LLCartridge762х54R
-  name: cartridge (7.62х54Rmm)
+  name: патрон (7.62х54Rmm)
   parent: BaseCartridgeLightRifle
   components:
   - type: CartridgeAmmo
@@ -24,7 +24,7 @@
 
 - type: entity
   id: LLCartridge762х54RImprovised
-  name: cartridge (7.62х54Rmm)
+  name: самодельный патрон (7.62х54Rmm)
   parent: BaseCartridgeLightRifle
   components:
   - type: CartridgeAmmo

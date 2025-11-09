@@ -1,6 +1,6 @@
 - type: entity
   id: LLCartridge762x39
-  name: cartridge (7.62x39mm)
+  name: патрон (7.62x39mm)
   parent: BaseCartridgeLightRifle
   components:
   - type: CartridgeAmmo
@@ -24,7 +24,7 @@
 
 - type: entity
   id: LLCartridge762x39Improvised
-  name: cartridge (7.62x39mm)
+  name: самодельный патрон (7.62x39mm)
   parent: BaseCartridgeLightRifle
   components:
   - type: CartridgeAmmo

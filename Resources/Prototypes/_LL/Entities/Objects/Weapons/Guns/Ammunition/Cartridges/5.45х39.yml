@@ -1,6 +1,6 @@
 - type: entity
   id: LLCartridge545х39
-  name: cartridge (5.45х39mm)
+  name: патрон (5.45х39mm)
   parent: BaseCartridgeLightRifle
   components:
   - type: CartridgeAmmo
@@ -24,7 +24,7 @@
 
 - type: entity
   id: LLCartridge545х39Improvised
-  name: Improvised cartridge (5.45х39mm)
+  name: самодельный патрон (5.45х39mm)
   parent: LLCartridge545х39
   components:
   - type: CartridgeAmmo

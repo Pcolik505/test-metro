@@ -104,7 +104,6 @@
     - N14WeaponLaserRifleMakeshiftBlueprint
     - N14WeaponRifle556PipeBlueprint
 
-# LL we recycle for ourselves
 - type: entity
   parent: N14WorkbenchBase
   id: N14WorkbenchAmmobench
@@ -122,11 +121,37 @@
       - Sheet
       - RawMaterial
       - Ingot
+      - N14Gunpowder
+      - LLBrassCartridge
+      - N14Iron
   - type: Lathe
     idleState: icon
     runningState: icon
     staticRecipes:
-    - Magazine556Rifle
+    # Материалы
+    - LLMaterialBrassCartridge1
+    # Пустые коробки
+    - LLMagazineBox45ImprovisedEmpty
+    - LLMagazineBox44ImprovisedEmpty
+    - LLMagazineBox20gaugeImprovisedEmpty
+    - LLMagazineBox12gaugeImprovisedEmpty
+    - MagazineBox762х25ImprovisedEmpty
+    - MagazineBox762х38ImprovisedEmpty
+    - MagazineBox762x39ImprovisedEmpty
+    - MagazineBox762х54RImprovisedEmpty
+    - MagazineBox545х39ImprovisedEmpty
+    - MagazineBox9х18ImprovisedEmpty
+    # Патроны
+    - LLCraftShellShotgun20Improvised
+    - LLCraftShellShotgun12Improvised
+    - LLCraftCartridge44MagnumImprovised
+    - LLCraftCartridgePistol45Improvised
+    - LLCraftCartridge9х18Improvised
+    - LLCraftCartridge545х39Improvised
+    - LLCraftCartridge762х54RImprovised
+    - LLCraftCartridge762х25Improvised
+    - LLCraftCartridge762x39Improvised
+    - LLCraftCartridge762х38Improvised
 
 - type: entity
   parent: N14WorkbenchBase

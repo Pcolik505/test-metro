@@ -1,6 +1,6 @@
 - type: entity
   id: LLCartridge44MagnumImprovised
-  name: cartridge (.44 magnum)
+  name: самодельный патрон (.44mm)
   parent: BaseCartridgePistol
   components:
   - type: CartridgeAmmo

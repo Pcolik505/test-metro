@@ -1,6 +1,6 @@
 - type: entity
   id: LLCartridge9х18
-  name: cartridge (9х18mm)
+  name: патрон (9х18mm)
   parent: BaseCartridgeLightRifle
   components:
   - type: CartridgeAmmo
@@ -24,7 +24,7 @@
 
 - type: entity
   id: LLCartridge9х18Improvised
-  name: cartridge (9х18mm)
+  name: самодельный патрон (9х18mm)
   parent: BaseCartridgeLightRifle
   components:
   - type: CartridgeAmmo
