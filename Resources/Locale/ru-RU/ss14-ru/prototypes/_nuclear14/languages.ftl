@@ -1,5 +1,5 @@
-﻿language-English-name = Английский
-language-English-description = Общий язык Пустошей.
+﻿language-English-name = Русский
+language-English-description =  Основной язык, используемый жителями метро.
 chat-language-English-name = А
 
 language-Chinese-name = Китайский

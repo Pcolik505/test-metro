@@ -1,13 +1,13 @@
-game-ticker-restart-round = Перемотка времени...
-game-ticker-start-round = Новый день в Пустоши начинается...
+game-ticker-restart-round = Умерли в нищете...
+game-ticker-start-round = Смерть в нищете начинается...
 game-ticker-start-round-cannot-start-game-mode-fallback = Не удалось активировать протокол выживания { $failedGameMode }! Активируем резервный протокол { $fallbackMode }...
 game-ticker-start-round-cannot-start-game-mode-restart = Не удалось активировать протокол выживания { $failedGameMode }! Перезагрузка симуляции...
 game-ticker-start-round-invalid-map = Выбранная территория { $map } не совместима с протоколом выживания { $mode }. Возможны сбои в работе Пип-Боя...
 game-ticker-unknown-role = Таинственный незнакомец
 game-ticker-delay-start = Запуск симуляции отложен на { $seconds } секунд. Проверьте свое снаряжение.
-game-ticker-pause-start = Симуляция приостановлена. Воспользуйтесь моментом, чтобы перевести дух.
-game-ticker-pause-start-resumed = Симуляция возобновлена. Приготовьтесь к выживанию.
-game-ticker-player-join-game-message = Добро пожаловать в Metro! Новичок? Нажми ESC и изучи Кодекс Выживания. Нужна помощь? Используй радиосигнал "SOS" (Админ помощь).
+game-ticker-pause-start = Смерть в нищете приостановлена, но ненадолго...
+game-ticker-pause-start-resumed = Смерть в нищете возобновлена. Приготовьтесь к смерти.
+game-ticker-player-join-game-message = Добро пожаловать в Metro!
 game-ticker-get-info-text =
     Привет и добро пожаловать на [color=white]Metro![/color]
     День выживания: [color=white]#{ $roundId }[/color]
@@ -26,14 +26,14 @@ game-ticker-get-info-preround-text =
     Условия выживания: [color=white]{ $gmTitle }[/color]
     >[color=yellow]{ $desc }[/color]
 game-ticker-no-map-selected = [color=red]Внимание! Зона выживания не определена![/color]
-game-ticker-player-no-jobs-available-when-joining = При попытке войти в симуляцию все роли были заняты. Попробуйте позже или выберите другую специализацию.
-game-ticker-welcome-to-the-station = Добро пожаловать в пустоши, выживальщик. Удачи и держи свой счётчик Гейгера под рукой!
+game-ticker-player-no-jobs-available-when-joining = При попытке войти зайти в метро, перед вами закрыли гермозатвор. Попробуйте позже или выберите другую специализацию.
+game-ticker-welcome-to-the-station = Добро пожаловать в метро, сталкер. Удачи и держи свой счётчик Гейгера под рукой!
 # Displayed in chat to admins when a player joins
-player-join-message = Выживший { $name } появился на горизонте!
-player-first-join-message = Новичок { $name } впервые вышел из убежища.
+player-join-message = Сталкер { $name } появился в тунелях метро!
+player-first-join-message = Салага { $name } спустился с поверхности.
 # Displayed in chat to admins when a player leaves
-player-leave-message = Выживший { $name } исчез в пустошах!
-latejoin-arrival-announcement = Внимание всем! Обнаружен новый выживший в секторе.
+player-leave-message = Сталкер { $name } потерялся в метро!
+latejoin-arrival-announcement = Найден новый сталкер в метро!
 latejoin-arrival-sender = Радиовещание
 latejoin-arrivals-direction = Радиоактивная буря грядёт...
 latejoin-arrivals-direction-time = Радиоактивная буря прибудет через... { $time }.
