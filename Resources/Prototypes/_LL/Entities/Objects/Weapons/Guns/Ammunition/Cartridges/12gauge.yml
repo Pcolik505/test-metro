@@ -1,0 +1,21 @@
+- type: entity
+  id: LLShellShotgun12Improvised
+  name: shell (12 gauge)
+  parent: N14BaseShell12Shotgun
+  components:
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: LLPelletShotgun12SpreadImprovised
+  - type: EmitSoundOnLand
+    sound:
+      collection: N14ShellEject
+      params:
+        volume: -1
+  - type: EmitSoundOnCollide
+    sound:
+      collection: N14ShellEject
+      params:
+        volume: -1

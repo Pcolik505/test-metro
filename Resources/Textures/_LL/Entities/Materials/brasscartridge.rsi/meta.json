@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-SA-3.0",
+  "copyright": "Taken from MS13 at commit https://github.com/Mojave-Sun/mojave-sun-13/commit/5e2e8ebe440947bcf947189d5a46bfbb5ae2e8e8. Edited by kys_t (dicord) for Metro-14",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "brasscartridge"
+    }
+  ]
+}

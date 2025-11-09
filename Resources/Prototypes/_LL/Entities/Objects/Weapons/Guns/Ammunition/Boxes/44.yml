@@ -1,0 +1,23 @@
+- type: entity
+  parent: BaseMagazineBox44
+  id: LLMagazineBox44Improvised
+  name: коробка патрон (.44)
+  suffix: самодельные
+  components:
+  - type: BallisticAmmoProvider
+    proto: LLCartridge44MagnumImprovised
+  - type: Sprite
+    sprite: _LL/Objects/Weapons/Guns/Ammunition/Boxes/44.rsi
+    layers:
+    - state: improvised
+      map: ["enum.GunVisualLayers.Base"]
+
+- type: entity
+  parent: LLMagazineBox44Improvised
+  id: LLMagazineBox44ImprovisedEmpty
+  name: коробка патрон (.44)
+  suffix: самодельные, пустой
+  components:
+  - type: BallisticAmmoProvider
+    proto: LLCartridge44MagnumImprovised
+    capacity: 0

@@ -30,6 +30,7 @@
   - type: BallisticAmmoProvider
     proto: N14ShellShotgun20
   - type: Sprite
+    sprite: _LL/Objects/Weapons/Guns/Ammunition/Boxes/20.rsi #LL
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]

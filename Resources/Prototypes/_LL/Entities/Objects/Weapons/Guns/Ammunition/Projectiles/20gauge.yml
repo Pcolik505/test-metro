@@ -1,0 +1,23 @@
+- type: entity
+  id: LLPelletShotgun20Improvised
+  name: pellet (20 gauge)
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: buckshot
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 7 #LL
+
+- type: entity
+  id: LLPelletShotgun20SpreadImprovised
+  categories: [ HideSpawnMenu ]
+  parent: PelletShotgun20
+  components:
+  - type: ProjectileSpread
+    proto: PelletShotgun20
+    count: 6
+    spread: 20

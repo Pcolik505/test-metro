@@ -390,4 +390,4 @@
 - type: damageModifierSet
   id: PotassiumIodide
   coefficients:
-    Radiation: 0.1
+    Radiation: 0.7 #LL

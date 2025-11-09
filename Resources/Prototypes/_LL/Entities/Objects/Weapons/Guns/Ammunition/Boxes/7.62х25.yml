@@ -28,7 +28,6 @@
 - type: entity
   parent: BaseMagazineBox762х25 
   id: MagazineBox762х25
-  name: коробка патрон (7.62х25mm)
   components:
   - type: BallisticAmmoProvider
     proto: LLCartridge762х25
@@ -36,3 +35,24 @@
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
+
+- type: entity
+  parent: BaseMagazineBox762х25 
+  id: MagazineBox762х25Improvised
+  suffix: самодельные
+  components:
+  - type: BallisticAmmoProvider
+    proto: LLCartridge762х25Improvised
+  - type: Sprite
+    layers:
+    - state: improvised
+      map: ["enum.GunVisualLayers.Base"]
+
+- type: entity
+  parent: MagazineBox762х25Improvised 
+  id: MagazineBox762х25ImprovisedEmpty
+  suffix: самодельные, пустой
+  components:
+  - type: BallisticAmmoProvider
+    proto: LLCartridge762х25Improvised
+    capacity: 0
