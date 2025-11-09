@@ -13,7 +13,7 @@
         Piercing: 9 #LL
 
 - type: entity
-  id: LLPelletShotgun12SpreadImprovised
+  id: PelletShotgun12Spread
   categories: [ HideSpawnMenu ]
   parent: PelletShotgun12
   components:
