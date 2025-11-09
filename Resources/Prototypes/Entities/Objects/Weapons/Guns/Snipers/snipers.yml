@@ -10,7 +10,7 @@
     - state: base
       map: ["enum.GunVisualLayers.Base"]
   - type: Item
-    size: Huge
+    size: Large #LL
   - type: Clothing
     sprite: Objects/Weapons/Guns/Snipers/bolt_gun_wood.rsi
     quickEquip: false
@@ -83,11 +83,11 @@
       tags:
       - LLCartridge762х54R
   - type: MeleeWeapon
-    range: 1.75
+    range: 2.25 #LL
     damage:
       types:
-        Piercing: 5
-        Slash: 3.5
+        Piercing: 14 #LL
+        Slash: 7 #LL
     wideAnimationRotation: -135
     soundHit:
       path: /Audio/Weapons/bladeslice.ogg
@@ -99,8 +99,8 @@
   - type: DamageOtherOnHit
     damage:
       types:
-        Piercing: 8
-        Slash: 3
+        Piercing: 22 #LL
+        Slash: 8 #LL
   - type: EmbeddableProjectile
     removalTime: 3.5
   - type: EmbedPassiveDamage

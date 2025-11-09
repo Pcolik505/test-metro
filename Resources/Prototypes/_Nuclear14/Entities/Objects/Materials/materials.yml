@@ -59,7 +59,9 @@
 - type: entity
   parent: N14Gunpowder
   id: N14Gunpowder10
-  suffix: Stack
+  name: порох #LL
+  description: Немного отсырел, но всё же ещё годен для создания патрон или взрывчатки. #LL
+  suffix: Full #LL
   components:
   - type: Stack
     count: 10
@@ -67,7 +69,9 @@
 - type: entity
   parent: N14Gunpowder
   id: N14Gunpowder1
-  suffix: Single
+  name: порох #LL
+  description: Немного отсырел, но всё же ещё годен для создания патрон или взрывчатки. #LL
+  suffix: Oдин #LL
   components:
   - type: Stack
     count: 1
@@ -107,6 +111,16 @@
   components:
   - type: Stack
     count: 10
+
+#LL Stack SulfurPowder30
+
+- type: entity
+  parent: SulfurPowder
+  id: SulfurPowder30
+  suffix: Full
+  components:
+  - type: Stack
+    count: 30
 
 - type: entity
   parent: SulfurPowder
@@ -359,8 +373,8 @@
 - type: entity
   parent: N14MaterialBase
   id: N14MaterialAntChitin
-  name: ant chitin
-  description: A strong and resistent piece of ant "skin".
+  name: хитин #LL
+  description: Крепкий и устойчивый фрагмент хитиновой "брони" муравья. Подойдет для брони, если у тебя хватит терпения, чтобы его обработать. #LL
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -391,6 +405,17 @@
   components:
   - type: Stack
     count: 1
+
+#LL Stack N14MaterialAntChitinFull
+
+- type: entity
+  parent: N14MaterialAntChitin
+  id: N14MaterialAntChitinFull
+  nane: хитин
+  suffix: Full
+  components:
+  - type: Stack
+    count: 3
 
 #MARK: Exoskeleton
 - type: entity

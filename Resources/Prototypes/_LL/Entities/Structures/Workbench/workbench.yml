@@ -61,28 +61,3 @@
     graph: LLWorkbenchArmorbench
     node: LLWorkbenchArmorbenchFrame
     defaultTarget: LLWorkbenchArmorbench
-
-
-- type: entity
-  parent: N14WorkbenchBase
-  id: LLWorkbench
-  description: Верстак для создания базовых компанентов.
-  name: верстак для компонентов
-  suffix: metro
-  components:
-  - type: MaterialStorage
-    whitelist:
-      tags:
-      - Sheet
-      - RawMaterial
-      - Ingot
-      - RawLeather
-      - Scrap
-      - Cloth
-      - ScrapSteel
-  - type: Lathe
-    idleState: icon
-    runningState: icon
-    staticRecipes:
-    - N14MaterialLeather
-    - LLMaterialChainmail1

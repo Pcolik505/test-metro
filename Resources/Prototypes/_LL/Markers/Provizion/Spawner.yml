@@ -1,0 +1,37 @@
+- type: entity
+  name: спавнер брикетов
+  suffix: все виды
+  id: LLSpawnerProvisions
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Objects/Power/power_cells.rsi
+        state: high
+  - type: EntityTableSpawner
+    table: !type:NestedSelector
+      tableId: MaintProvisionsTable
+      prob: 0.8
+
+- type: entityTable
+  id: MaintProvisionsTable
+  table: !type:GroupSelector
+    children:
+    - !type:GroupSelector
+      children:
+      - !type:EntSelector
+        id: LLProvisions1
+        weight: 3
+      - !type:EntSelector
+        id: LLProvisions2
+        weight: 2
+      - !type:EntSelector
+        id: LLProvisions3
+        weight: 2
+      - !type:EntSelector
+        id: LLProvisions4
+        weight: 1
+      - !type:EntSelector
+        id: LLProvisions5
+        weight: 1

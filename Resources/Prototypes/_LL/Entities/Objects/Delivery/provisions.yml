@@ -8,7 +8,7 @@
     sprite: _LL/Entities/Delivery/provisions.rsi
     state: icon-1
   - type: Item
-    size: Normal
+    size: Huge
     shape:
     - 0,0,6,0
     - 0,1,6,1
@@ -25,7 +25,7 @@
     sprite: _LL/Entities/Delivery/provisions.rsi
     state: icon-2
   - type: Item
-    size: Normal
+    size: Huge
     shape:
     - 0,0,6,0
     - 0,1,6,1
@@ -42,7 +42,7 @@
     sprite: _LL/Entities/Delivery/provisions.rsi
     state: icon-3
   - type: Item
-    size: Normal
+    size: Huge
     shape:
     - 0,0,6,0
     - 0,1,6,1
@@ -59,7 +59,24 @@
     sprite: _LL/Entities/Delivery/provisions.rsi
     state: icon-4
   - type: Item
-    size: Normal
+    size: Huge
+    shape:
+    - 0,0,6,0
+    - 0,1,6,1
+    - 0,2,6,2
+    sprite: _LL/Entities/Delivery/provisions.rsi
+
+- type: entity
+  name: Брикет Снабжения Больницы
+  parent: SnapPop
+  id: LLProvisions5
+  description: Этот важный брикет в срочном порядке нужно доставить к метромату, думаю за него хорошо заплатят.
+  components:
+  - type: Sprite
+    sprite: _LL/Entities/Delivery/provisions.rsi
+    state: icon-5
+  - type: Item
+    size: Huge
     shape:
     - 0,0,6,0
     - 0,1,6,1

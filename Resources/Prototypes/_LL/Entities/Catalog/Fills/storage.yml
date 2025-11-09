@@ -166,6 +166,37 @@
       - id: MaterialCloth
         amount: 1
 
+- type: entity
+  parent: MetroLootShelf
+  id: LLBoxFullGunpowder
+  name: старый ящик
+  suffix: порох metro
+  description: в нём явно, что-то будет.
+  components:
+  - type: Sprite
+    sprite: _LL/Objects/Box/box1.rsi
+    netsync: false
+    state: icon
+  - type: StorageFill
+    contents:
+      - id: N14Gunpowder10
+        amount: 2
+
+- type: entity
+  parent: MetroLootShelf
+  id: LLBoxFullSulfurPowder
+  name: старый ящик
+  suffix: сера metro
+  description: в нём явно, что-то будет.
+  components:
+  - type: Sprite
+    sprite: _LL/Objects/Box/box1.rsi
+    netsync: false
+    state: icon
+  - type: StorageFill
+    contents:
+      - id: SulfurPowder10
+        amount: 2
 # другой спрайт
 
 - type: entity
@@ -267,3 +298,35 @@
         amount: 1
       - id: MaterialCloth
         amount: 1
+
+- type: entity
+  parent: MetroLootShelf
+  id: LLBoxFullGunpowder2
+  name: старый ящик
+  suffix: порох metro
+  description: в нём явно, что-то будет.
+  components:
+  - type: Sprite
+    sprite: _LL/Objects/Box/box2.rsi
+    netsync: false
+    state: icon
+  - type: StorageFill
+    contents:
+      - id: N14Gunpowder10
+        amount: 2
+
+- type: entity
+  parent: MetroLootShelf
+  id: LLBoxFullSulfurPowder2
+  name: старый ящик
+  suffix: сера metro
+  description: в нём явно, что-то будет.
+  components:
+  - type: Sprite
+    sprite: _LL/Objects/Box/box2.rsi
+    netsync: false
+    state: icon
+  - type: StorageFill
+    contents:
+      - id: SulfurPowder30
+        amount: 2

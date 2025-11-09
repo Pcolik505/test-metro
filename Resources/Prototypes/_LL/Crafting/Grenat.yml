@@ -1,0 +1,9 @@
+- type: latheRecipe
+  id: LLCraftingTinNade
+  result: N14TinNade
+  completetime: 30
+  materials:
+    N14Gunpowder: 2000
+    Tincan: 100
+    Thread: 500
+

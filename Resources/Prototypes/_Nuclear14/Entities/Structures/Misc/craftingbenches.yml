@@ -104,6 +104,7 @@
     - N14WeaponLaserRifleMakeshiftBlueprint
     - N14WeaponRifle556PipeBlueprint
 
+# LL we recycle for ourselves
 - type: entity
   parent: N14WorkbenchBase
   id: N14WorkbenchAmmobench
@@ -123,52 +124,9 @@
       - Ingot
   - type: Lathe
     idleState: icon
-    runningState: icon # change this
-    staticRecipes: # Ammo related only.
+    runningState: icon
+    staticRecipes:
     - Magazine556Rifle
-    - LongMagazine556Rifle
-    - LMGMagazine556Rifle
-    - MagazineBox556
-    - N14MagazineMinigun5mm
-    - Magazine762Rifle
-    - Magazine762AmmoShort
-    - Magazine762AmmoBelt
-    - MagazineBox762
-    - SpeedLoader9
-    - N14MagazinePistol9mm
-    - N14MagazineSMG9mm
-    - MagazineBox9mm
-    - SpeedLoader10
-    - N14MagazinePistol10mm
-    - N14MagazineSMG10mm
-    - MagazineBox10mm
-    - N14MagazinePistol12mm
-    - N14MagazineSMG12mm
-    - N14TopMagazineSMG12mm
-    - MagazineBox12
-    - N14ShellShotgun12
-    - N14MagazineShotgun12
-    - MagazineBox12gauge
-    - N14ShellShotgun20
-    - N14MagazineShotgun20
-    - MagazineBox20gauge
-    - N14MagazinePistol22lr
-    - MagazineBox22
-    - SpeedLoader44
-    - MagazineBox44
-    - N14MagazinePistol44
-    - N14MagazinePistol45
-    - Magazine45SubMachineGun
-    - MagazineBox45
-    - Magazine308Rifle
-    - Magazine308RifleLong
-    - ClipMagazine308Rifle
-    - MagazineBox308
-    - SpeedLoader45-70
-    - SpeedLoader45-70Tube
-    - MagazineBox45-70
-    - N14Magazine50AMR
-    - MagazineBox50
 
 - type: entity
   parent: N14WorkbenchBase
@@ -359,8 +317,8 @@
 - type: entity
   parent: N14WorkbenchBase
   id: N14WorkbenchMetal
-  description: A workbench with metal working tools for crafting.
-  name: workbench
+  description: Верстак для создания базовых компанентов. #LL
+  name: верстак для компонентов #LL
   components:
   - type: Construction
     graph: N14WorkbenchMetal
@@ -368,101 +326,31 @@
   - type: MaterialStorage
     whitelist:
       tags:
-      - Sheet
-      - RawMaterial
-      - Ingot
+      - Sheet #LL
+      - RawMaterial #LL
+      - Ingot #LL
+      - RawLeather #LL
+      - Scrap #LL
+      - Cloth #LL
+      - ScrapSteel #LL
+      - LLOrganLungs #LL
+      - LLOrganHeart #LL
+      - LLOrganStomach #LL
+      - LLOrganLiver #LL
+      - LLOrganKidneys #LL
+      - Tincan #LL
   - type: Lathe
     idleState: icon
-    runningState: icon # change this
+    runningState: icon
     staticRecipes:
-    # Tools
-    - N14Wirecutter
-    - N14Screwdriver
-    - N14Welder
-    - N14Wrench
-    - N14CableStack
-    - N14CableMVStack
-    - N14CableHVStack
-    - N14Crowbar
-    - N14Pickaxe
-    - N14Shovel
-    - N14SprayPainter
-    - N14ClothingEyesGlassesWelding
-    - N14HydroponicsToolHoe
-    - N14HydroponicsToolHatchet
-    - HydroponicsToolSpade
-    - N14HydroponicsToolScythe
-    - N14HydroponicsToolClippers
-    - N14HandLabeler
-    # Kitchen
-    - N14ButchersCleaver
-    - N14KitchenKnife
-    - N14DrinkMug
-    - N14DrinkMugMetal
-    - N14DrinkGlass
-    - N14DrinkShotGlass
-    - N14DrinkGlassCoupeShaped
-    - N14FoodPlate
-    - N14FoodPlateSmall
-    - N14FoodPlatePlastic
-    - N14FoodPlateSmallPlastic
-    - N14FoodPlateTin
-    - N14FoodKebabSkewer
-    - N14JunkCookpot
-    - N14JunkCoffeepot
-    - PlantBag
-    # Janitorial
-    - N14Mop
-    - N14MopBucket
-    - N14Bucket
-    - N14WetFloorSign
-    - N14SprayBottle
-    - N14TrashBag
-    - N14LightReplacer
-    - N14Mousetrap
-    - N14Plunger
-    - N14WeaponSprayNozzle
-    - N14ClothingBackpackWaterTank
-    # Chemistry
-    - N14Beaker
-    - N14LargeBeaker
-    - N14Dropper
-    - N14Syringe
-    - N14SyringeInjectable
-    - N14PillCanister
-    - N14ChemistryEmptyBottle01
-    - N14PillCanisterRadX
-    - N14PillCanisterMentats
-    - N14PillCanisterBuffout
-    - N14PillCanisterCateye
-    - N14PillCanisterFixer
-    - N14JetInhaler
-    - N14TurboInhaler
-    - N14HydraInhaler
-    - N14ChemicalSyringeAntidoteEmpty
-    - N14PsychoSyringe
-    - N14RadAwayPhialEmpty
-    # Misc
-    - N14LightTube
-    - N14LedLightTube
-    - N14SodiumLightTube
-    - N14ExteriorLightTube
-    - N14LightBulb
-    - N14LedLightBulb
-    - N14Flare
-    - N14Matchbox
-    - N14JunkComponentScrew
-    - FloorTileItemMetalIndustrial
-    - FloorTileItemMetalMS13
-    - FloorTileItemMetalGrate
-    - FloorTileItemMetalSolid
-    # Ammo
-    - ArrowRegular
-    # Machine Parts
-    - N14PortableGeneratorWeldingFuelMachineParts
-    #Paperwork
-    - N14WoodPencil # Forge-Change
-    - N14PenReporter # Forge-Change
+    - N14MaterialLeather #LL
+    - LLMaterialChainmail1 #LL
+    - LLCraftBricketFromLungs #LL
+    - LLCraftBricketFromHeart #LL
+    - LLCraftBricketFromStomach #LL
+    - LLCraftBricketFromLiver #LL
+    - LLCraftBricketFromKidneys #LL
+    - LLCraftingTinNade #LL
 
 - type: entity
   parent: N14WorkbenchBase

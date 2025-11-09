@@ -176,7 +176,7 @@
     materialComposition:
       Plastic: 100
   - type: Tag
-    tags: 
+    tags:
       - Abraxo
 
 - type: entity
@@ -382,7 +382,7 @@
   - type: Sprite
     state: timer
   - type: Tag
-    tags: 
+    tags:
     - JunkTimer
 - type: entity
   parent: N14JunkItemBaseMetal
@@ -395,6 +395,15 @@
   - type: Tag
     tags:
     - Tincan
+    #LL Material
+  - type: Material
+  - type: Craftable
+  - type: Stack
+    stackType: Tincan
+    count: 1
+  - type: PhysicalComposition
+    materialComposition:
+      Tincan: 100
 
 - type: entity
   parent: N14JunkItemBaseAluminum
@@ -438,7 +447,7 @@
         - ReagentId: Turpentine
           Quantity: 50
   - type: Tag
-    tags: 
+    tags:
       - Turpentine
 
 - type: entity

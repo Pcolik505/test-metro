@@ -2,17 +2,17 @@
   parent: ClothingBackpack
   id: ClothingBackpackDuffel
   name: duffel bag
-  description: A large duffel bag for holding extra things.
+  description: Замедляет на 20 %.
   components:
   - type: Sprite
     sprite: Clothing/Back/Duffels/duffel.rsi
   - type: Storage
     maxItemSize: Huge
     grid:
-    - 0,0,7,4
+    - 0,0,9,5 #LL
   - type: ClothingSpeedModifier
     walkModifier: 1
-    sprintModifier: 0.9
+    sprintModifier: 0.65 #LL
   - type: HeldSpeedModifier
 
 - type: entity

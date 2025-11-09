@@ -161,6 +161,18 @@
         reagents:
         - ReagentId: UncookedAnimalProteins
           Quantity: 5
+# LL
+  - type: Tag
+    tags:
+      - RawMaterial
+  - type: Material
+  - type: Craftable
+  - type: Stack
+    stackType: LLOrganLungs
+    count: 1
+  - type: PhysicalComposition
+    materialComposition:
+      LLOrganLungs: 100
 
 - type: entity
   id: OrganHumanHeart
@@ -184,6 +196,18 @@
     - id: Poison
     - id: Narcotic
     - id: N14Virus # Corvax-Change
+# LL
+  - type: Tag
+    tags:
+      - RawMaterial
+  - type: Material
+  - type: Craftable
+  - type: Stack
+    stackType: LLOrganHeart
+    count: 1
+  - type: PhysicalComposition
+    materialComposition:
+      LLOrganHeart: 100
 
 - type: entity
   id: OrganHumanStomach
@@ -215,6 +239,18 @@
     groups:
     - id: Food
     - id: Drink
+# LL
+  - type: Tag
+    tags:
+      - RawMaterial
+  - type: Material
+  - type: Craftable
+  - type: Stack
+    stackType: LLOrganStomach
+    count: 1
+  - type: PhysicalComposition
+    materialComposition:
+      LLOrganStomach: 100
 
 - type: entity
   id: OrganHumanLiver
@@ -233,6 +269,18 @@
     groups:
     - id: Alcohol
       rateModifier: 0.1 # removes alcohol very slowly along with the stomach removing it as a drink
+  # LL
+  - type: Tag
+    tags:
+      - RawMaterial
+  - type: Material
+  - type: Craftable
+  - type: Stack
+    stackType: LLOrganLiver
+    count: 1
+  - type: PhysicalComposition
+    materialComposition:
+      LLOrganLiver: 100
 
 - type: entity
   id: OrganHumanKidneys
@@ -251,3 +299,15 @@
     maxReagents: 5
     metabolizerTypes: [Human]
     removeEmpty: true
+# LL
+  - type: Tag
+    tags:
+      - RawMaterial
+  - type: Material
+  - type: Craftable
+  - type: Stack
+    stackType: LLOrganKidneys
+    count: 1
+  - type: PhysicalComposition
+    materialComposition:
+      LLOrganKidneys: 100

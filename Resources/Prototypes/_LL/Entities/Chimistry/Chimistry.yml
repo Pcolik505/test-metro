@@ -1,0 +1,383 @@
+- type: entity
+  parent: BaseChemistryEmptyVial
+  id: LLTubeCarbon
+  name: углерод
+  description: Пробирка с углеродом.
+  components:
+    - type: Label
+      currentLabel: reagent-name-carbon
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          maxVolume: 30
+          reagents:
+            - ReagentId: Carbon
+              Quantity: 30
+
+- type: entity
+  parent: BaseChemistryEmptyVial
+  id: LLTubeIodine
+  name: йод
+  description: Пробирка с йодом.
+  components:
+    - type: Label
+      currentLabel: reagent-name-iodine
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          maxVolume: 30
+          reagents:
+            - ReagentId: Iodine
+              Quantity: 30
+
+- type: entity
+  parent: BaseChemistryEmptyVial
+  id: LLTubeFluorine
+  name: фтор
+  description: Пробирка с фтором.
+  components:
+    - type: Label
+      currentLabel: reagent-name-fluorine
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          maxVolume: 30
+          reagents:
+            - ReagentId: Fluorine
+              Quantity: 30
+
+- type: entity
+  parent: BaseChemistryEmptyVial
+  id: LLTubeChlorine
+  name: хлор
+  description: Пробирка с хлором.
+  components:
+    - type: Label
+      currentLabel: reagent-name-chlorine
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          maxVolume: 30
+          reagents:
+            - ReagentId: Chlorine
+              Quantity: 30
+
+- type: entity
+  parent: BaseChemistryEmptyVial
+  id: LLTubeAluminium
+  name: алюминий
+  description: Пробирка с алюминием.
+  components:
+    - type: Label
+      currentLabel: reagent-name-aluminium
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          maxVolume: 30
+          reagents:
+            - ReagentId: Aluminium
+              Quantity: 30
+
+- type: entity
+  parent: BaseChemistryEmptyVial
+  id: LLTubePhosphorus
+  name: фосфор
+  description: Пробирка с фосфором.
+  components:
+    - type: Label
+      currentLabel: reagent-name-phosphorus
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          maxVolume: 30
+          reagents:
+            - ReagentId: Phosphorus
+              Quantity: 30
+
+- type: entity
+  parent: BaseChemistryEmptyVial
+  id: LLTubeSulfur
+  name: сера
+  description: Пробирка с серой.
+  components:
+    - type: Label
+      currentLabel: reagent-name-sulfur
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          maxVolume: 30
+          reagents:
+            - ReagentId: Sulfur
+              Quantity: 30
+
+- type: entity
+  parent: BaseChemistryEmptyVial
+  id: LLTubeSilicon
+  name: кремний
+  description: Пробирка с кремнием.
+  components:
+    - type: Label
+      currentLabel: reagent-name-silicon
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          maxVolume: 30
+          reagents:
+            - ReagentId: Silicon
+              Quantity: 30
+
+- type: entity
+  parent: BaseChemistryEmptyVial
+  id: LLTubeHydrogen
+  name: водород
+  description: Пробирка с водородом.
+  components:
+    - type: Label
+      currentLabel: reagent-name-hydrogen
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          maxVolume: 30
+          reagents:
+            - ReagentId: Hydrogen
+              Quantity: 30
+
+- type: entity
+  parent: BaseChemistryEmptyVial
+  id: LLTubeLithium
+  name: литий
+  description: Пробирка с литием.
+  components:
+    - type: Label
+      currentLabel: reagent-name-lithium
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          maxVolume: 30
+          reagents:
+            - ReagentId: Lithium
+              Quantity: 30
+
+- type: entity
+  parent: BaseChemistryEmptyVial
+  id: LLTubeSodium
+  name: натрий
+  description: Пробирка с натрием.
+  components:
+    - type: Label
+      currentLabel: reagent-name-sodium
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          maxVolume: 30
+          reagents:
+            - ReagentId: Sodium
+              Quantity: 30
+
+- type: entity
+  parent: BaseChemistryEmptyVial
+  id: LLTubePotassium
+  name: калий
+  description: Пробирка с калием.
+  components:
+    - type: Label
+      currentLabel: reagent-name-potassium
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          maxVolume: 30
+          reagents:
+            - ReagentId: Potassium
+              Quantity: 30
+
+- type: entity
+  parent: BaseChemistryEmptyVial
+  id: LLTubeRadium
+  name: радий
+  description: Пробирка с радием.
+  components:
+    - type: Label
+      currentLabel: reagent-name-radium
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          maxVolume: 30
+          reagents:
+            - ReagentId: Radium
+              Quantity: 30
+
+- type: entity
+  parent: BaseChemistryEmptyVial
+  id: LLTubeIron
+  name: железо
+  description: Пробирка с железом.
+  components:
+    - type: Label
+      currentLabel: reagent-name-iron
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          maxVolume: 30
+          reagents:
+            - ReagentId: Iron
+              Quantity: 30
+
+- type: entity
+  parent: BaseChemistryEmptyVial
+  id: LLTubeCopper
+  name: медь
+  description: Пробирка с медью.
+  components:
+    - type: Label
+      currentLabel: reagent-name-copper
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          maxVolume: 30
+          reagents:
+            - ReagentId: Copper
+              Quantity: 30
+
+- type: entity
+  parent: BaseChemistryEmptyVial
+  id: LLTubeGold
+  name: золото
+  description: Пробирка с золотом.
+  components:
+    - type: Label
+      currentLabel: reagent-name-gold
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          maxVolume: 30
+          reagents:
+            - ReagentId: Gold
+              Quantity: 30
+
+- type: entity
+  parent: BaseChemistryEmptyVial
+  id: LLTubeMercury
+  name: ртуть
+  description: Пробирка с ртутью.
+  components:
+    - type: Label
+      currentLabel: reagent-name-mercury
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          maxVolume: 30
+          reagents:
+            - ReagentId: Mercury
+              Quantity: 30
+
+- type: entity
+  parent: BaseChemistryEmptyVial
+  id: LLTubeSilver
+  name: серебро
+  description: Пробирка с серебром.
+  components:
+    - type: Label
+      currentLabel: reagent-name-silver
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          maxVolume: 30
+          reagents:
+            - ReagentId: Silver
+              Quantity: 30
+
+- type: entity
+  parent: BaseChemistryEmptyVial
+  id: LLTubeEthanol
+  name: этанол
+  description: Пробирка с этанолом.
+  components:
+    - type: Label
+      currentLabel: reagent-name-ethanol
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          maxVolume: 30
+          reagents:
+            - ReagentId: Ethanol
+              Quantity: 30
+
+- type: entity
+  parent: BaseChemistryEmptyVial
+  id: LLTubeSugar
+  name: сахар
+  description: Пробирка с сахаром.
+  components:
+    - type: Label
+      currentLabel: reagent-name-sugar
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          maxVolume: 30
+          reagents:
+            - ReagentId: Sugar
+              Quantity: 30
+
+- type: entity
+  parent: BaseChemistryEmptyVial
+  id: LLTubeNitrogen
+  name: азот
+  description: Пробирка с азотом.
+  components:
+    - type: Label
+      currentLabel: reagent-name-nitrogen
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          maxVolume: 30
+          reagents:
+            - ReagentId: Nitrogen
+              Quantity: 30
+
+- type: entity
+  parent: BaseChemistryEmptyVial
+  id: LLTubeOxygen
+  name: кислород
+  description: Пробирка с кислородом.
+  components:
+    - type: Label
+      currentLabel: reagent-name-oxygen
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          maxVolume: 30
+          reagents:
+            - ReagentId: Oxygen
+              Quantity: 30
+
+- type: entity
+  parent: BaseChemistryEmptyVial
+  id: LLTubePlantBGone
+  name: Plant-B-Gone
+  description: Пробирка с Plant-B-Gone.
+  components:
+    - type: Label
+      currentLabel: reagent-name-plant-b-gone
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          maxVolume: 30
+          reagents:
+            - ReagentId: PlantBGone
+              Quantity: 30
+
+- type: entity
+  parent: BaseChemistryEmptyVial
+  id: LLTubeWeldingFuel
+  name: сварочное топливо
+  description: Пробирка со сварочным топливом.
+  components:
+    - type: Label
+      currentLabel: reagent-name-welding-fuel
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          maxVolume: 30
+          reagents:
+            - ReagentId: WeldingFuel
+              Quantity: 30

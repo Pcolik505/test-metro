@@ -64,6 +64,7 @@
         Slash: 0.95
         Piercing: 0.95
         Heat: 0.9
+        Radiation: 0.75 #LL
     priceMultiplier: 0.5
 
 - type: entity
@@ -84,7 +85,7 @@
         Blunt: 0.95
         Slash: 0.95
         Heat: 0.95
-        Radiation: 0.95
+        Radiation: 0.65 #LL
     priceMultiplier: 0.5
 
 - type: entity

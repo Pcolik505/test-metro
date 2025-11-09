@@ -466,3 +466,23 @@
   spawn: LLMaterialBrassCartridge1
   maxCount: 60
   itemSize: 1
+
+- type: material
+  id: Tincan
+  stackEntity: N14JunkTincan
+  name: консервная банка
+  icon:
+    sprite: /Textures/_Nuclear14/Objects/Misc/crafting_junk.rsi
+    state: tincan
+  color: "#D3D3D3"
+  price: 0.05
+
+- type: stack
+  id: Tincan
+  name: консервная банка
+  icon:
+    sprite: /Textures/_Nuclear14/Objects/Misc/crafting_junk.rsi
+    state: tincan
+  spawn: N14JunkTincan
+  maxCount: 1
+  itemSize: 1

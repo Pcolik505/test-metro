@@ -4,6 +4,8 @@
   components:
         - id: FoodTinBeans
           prob: 0.1
+        - id: N14IngotAluminum1
+          prob: 0.08
         - id: LLCannedStew
           prob: 0.1
         - id: LLCannedBeans
@@ -98,24 +100,6 @@
           prob: 0.1
         - id: EmptyFlashlightLantern
           prob: 0.1
-        - id: CellRechargerCircuitboard
-          prob: 0.1
-        - id: ReagentGrinderMachineCircuitboard
-          prob: 0.1
-        - id: BiomassReclaimerMachineCircuitboard
-          prob: 0.1
-        - id: MicrowaveMachineCircuitboard
-          prob: 0.1
-        - id: OreProcessorMachineCircuitboard
-          prob: 0.1
-        - id: PortableGeneratorJrPacmanMachineCircuitboard
-          prob: 0.1
-        - id: APCElectronics
-          prob: 0.1
-        - id: SubstationMachineCircuitboard
-          prob: 0.1
-        - id: SMESMachineCircuitboard
-          prob: 0.1
         - id: LLProvisions1
           prob: 0.08
         - id: LLProvisions3
@@ -136,68 +120,152 @@
           prob: 0.1
         - id: LLMaterialTitanium1
           prob: 0.1
-        - id: LLMaterialChainmail1
-          prob: 0.1
         - id: LLMaterialAramid1
           prob: 0.1
         - id: LLMaterialFiberglass1
           prob: 0.1
         - id: LLMaterialAsbestos1
           prob: 0.1
+        - id: ClothingUniformJumpsuitSuitBrownAlt
+          prob: 0.05
+        - id: ClothingUniformJumpsuitSuitBlackAlt
+          prob: 0.05
+        - id: ClothingUniformJumpsuitDetectiveGrey
+          prob: 0.05
+        - id: ClothingUniformJumpsuitSuitBrownMob
+          prob: 0.05
+        - id: N14ClothingUniformJumpsuitPreWarCasual
+          prob: 0.05
+        - id: ClothingUniformJumpsuitLoungewear
+          prob: 0.05
+        - id: ClothingUniformJumpsuitCossack
+          prob: 0.05
+        - id: N14ClothingUniformJumpsuitBrahminFarmer
+          prob: 0.05
+        - id: N14ClothingUniformJumpsuitPreWarRelaxed
+          prob: 0.05
+        - id: N14ClothingUniformJumpsuitCombat
+          prob: 0.05
+        - id: N14ClothingUniformJumpsuitPreWarRelaxed
+          prob: 0.05
+        - id: ClothingUniformJumpsuitSuitWhite
+          prob: 0.05
+        - id: ClothingUniformJumpsuitSuitBrown
+          prob: 0.05
+        - id: N14ClothingUniformJumpsuitDetectiveAlt
+          prob: 0.05
+        - id: ClothingUniformJumpsuitSafari
+          prob: 0.05
+        - id: ClothingUniformJumpsuitJournalist
+          prob: 0.05
+        - id: ClothingUniformJumpsuitLibrarian
+          prob: 0.05
+        - id: N14ClothingUniformJumpsuitManagerSuit
+          prob: 0.05
 
 - type: entity
   abstract: true
   id: LLBunchJunkFillResupply
   components:
         - id: N14MaterialThread1
-          prob: 0.3
+          prob: 0.1
         - id: N14JunkCookpot
-          prob: 0.3
+          prob: 0.1
         - id: N14ScrapElectronic1
-          prob: 0.3
+          prob: 0.1
         - id: MaterialCloth10
-          prob: 0.3
+          prob: 0.1
         - id: N14ScrapSteel1
-          prob: 0.3
+          prob: 0.5
         - id: N14ScrapLead1
-          prob: 0.3
+          prob: 0.1
         - id: N14ScrapCopper1
-          prob: 0.3
+          prob: 0.1
         - id: MaterialCloth1
-          prob: 0.3
+          prob: 0.1
         - id: N14ScrapBrass1
-          prob: 0.3
+          prob: 0.1
         - id: N14ScrapGold1
-          prob: 0.3
+          prob: 0.1
         - id: N14Scrap1
-          prob: 0.3
+          prob: 0.5
         - id: N14JunkComponentGearLarge
-          prob: 0.3
+          prob: 0.1
         - id: N14JunkComponentScrew
-          prob: 0.3
+          prob: 0.1
         - id: N14JunkComponentGearSmall
-          prob: 0.3
+          prob: 0.1
         - id: N14IronOre1
-          prob: 0.3
+          prob: 0.1
         - id: N14GoldOre1
-          prob: 0.3
+          prob: 0.1
         - id: N14CopperOre1
-          prob: 0.3
+          prob: 0.1
         - id: N14LeadOre1
-          prob: 0.3
+          prob: 0.1
         - id: N14SilverOre1
-          prob: 0.3
+          prob: 0.1
         - id: SulfurOre1
-          prob: 0.3
-        - id: LLMaterialTitanium1
           prob: 0.1
-        - id: LLMaterialChainmail1
+        - id: N14JunkComponentSensor
           prob: 0.1
-        - id: LLMaterialAramid1
+        - id: N14JunkComponentMainboard
           prob: 0.1
-        - id: LLMaterialFiberglass1
+        - id: N14JunkComponentBoard1
           prob: 0.1
-        - id: LLMaterialAsbestos1
+        - id: N14JunkComponentBoard2
+          prob: 0.1
+        - id: N14JunkComponentBoard3
+          prob: 0.1
+        - id: N14JunkCookpot
+          prob: 0.1
+        - id: N14JunkComponentGearLarge
+          prob: 0.1
+        - id: N14JunkComponentGearSmall
+          prob: 0.1
+        - id: N14JunkComponentScrew
+          prob: 0.1
+        - id: N14JunkComponentFuse1
+          prob: 0.1
+        - id: N14JunkComponentFuse2
+          prob: 0.1
+        - id: N14JunkComponentResistor1
+          prob: 0.1
+        - id: N14JunkComponentResistor2
+          prob: 0.1
+        - id: N14JunkComponentResistor3
+          prob: 0.1
+        - id: N14JunkComponentTransistor1
+          prob: 0.1
+        - id: N14JunkComponentTransistor2
+          prob: 0.1
+        - id: N14JunkComponentTransistor3
+          prob: 0.1
+        - id: N14JunkComponentBulb1
+          prob: 0.1
+        - id: N14JunkComponentBulb2
+          prob: 0.1
+        - id: N14JunkComponentBulb3
+          prob: 0.1
+        - id: N14JunkComponentDiode1
+          prob: 0.1
+        - id: N14JunkComponentDiode2
+          prob: 0.1
+        - id: N14JunkComponentDiode3
+          prob: 0.1
+        - id: N14JunkComponentCapacitor1
+          prob: 0.1
+        - id: N14JunkComponentCapacitor2
+          prob: 0.1
+        - id: N14JunkComponentCapacitor3
+          prob: 0.1
+        - id: N14JunkComponentIgniter
+          prob: 0.1
+        - id: N14JunkComponentSensorModule
+          prob: 0.1
+        - id: N14JunkComponentSwitch
+          prob: 0.1
+        - id: N14JunkComponentBuzzer
           prob: 0.1
 
 - type: entity
@@ -254,6 +322,52 @@
           prob: 0.3
         - id: RadAutoInjector
           prob: 0.3
+        - id: LLTubeCarbon
+          prob: 0.1
+        - id: LLTubeIodine
+          prob: 0.1
+        - id: LLTubeFluorine
+          prob: 0.1
+        - id: LLTubeChlorine
+          prob: 0.1
+        - id: LLTubeAluminium
+          prob: 0.1
+        - id: LLTubePhosphorus
+          prob: 0.1
+        - id: LLTubeSulfur
+          prob: 0.1
+        - id: LLTubeSilicon
+          prob: 0.1
+        - id: LLTubeHydrogen
+          prob: 0.1
+        - id: LLTubeLithium
+          prob: 0.1
+        - id: LLTubeSodium
+          prob: 0.1
+        - id: LLTubePotassium
+          prob: 0.1
+        - id: LLTubeRadium
+          prob: 0.1
+        - id: LLTubeIron
+          prob: 0.1
+        - id: LLTubeCopper
+          prob: 0.1
+        - id: LLTubeGold
+          prob: 0.1
+        - id: LLTubeMercury
+          prob: 0.1
+        - id: LLTubeSilver
+          prob: 0.1
+        - id: LLTubeEthanol
+          prob: 0.1
+        - id: LLTubeSugar
+          prob: 0.1
+        - id: LLTubeNitrogen
+          prob: 0.1
+        - id: LLTubeOxygen
+          prob: 0.1
+        - id: LLTubeWeldingFuel
+          prob: 0.1
 
 - type: entity
   abstract: true
@@ -262,10 +376,6 @@
   - type: StorageFill
     contents:
         - id: N14ClothingHeadHatCombatHelmet
-          prob: 0.05
-        - id: LLClothingOuterHiveVest
-          prob: 0.05
-        - id: LLProvisions2
           prob: 0.05
         - id: N14ClothingBootsCombatMK2
           prob: 0.1
@@ -283,14 +393,6 @@
           prob: 0.7
         - id: LLCannedStew
           prob: 0.7
-        - id: ClothingBeltRevolver
-          prob: 0.1
-        - id: N14ClothingBackpackMilitary
-          prob: 0.1
-        - id: ClothingBeltMilitary
-          prob: 0.1
-        - id: ClothingBeltMilitaryWebbing
-          prob: 0.1
         - id: WeaponSubMachineGunTypewriter
           prob: 0.05
         - id: N14WeaponShotgunSawedOff

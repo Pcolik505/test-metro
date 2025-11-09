@@ -12,9 +12,9 @@
     netsync: true
     scale: 0.75, 0.75
   - type: Item
-    size: Huge
+    size: Large
   - type: Storage
-    maxItemSize: Huge
+    maxItemSize: Large
     grid:
     - 0,0,7,4
   - type: PhysicalComposition
@@ -55,7 +55,7 @@
     netsync: true
     scale: 0.75, 0.75
   - type: Item
-    size: Huge
+    size: Large
   - type: PhysicalComposition
     materialComposition:
       Cloth: 300
