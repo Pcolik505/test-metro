@@ -1287,7 +1287,7 @@
       - !type:GenericStatusEffect
         key: RadiationProtection
         component: RadiationProtection
-        time: 2
+        time: 6 #LL
         type: Add
         refresh: false
       - !type:HealthChange

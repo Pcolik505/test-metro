@@ -21,3 +21,13 @@
       collection: N14RifleCasingEject
       params:
         volume: -1
+
+- type: entity
+  id: LLCartridge545х39Improvised
+  name: Improvised cartridge (5.45х39mm)
+  parent: LLCartridge545х39
+  components:
+  - type: CartridgeAmmo
+    proto: LLBullet545х39Improvised
+    soundEject:
+      collection: N14RifleCasingEject

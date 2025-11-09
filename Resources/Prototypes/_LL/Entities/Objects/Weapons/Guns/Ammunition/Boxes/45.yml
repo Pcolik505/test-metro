@@ -1,0 +1,23 @@
+- type: entity
+  parent: BaseMagazineBox45
+  id: LLMagazineBox45Improvised
+  name: коробка патрон (45 auto)
+  suffix: самодельные
+  components:
+  - type: BallisticAmmoProvider
+    proto: LLCartridgePistol45Improvised
+  - type: Sprite
+    sprite: _LL/Objects/Weapons/Guns/Ammunition/Boxes/45.rsi
+    layers:
+    - state: improvised
+      map: ["enum.GunVisualLayers.Base"]
+
+- type: entity
+  parent: LLMagazineBox45Improvised
+  id: LLMagazineBox45ImprovisedEmpty
+  name: коробка патрон (45 auto)
+  suffix: самодельные, пустой
+  components:
+  - type: BallisticAmmoProvider
+    proto: LLCartridgePistol45Improvised
+    capacity: 0

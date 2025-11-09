@@ -419,3 +419,50 @@
   spawn: OrganHumanKidneys
   maxCount: 1
   itemSize: 1
+
+- type: entity
+  parent: N14MaterialBase
+  id: LLMaterialBrassCartridge
+  name: латунная гильза
+  description: Гильза ужасного качества, вряд-ли их можно использовать повторно
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _LL/Entities/Materials/brasscartridge.rsi
+    state: brasscartridge
+    layers:
+    - state: brasscartridge
+      map: ["base"]
+  - type: Stack
+    stackType: LLBrassCartridge
+    count: 60
+    baseLayer: base
+    layerStates:
+    - brasscartridge
+  - type: PhysicalComposition
+    materialComposition:
+      LLBrassCartridge: 100
+
+- type: entity
+  parent: LLMaterialBrassCartridge
+  id: LLMaterialBrassCartridge1
+  suffix: одна штука
+  components:
+  - type: Stack
+    count: 1
+
+- type: material
+  id: LLBrassCartridge
+  stackEntity: LLMaterialBrassCartridge1
+  name: Латунная гильза
+  icon: { sprite: /Textures/_LL/Entities/Materials/brasscartridge.rsi, state: brasscartridge }
+  color: "#C0C0C0"
+  price: 0.1
+
+- type: stack
+  id: LLBrassCartridge
+  name: Латунная гильза
+  icon: { sprite: _LL/Entities/Materials/brasscartridge.rsi, state: brasscartridge }
+  spawn: LLMaterialBrassCartridge1
+  maxCount: 60
+  itemSize: 1

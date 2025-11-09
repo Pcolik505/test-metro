@@ -1,0 +1,23 @@
+- type: entity
+  id: LLCartridge44MagnumImprovised
+  name: cartridge (.44 magnum)
+  parent: BaseCartridgePistol
+  components:
+  - type: CartridgeAmmo
+    proto: LLBullet44Improvised
+    soundEject:
+      collection: N14PistolCasingEject
+  - type: Tag
+    tags:
+      - Cartridge
+      - N14Cartridge44Magnum
+  - type: EmitSoundOnLand
+    sound:
+      collection: N14PistolCasingEject
+      params:
+        volume: -1
+  - type: EmitSoundOnCollide
+    sound:
+      collection: N14PistolCasingEject
+      params:
+        volume: -1

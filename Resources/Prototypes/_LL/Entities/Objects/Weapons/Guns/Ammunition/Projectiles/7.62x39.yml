@@ -8,3 +8,14 @@
     damage:
       types:
         Piercing: 22
+
+- type: entity
+  id: LLBullet762x39Improvised
+  name: bullet (7.62x39mm)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 16

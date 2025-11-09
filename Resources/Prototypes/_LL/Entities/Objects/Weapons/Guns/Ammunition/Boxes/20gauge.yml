@@ -1,0 +1,23 @@
+- type: entity
+  parent: BaseMagazineBox20gauge
+  id: LLMagazineBox20gaugeImprovised
+  name: коробка патрон (20 gauge)
+  suffix: самодельные
+  components:
+  - type: BallisticAmmoProvider
+    proto: LLShellShotgun20Improvised
+  - type: Sprite
+    sprite: _LL/Objects/Weapons/Guns/Ammunition/Boxes/20.rsi
+    layers:
+    - state: improvised
+      map: ["enum.GunVisualLayers.Base"]
+
+- type: entity
+  parent: LLMagazineBox20gaugeImprovised
+  id: LLMagazineBox20gaugeImprovisedEmpty
+  name: коробка патрон (20 gauge)
+  suffix: самодельные, пустой
+  components:
+  - type: BallisticAmmoProvider
+    proto: LLShellShotgun20Improvised
+    capacity: 0

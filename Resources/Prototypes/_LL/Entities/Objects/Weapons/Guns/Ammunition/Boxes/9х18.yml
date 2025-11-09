@@ -28,7 +28,6 @@
 - type: entity
   parent: BaseMagazineBox9х18
   id: MagazineBox9х18
-  name: ammunition box (9х18mm)
   components:
   - type: BallisticAmmoProvider
     proto: LLCartridge9х18
@@ -36,3 +35,24 @@
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
+
+- type: entity
+  parent: BaseMagazineBox9х18
+  id: MagazineBox9х18Improvised
+  suffix: самодельные
+  components:
+  - type: BallisticAmmoProvider
+    proto: LLCartridge9х18Improvised
+  - type: Sprite
+    layers:
+    - state: improvised
+      map: ["enum.GunVisualLayers.Base"]
+
+- type: entity
+  parent: MagazineBox9х18Improvised
+  id: MagazineBox9х18ImprovisedEmpty
+  suffix: самодельные, пустой
+  components:
+  - type: BallisticAmmoProvider
+    proto: LLCartridge9х18Improvised
+    capacity: 0

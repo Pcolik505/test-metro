@@ -21,3 +21,27 @@
       collection: N14RifleCasingEject
       params:
         volume: -1
+
+- type: entity
+  id: LLCartridge762x39Improvised
+  name: cartridge (7.62x39mm)
+  parent: BaseCartridgeLightRifle
+  components:
+  - type: CartridgeAmmo
+    proto: LLBullet762x39Improvised
+    soundEject:
+      collection: N14RifleCasingEject
+  - type: Tag
+    tags:
+      - Cartridge
+      - LLCartridge762x39
+  - type: EmitSoundOnLand
+    sound:
+      collection: N14RifleCasingEject
+      params:
+        volume: -1
+  - type: EmitSoundOnCollide
+    sound:
+      collection: N14RifleCasingEject
+      params:
+        volume: -1
