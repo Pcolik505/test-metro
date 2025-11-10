@@ -817,8 +817,6 @@
     understands:
     - TauCetiBasic
     - Bubblish
-  - type: TTS # Corvax-TTS
-    voice: Dryad
 
 - type: entity
   name: Pun Pun

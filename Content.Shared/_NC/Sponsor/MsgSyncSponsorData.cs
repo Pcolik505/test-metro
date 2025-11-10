@@ -2,7 +2,7 @@ using Lidgren.Network;
 using Robust.Shared.Network;
 using Robust.Shared.Serialization;
 
-namespace Content.Shared._NC.Sponsor;
+namespace Content.Shared._NC.Sponsors;
 
 public sealed class MsgSyncSponsorData : NetMessage
 {

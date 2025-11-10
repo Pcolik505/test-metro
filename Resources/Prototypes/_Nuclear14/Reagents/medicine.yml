@@ -128,7 +128,7 @@
   group: Chems
   desc: reagent-desc-antidote-mixture
   physicalDesc: reagent-physical-desc-soothing
-  color: "#982d1e"
+  color: "#D41244"
   metabolisms:
     Medicine:
       metabolismRate: 0.1 # Slow

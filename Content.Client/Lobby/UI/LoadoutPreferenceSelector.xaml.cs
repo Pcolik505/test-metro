@@ -1,12 +1,13 @@
 using System.Linq;
 using System.Numerics;
 using System.Text;
-using Content.Client._NC.Sponsor; // Forge-Change
+using Content.Client._NC.Sponsors;
 using Content.Client.Guidebook;
 using Content.Client.Paint;
 using Content.Client.Players.PlayTimeTracking;
 using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Systems.Guidebook;
+using Content.Shared._NC.Sponsors; // Forge-Change
 using Content.Shared.Clothing.Loadouts.Prototypes;
 using Content.Shared.Clothing.Loadouts.Systems;
 using Content.Shared.Customization.Systems;

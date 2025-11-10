@@ -1,7 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using Robust.Shared.Network;
 
-namespace Content.Shared._NC.Sponsor;
+namespace Content.Shared._NC.Sponsors;
 
 public interface ISharedSponsorManager
 {

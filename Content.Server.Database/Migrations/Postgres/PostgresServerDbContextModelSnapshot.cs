@@ -839,10 +839,12 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("text")
                         .HasColumnName("backpack");
 
+                    // Corvax-Fallout-Barks-start
                     b.Property<string>("BarkVoice")
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("bark_voice");
+                    // Corvax-Fallout-Barks-end
 
                     b.Property<string>("CharacterName")
                         .IsRequired()
@@ -944,11 +946,6 @@ namespace Content.Server.Database.Migrations.Postgres
                     b.Property<string>("StationAiName")
                         .HasColumnType("text")
                         .HasColumnName("station_ai_name");
-
-                    b.Property<string>("Voice")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("voice");
 
                     b.Property<float>("Width")
                         .HasColumnType("real")

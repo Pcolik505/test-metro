@@ -37,8 +37,7 @@ using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
-using Content.Server._NC.Sponsor; // Forge-Change
-using Content.Server._NC.TTS; // Forge-Change
+using Content.Server._NC.Sponsors; // Forge-Change
 
 namespace Content.Server.Entry
 {
@@ -115,7 +114,6 @@ namespace Content.Server.Entry
                 IoCManager.Resolve<ServerInfoManager>().Initialize();
                 IoCManager.Resolve<JoinQueueManager>().Initialize();
                 IoCManager.Resolve<DiscordAuthManager>().Initialize();
-                IoCManager.Resolve<TTSManager>().Initialize(); // Corvax-TTS
                 IoCManager.Resolve<ServerApi>().Initialize();
                 IoCManager.Resolve<JoinQueueManager>().Initialize();
 

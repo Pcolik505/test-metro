@@ -1,9 +1,9 @@
 using System.Diagnostics.CodeAnalysis;
-using Content.Shared._NC.Sponsor;
+using Content.Shared._NC.Sponsors;
 using JetBrains.Annotations;
 using Robust.Shared.Network;
 
-namespace Content.Server._NC.Sponsor;
+namespace Content.Server._NC.Sponsors;
 
 [UsedImplicitly]
 public sealed class SponsorManager : ISharedSponsorManager

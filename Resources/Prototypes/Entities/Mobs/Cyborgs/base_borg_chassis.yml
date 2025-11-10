@@ -242,8 +242,6 @@
   - type: PsionicInsulation
   - type: TwistedConstructionTarget
     replacementProto: ConstructShell
-  - type: TTS # Corvax-TTS
-    voice: TrainingRobot
 
 - type: entity
   abstract: true
