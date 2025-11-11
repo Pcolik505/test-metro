@@ -3,6 +3,11 @@
   name: самодельный патрон (.44mm)
   parent: BaseCartridgePistol
   components:
+  - type: Sprite
+    sprite: _LL/Objects/Weapons/Guns/Ammunition/Casings/improvised_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
   - type: CartridgeAmmo
     proto: LLBullet44Improvised
     soundEject:
