@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-4.0",
-  "copyright": "Made by _dizi_ (discord) for metro-14",
+  "copyright": "Made by _dizi_ and vanflow0281 (discords) for metro-14",
   "size": {
     "x": 32,
     "y": 32
@@ -60,6 +60,42 @@
     },
     {
       "name": "shelterthereright"
+    },
+    {
+      "name": "atom"
+    },
+    {
+      "name": "bastardswithbastards"
+    },
+    {
+      "name": "eyes"
+    },
+    {
+      "name": "gixsolite"
+    },
+    {
+      "name": "gopstop"
+    },
+    {
+      "name": "hearus"
+    },
+    {
+      "name": "peace"
+    },
+    {
+      "name": "uded"
+    },
+    {
+      "name": "wearealwaysnear"
+    },
+    {
+      "name": "wewatchyou"
+    },
+    {
+      "name": "wherearethedumplings"
+    },
+    {
+      "name": "youwillhearus"
     },
     {
       "name": "worldpeace"

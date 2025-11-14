@@ -9,7 +9,7 @@
   abstract: true
 
 - type: decal
-  id: LLAlphabet
+  id: LLAlphabetAndNumbers
   parent: Alphabet
   tags: ["crayon", "crayon-2-alphanum"]
   defaultCleanable: true
@@ -21,231 +21,231 @@
 #MiniRu
 - type: decal
   id: и
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_i
 
 - type: decal
   id: э
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_ie
 
 - type: decal
   id: й
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_ii
 
 - type: decal
   id: ы
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_iy
 
 - type: decal
   id: к
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_k
 
 - type: decal
   id: л
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_l
 
 - type: decal
   id: м
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_m
 
 - type: decal
   id: н
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_n
 
 - type: decal
   id: о
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_o
 
 - type: decal
   id: п
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_p
 
 - type: decal
   id: р
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_r
 
 - type: decal
   id: с
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_s
 
 - type: decal
   id: щ
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_sch
 
 - type: decal
   id: ш
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_sh
 
 - type: decal
   id: ь
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_softsign
 
 - type: decal
   id: ъ
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_solidsign
 
 - type: decal
   id: т
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_t
 
 - type: decal
   id: в
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_v
 
 - type: decal
   id: у
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_y
 
 - type: decal
   id: я
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_ya
 
 - type: decal
   id: ё
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_yo
 
 - type: decal
   id: ю
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_yu
 
 - type: decal
   id: з
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_z
 
 - type: decal
   id: ж
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_zh
 
 - type: decal
   id: а
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_a
 
 - type: decal
   id: б
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_b
 
 - type: decal
   id: ц
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_c
 
 - type: decal
   id: ч
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_ch
 
 - type: decal
   id: д
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_d
 
 - type: decal
   id: е
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_e
 
 - type: decal
   id: ф
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_f
 
 - type: decal
   id: г
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_g
 
 - type: decal
   id: х
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_ru_alphabet.rsi
     state: mini_ru_h
@@ -253,185 +253,277 @@
 #MiniEn
 - type: decal
   id: q_mini
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_en_alphabet.rsi
     state: mini_en_q
 
 - type: decal
   id: r_mini
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_en_alphabet.rsi
     state: mini_en_r
 
 - type: decal
   id: s_mini
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_en_alphabet.rsi
     state: mini_en_s
 
 - type: decal
   id: t_mini
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_en_alphabet.rsi
     state: mini_en_t
 
 - type: decal
   id: u_mini
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_en_alphabet.rsi
     state: mini_en_u
 
 - type: decal
   id: v_mini
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_en_alphabet.rsi
     state: mini_en_v
 
 - type: decal
   id: w_mini
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_en_alphabet.rsi
     state: mini_en_w
 
 - type: decal
   id: x_mini
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_en_alphabet.rsi
     state: mini_en_x
 
 - type: decal
   id: y_mini
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_en_alphabet.rsi
     state: mini_en_y
 
 - type: decal
   id: z_mini
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_en_alphabet.rsi
     state: mini_en_z
 
 - type: decal
   id: a_mini
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_en_alphabet.rsi
     state: mini_en_a
 
 - type: decal
   id: b_mini
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_en_alphabet.rsi
     state: mini_en_b
 
 - type: decal
   id: c_mini
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_en_alphabet.rsi
     state: mini_en_c
 
 - type: decal
   id: d_mini
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_en_alphabet.rsi
     state: mini_en_d
 
 - type: decal
   id: e_mini
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_en_alphabet.rsi
     state: mini_en_e
 
 - type: decal
   id: f_mini
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_en_alphabet.rsi
     state: mini_en_f
 
 - type: decal
   id: g_mini
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_en_alphabet.rsi
     state: mini_en_g
 
 - type: decal
   id: h_mini
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_en_alphabet.rsi
     state: mini_en_h
 
 - type: decal
   id: i_mini
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_en_alphabet.rsi
     state: mini_en_i
 
 - type: decal
   id: j_mini
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_en_alphabet.rsi
     state: mini_en_j
 
 - type: decal
   id: k_mini
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_en_alphabet.rsi
     state: mini_en_k
 
 - type: decal
   id: l_mini
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_en_alphabet.rsi
     state: mini_en_l
 
 - type: decal
   id: m_mini
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_en_alphabet.rsi
     state: mini_en_m
 
 - type: decal
   id: n_mini
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_en_alphabet.rsi
     state: mini_en_n
 
 - type: decal
   id: p_mini
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_en_alphabet.rsi
     state: mini_en_p
 
 - type: decal
   id: o_mini
-  parent: LLAlphabet
+  parent: LLAlphabetAndNumbers
   sprite:
     sprite: _LL/Decals/mini_en_alphabet.rsi
     state: mini_en_o
+
+#Numbers
+- type: decal
+  id: 0_mini
+  parent: LLAlphabetAndNumbers
+  sprite:
+    sprite: _LL/Decals/numbers.rsi
+    state: 0
+
+- type: decal
+  id: 1_mini
+  parent: LLAlphabetAndNumbers
+  sprite:
+    sprite: _LL/Decals/numbers.rsi
+    state: 1
+
+- type: decal
+  id: 2_mini
+  parent: LLAlphabetAndNumbers
+  sprite:
+    sprite: _LL/Decals/numbers.rsi
+    state: 2
+
+- type: decal
+  id: 3_mini
+  parent: LLAlphabetAndNumbers
+  sprite:
+    sprite: _LL/Decals/numbers.rsi
+    state: 3
+
+- type: decal
+  id: 4_mini
+  parent: LLAlphabetAndNumbers
+  sprite:
+    sprite: _LL/Decals/numbers.rsi
+    state: 4
+
+- type: decal
+  id: 5_mini
+  parent: LLAlphabetAndNumbers
+  sprite:
+    sprite: _LL/Decals/numbers.rsi
+    state: 5
+
+- type: decal
+  id: 6_mini
+  parent: LLAlphabetAndNumbers
+  sprite:
+    sprite: _LL/Decals/numbers.rsi
+    state: 6
+
+- type: decal
+  id: 7_mini
+  parent: LLAlphabetAndNumbers
+  sprite:
+    sprite: _LL/Decals/numbers.rsi
+    state: 7
+
+- type: decal
+  id: 8_mini
+  parent: LLAlphabetAndNumbers
+  sprite:
+    sprite: _LL/Decals/numbers.rsi
+    state: 8
+
+- type: decal
+  id: 9_mini
+  parent: LLAlphabetAndNumbers
+  sprite:
+    sprite: _LL/Decals/numbers.rsi
+    state: 9
+
+- type: decal
+  id: roman_1_mini
+  parent: LLAlphabetAndNumbers
+  sprite:
+    sprite: _LL/Decals/numbers.rsi
+    state: roman_1
+
+- type: decal
+  id: roman_5_mini
+  parent: LLAlphabetAndNumbers
+  sprite:
+    sprite: _LL/Decals/numbers.rsi
+    state: roman_5
+
+- type: decal
+  id: roman_10_mini
+  parent: LLAlphabetAndNumbers
+  sprite:
+    sprite: _LL/Decals/numbers.rsi
+    state: roman_10
 
 #Graffiti
 - type: decal
@@ -566,3 +658,87 @@
   sprite:
     sprite: _LL/Decals/graffiti32x32.rsi
     state: shelterthereright
+
+- type: decal
+  id: Atom
+  parent: LLGraffiti
+  sprite:
+    sprite: _LL/Decals/graffiti32x32.rsi
+    state: atom
+
+- type: decal
+  id: BastardsWithBastards
+  parent: LLGraffiti
+  sprite:
+    sprite: _LL/Decals/graffiti32x32.rsi
+    state: bastardswithbastards
+
+- type: decal
+  id: Eyes
+  parent: LLGraffiti
+  sprite:
+    sprite: _LL/Decals/graffiti32x32.rsi
+    state: eyes
+
+- type: decal
+  id: Gixsolite
+  parent: LLGraffiti
+  sprite:
+    sprite: _LL/Decals/graffiti32x32.rsi
+    state: gixsolite
+
+- type: decal
+  id: GopStop
+  parent: LLGraffiti
+  sprite:
+    sprite: _LL/Decals/graffiti32x32.rsi
+    state: gopstop
+
+- type: decal
+  id: HearUs
+  parent: LLGraffiti
+  sprite:
+    sprite: _LL/Decals/graffiti32x32.rsi
+    state: hearus
+
+- type: decal
+  id: Peace
+  parent: LLGraffiti
+  sprite:
+    sprite: _LL/Decals/graffiti32x32.rsi
+    state: peace
+
+- type: decal
+  id: YouDied
+  parent: LLGraffiti
+  sprite:
+    sprite: _LL/Decals/graffiti32x32.rsi
+    state: uded
+
+- type: decal
+  id: WeAreAlwaysNear
+  parent: LLGraffiti
+  sprite:
+    sprite: _LL/Decals/graffiti32x32.rsi
+    state: wearealwaysnear
+
+- type: decal
+  id: WeWatchYou
+  parent: LLGraffiti
+  sprite:
+    sprite: _LL/Decals/graffiti32x32.rsi
+    state: wewatchyou
+
+- type: decal
+  id: WhereAreTheDumplings
+  parent: LLGraffiti
+  sprite:
+    sprite: _LL/Decals/graffiti32x32.rsi
+    state: wherearethedumplings
+
+- type: decal
+  id: YouWillHearus
+  parent: LLGraffiti
+  sprite:
+    sprite: _LL/Decals/graffiti32x32.rsi
+    state: youwillhearus
