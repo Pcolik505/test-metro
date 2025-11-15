@@ -1,7 +1,7 @@
 - type: entity
   abstract: true
   parent: BaseMagazineBox
-  id: BaseMagazineBox545х39 
+  id: BaseMagazineBox545х39
   name: коробка патрон (5.45х39mm)
   components:
   - type: BallisticAmmoProvider
@@ -10,7 +10,7 @@
       tags:
         - LLCartridge545х39
     proto: LLCartridge545х39
-    capacity: 60
+    capacity: 30
   - type: Item
     size: Small
   - type: ContainerContainer
@@ -47,12 +47,3 @@
     layers:
     - state: improvised
       map: ["enum.GunVisualLayers.Base"]
-
-- type: entity
-  parent: MagazineBox545х39Improvised
-  id: MagazineBox545х39ImprovisedEmpty
-  suffix: самодельные, пустой
-  components:
-  - type: BallisticAmmoProvider
-    proto: LLCartridge545х39Improvised
-    capacity: 0

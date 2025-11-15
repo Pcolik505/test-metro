@@ -129,29 +129,20 @@
     runningState: icon
     staticRecipes:
     # Материалы
-    - LLMaterialBrassCartridge1
+    - LLMaterialBrassCartridge
     # Пустые коробки
-    - LLMagazineBox45ImprovisedEmpty
-    - LLMagazineBox44ImprovisedEmpty
-    - LLMagazineBox20gaugeImprovisedEmpty
-    - LLMagazineBox12gaugeImprovisedEmpty
-    - MagazineBox762х25ImprovisedEmpty
-    - MagazineBox762х38ImprovisedEmpty
-    - MagazineBox762x39ImprovisedEmpty
-    - MagazineBox762х54RImprovisedEmpty
-    - MagazineBox545х39ImprovisedEmpty
-    - MagazineBox9х18ImprovisedEmpty
-    # Патроны
-    - LLCraftShellShotgun20Improvised
-    - LLCraftShellShotgun12Improvised
-    - LLCraftCartridge44MagnumImprovised
-    - LLCraftCartridgePistol45Improvised
-    - LLCraftCartridge9х18Improvised
-    - LLCraftCartridge545х39Improvised
-    - LLCraftCartridge762х54RImprovised
-    - LLCraftCartridge762х25Improvised
-    - LLCraftCartridge762x39Improvised
-    - LLCraftCartridge762х38Improvised
+    #- LLMagazineBox45Improvised
+    #- LLMagazineBox44Improvised
+    #- LLMagazineBox20gaugeImprovised
+    #- LLMagazineBox12gaugeImprovised
+    #- MagazineBox762х25Improvised
+    #- MagazineBox762х38Improvised
+    #- MagazineBox762x39Improvised
+    #- MagazineBox762х54RImprovised
+    #- MagazineBox545х39Improvised
+    #- MagazineBox9х18Improvised
+
+
 
 - type: entity
   parent: N14WorkbenchBase

@@ -11,13 +11,3 @@
     layers:
     - state: improvised
       map: ["enum.GunVisualLayers.Base"]
-
-- type: entity
-  parent: LLMagazineBox20gaugeImprovised
-  id: LLMagazineBox20gaugeImprovisedEmpty
-  name: коробка патрон (20 дробь)
-  suffix: самодельные, пустой
-  components:
-  - type: BallisticAmmoProvider
-    proto: LLShellShotgun20Improvised
-    capacity: 0

@@ -15,6 +15,54 @@
     shoes: N14ClothingShoesRags
     outerClothing: N14ClothingOuterCoatDuster
     belt: ClothingBeltStorageWaistbag
-    id: LLWallet
     pocket1: LLMetruble200
     pocket2: CombatKnife
+
+- type: job
+  id: Machinist
+  name: Машинист
+  description: Руководить своей станцией
+  playTimeTracker: JobMachinist
+  startingGear: LLMetroMachinist
+  icon: "JobIconPassenger"
+  supervisors: job-supervisors-nobody
+  departments: [Metro]
+
+- type: startingGear
+  id: LLMetroMachinist
+  equipment:
+    jumpsuit: N14ClothingUniformJumpsuitFudd
+    shoes: N14ClothingBootsBlack
+    outerClothing: N14ClothingOuterCoatLeatherCoat
+    belt: ClothingBeltAssault
+    head: ClothingHeadHatBeret
+    eyes: ClothingEyesGlasses
+    pocket1: LLMetruble500
+    id: LLTokenMachinist
+    back: N14ClothingBackpackSatchelMilitary
+  storage:
+    back:
+    - LLKitMachinist
+
+- type: job
+  id: Bastard
+  name: Ублюдок
+  description: Грабить и убивать.
+  playTimeTracker: JobBastard
+  startingGear: LLBastard
+  icon: "JobIconPassenger"
+  supervisors: job-supervisors-nobody
+  departments: [Metro]
+
+- type: startingGear
+  id: LLBastard
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBoatswain
+    shoes: N14ClothingBootsLeather
+    outerClothing: LLClothingOuterMakeshiftVest
+    belt: ClothingBeltStorageWaistbag
+    pocket1: LLMetruble200
+    back: N14ClothingBackpackMilitary
+  storage:
+    back:
+    - LLKitBastard

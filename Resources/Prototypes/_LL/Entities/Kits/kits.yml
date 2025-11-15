@@ -1,0 +1,45 @@
+- type: entity
+  name: Набор Машиниста
+  parent: KitBase
+  id: LLKitMachinist
+  description: Базовый набор всех машинистов.
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Small
+  - type: SpawnItemsOnUse
+    items:
+      - id: LLWeaponSMGPPSh
+      - id: CombatKnife
+      - id: LLMagazine762х259PPSh
+      - id: LLMagazine762х259PPSh
+      - id: LLMagazine762х259PPSh
+      - id: MagazineBox762х25
+
+- type: entity
+  name: Набор Ублюдка
+  parent: KitBase
+  id: LLKitBastard
+  description: Базовый набор всех ублюдков.
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Small
+  - type: SpawnItemsOnUse
+    items:
+      - id: LLWeaponSMGBastard
+      - id: LLMagazine545х39Bastard
+      - id: LLMagazine545х39Bastard
+      - id: MagazineBox545х39
+      - id: MagazineBox545х39
+      - id: Brutepack
+      - id: N14DirtyGauze10
+      - id: N14DirtyGauze10
+      - id: PillCanisterHyronalin
+      - id: LLCannedStew
+      - id: LLCannedStew
+      - id: N14ClothingNeckTownGuardCloak
+      - id: ClothingMaskGasMiner
+

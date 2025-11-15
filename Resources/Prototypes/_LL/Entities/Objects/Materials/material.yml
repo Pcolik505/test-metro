@@ -420,6 +420,7 @@
   maxCount: 1
   itemSize: 1
 
+# МАТЕРИАЛЫ (В ЭНТИТИ - ОБЪЕКТЫ)
 - type: entity
   parent: N14MaterialBase
   id: LLMaterialBrassCartridge
@@ -437,8 +438,6 @@
     stackType: LLBrassCartridge
     count: 60
     baseLayer: base
-    layerStates:
-    - brasscartridge
   - type: PhysicalComposition
     materialComposition:
       LLBrassCartridge: 100
@@ -451,17 +450,28 @@
   - type: Stack
     count: 1
 
+- type: entity
+  parent: LLMaterialBrassCartridge
+  id: LLMaterialBrassCartridgeFull
+  suffix: Full
+  components:
+  - type: Stack
+    count: 60
+
+# МАТЕРИАЛЫ (В РЕАГЕНТАХ)
 - type: material
   id: LLBrassCartridge
   stackEntity: LLMaterialBrassCartridge1
+  unit: materials-unit-sheet
   name: Латунная гильза
   icon: { sprite: /Textures/_LL/Entities/Materials/brasscartridge.rsi, state: brasscartridge }
-  color: "#C0C0C0"
-  price: 0.1
+  color: "#D4AF37"
+  price: 0.05
 
+# СТАКИ
 - type: stack
   id: LLBrassCartridge
-  name: Латунная гильза
+  name: Латунные гильзы
   icon: { sprite: _LL/Entities/Materials/brasscartridge.rsi, state: brasscartridge }
   spawn: LLMaterialBrassCartridge1
   maxCount: 60

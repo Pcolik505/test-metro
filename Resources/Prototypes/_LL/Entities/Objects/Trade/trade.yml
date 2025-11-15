@@ -14,14 +14,6 @@
         price: 350
       - proto: LLWeaponSMGPPSh
         price: 525
-      - proto: WeaponSubMachineGunTypewriter
-        price: 350
-      - proto: WeaponRifleAk
-        price: 650
-      - proto: WeaponSniperMosin
-        price: 580
-      - proto: N14WeaponShotgunLever
-        price: 400
       - proto: N14WeaponShotgunSawedOff
         price: 400
       ближнее:
@@ -38,17 +30,21 @@
       магазины:
       - proto: LLMagazine9х18Pistol
         price: 25
+      - proto: N14MagazinePistol45
+        price: 35
       - proto: LLMagazine545х39Bastard
         price: 45
       - proto: LLMagazine762х259PPSh
         price: 75
       - proto: MagazinePistolSubMachineGun
-        price: 90
+        price: 85
       - proto: LLMagazine762x39Ak
-        price: 150
+        price: 95
       боеприпасы:
       - proto: MagazineBox9х18
         price: 45
+      - proto: MagazineBox45
+        price: 65
       - proto: MagazineBox545х39
         price: 90
       - proto: MagazineBox762х25
@@ -327,11 +323,6 @@
         price: 40
       - proto: ClothingBeltUtility
         price: 40
-      защитная одежда:
-      - proto: ClothingOuterSuitRad
-        price: 500
-      - proto: LLClothingOuterHiveVest
-        price: 500
       электроника:
       - proto: PowerCellHighPrinted
         price: 5
@@ -361,22 +352,20 @@
 
     Sell:
       огнестрел:
-      - proto: LLWeaponSMGBastard
-        price: 35
       - proto: N14WeaponPistol9mm
-        price: 15
+        price: 50
       - proto: N14WeaponRevolver45-70Hunter
         price: 100
       - proto: LLWeaponSMGBastard
         price: 100
       - proto: LLWeaponSMGPPSh
-        price: 150
+        price: 100
       - proto: WeaponSubMachineGunTypewriter
         price: 100
       - proto: WeaponRifleAk
-        price: 200
+        price: 100
       - proto: WeaponSniperMosin
-        price: 150
+        price: 100
       - proto: N14WeaponShotgunLever
         price: 100
       - proto: N14WeaponShotgunSawedOff
@@ -400,14 +389,16 @@
         price: 15
       - proto: DrinkWaterBottleFull
         price: 10
-      - proto: FoodMushroom
-        price: 5
       - proto: DrinkVodkaBottleFull
         price: 25
       - proto: N14FloraProduceWildCaveFungus
         price: 2
       - proto: N14FloraProduceWildCaveFungusRad
         price: 1
+      - proto: FoodMushroom
+        price: 5
+      - proto: FoodPotato
+        price: 5
       сигареты:
       - proto: N14CigarettePackRepublics
         price: 5
@@ -535,13 +526,17 @@
       - proto: SulfurPowder1
         price: 8
       мутанина:
+      - proto: N14MaterialRawLeather1
+        price: 1
       - proto: N14FoodMeatRadRaw
         price: 20
+      - proto: N14FoodMeatCooked
+        price: 25
       - proto: N14FoodMeatRadscorpion
         price: 20
       - proto: N14FoodMeatRadscorpionCooked
         price: 25
-      - proto: N14FoodMeatCooked
+      - proto: ToxinChemistryBottle
         price: 25
       медицина:
       - proto: Portafib

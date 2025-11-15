@@ -1,7 +1,9 @@
 - type: department
   id: Metro
-  name: Метро  
+  name: Метро
   description: Тонели Метро
   color: "#303646"
   roles:
   - MetroResident
+  - Machinist
+  - Bastard

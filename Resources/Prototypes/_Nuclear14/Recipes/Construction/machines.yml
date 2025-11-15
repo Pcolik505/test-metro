@@ -13,68 +13,17 @@
     state: rack_on
 
 #MARK: Servers / Racks / Panels
-- type: construction
-  name: electronics rack
-  id: N14RackElectronics
-  graph: N14TallMachineFrame
-  startNode: start
-  targetNode: ElectronicsRack
-  category: construction-category-machines
-  description: A server rack filled with electronics.
-  objectType: Structure
-  canBuildInImpassable: false
-  hide: false
-  icon:
-    sprite: _Nuclear14/Structures/Power/32x48_machines.rsi
-    state: rack_on
-  conditions:
-    - !type:TileNotBlocked
-
-- type: construction
-  name: server rack
-  id: N14ServerRack
-  graph: N14TallMachineFrame
-  startNode: start
-  targetNode: ServerRack
-  category: construction-category-machines
-  description: A server rack filled with electronics.
-  objectType: Structure
-  canBuildInImpassable: false
-  hide: false
-  icon:
-    sprite: _Nuclear14/Structures/Power/32x48_machines.rsi
-    state: serverrack_on
-  conditions:
-    - !type:TileNotBlocked
-
-#MARK: Terminals
-- type: construction
-  name: terminal
-  id: N14Terminal
-  graph: N14TallMachineFrame
-  startNode: start
-  targetNode: ServerRack
-  category: construction-category-machines
-  description: A server rack filled with electronics.
-  objectType: Structure
-  canBuildInImpassable: false
-  hide: false
-  icon:
-    sprite: _Nuclear14/Structures/Power/32x48_machines.rsi
-    state: rack_on
-  conditions:
-    - !type:TileNotBlocked
 
 #MARK: Crafting Benches
 
 - type: construction
-  name: Workbench
+  name: верстак для компанентов
   id: N14WorkbenchMetal
   graph: N14WorkbenchMetal
   startNode: start
   targetNode: WorkbenchMetal
   category: construction-category-machines
-  description: A workbench with metal working tools for crafting.
+  description: Верстак для создания базовых компанентов.
   icon:
     sprite: _Nuclear14/Structures/Misc/workbenches.rsi
     state: workbench

@@ -10,7 +10,7 @@
       tags:
         - LLCartridge762х25
     proto: LLCartridge762х25
-    capacity: 60
+    capacity: 30
   - type: Item
     size: Small
   - type: ContainerContainer
@@ -26,7 +26,7 @@
 
 # Boxes
 - type: entity
-  parent: BaseMagazineBox762х25 
+  parent: BaseMagazineBox762х25
   id: MagazineBox762х25
   components:
   - type: BallisticAmmoProvider
@@ -37,7 +37,7 @@
       map: ["enum.GunVisualLayers.Base"]
 
 - type: entity
-  parent: BaseMagazineBox762х25 
+  parent: BaseMagazineBox762х25
   id: MagazineBox762х25Improvised
   suffix: самодельные
   components:
@@ -47,12 +47,3 @@
     layers:
     - state: improvised
       map: ["enum.GunVisualLayers.Base"]
-
-- type: entity
-  parent: MagazineBox762х25Improvised 
-  id: MagazineBox762х25ImprovisedEmpty
-  suffix: самодельные, пустой
-  components:
-  - type: BallisticAmmoProvider
-    proto: LLCartridge762х25Improvised
-    capacity: 0

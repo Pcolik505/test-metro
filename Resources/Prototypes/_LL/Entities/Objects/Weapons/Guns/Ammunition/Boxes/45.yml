@@ -11,13 +11,3 @@
     layers:
     - state: improvised
       map: ["enum.GunVisualLayers.Base"]
-
-- type: entity
-  parent: LLMagazineBox45Improvised
-  id: LLMagazineBox45ImprovisedEmpty
-  name: коробка патрон (.45mm)
-  suffix: самодельные, пустой
-  components:
-  - type: BallisticAmmoProvider
-    proto: LLCartridgePistol45Improvised
-    capacity: 0

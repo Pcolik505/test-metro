@@ -2,7 +2,7 @@
   name: ублюдок
   parent: N14WeaponSMGBase
   id: LLWeaponSMGBastard
-  description: Он обязательно подведёт тебя в самую трудную минуту.
+  description: Лёгкий, скорострельный, но собран из чего попало. Ненадёжный ствол и ужасная точность компенсируются плотным огнём на короткой дистанции. Он обязательно подведёт тебя в самую трудную минуту. Стреляет калибром 5.45х39mm.
   components:
   - type: MagazineVisuals
     magState: mag
@@ -68,7 +68,7 @@
   name: ППШ
   parent: N14WeaponSMGBase
   id: LLWeaponSMGPPSh
-  description: Зачем вы отобрали его у Шпагина?
+  description: Проверенный временем пистолет-пулемёт. Мощный патрон 7.62х25mm, высокая надёжность и ёмкий барабанный магазин. Громоздкий и с сильной отдачей, но непревзойдён в уличных боях. 
   components:
   - type: MagazineVisuals
     magState: mag

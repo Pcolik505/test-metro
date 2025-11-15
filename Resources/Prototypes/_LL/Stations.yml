@@ -1,0 +1,14 @@
+- type: entity
+  id: MetroStation
+  parent:
+    - BaseStation
+    - BaseStationNews
+    - BaseStationCargo
+    - BaseStationJobsSpawning
+    - BaseStationRecords
+    # - BaseStationEvacuation
+    # - BaseStationExpeditions
+    # - BaseStationAllEventsEligible
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Transform

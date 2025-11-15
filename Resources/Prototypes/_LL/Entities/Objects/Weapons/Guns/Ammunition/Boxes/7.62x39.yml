@@ -10,7 +10,7 @@
       tags:
         - LLCartridge762x39
     proto: LLCartridge762x39
-    capacity: 60
+    capacity: 30
   - type: Item
     size: Small
   - type: ContainerContainer
@@ -47,12 +47,3 @@
     layers:
     - state: improvised
       map: ["enum.GunVisualLayers.Base"]
-
-- type: entity
-  parent: MagazineBox762x39Improvised
-  id: MagazineBox762x39ImprovisedEmpty
-  suffix: самодельные, пустой
-  components:
-  - type: BallisticAmmoProvider
-    proto: LLCartridge762x39Improvised
-    capacity: 0

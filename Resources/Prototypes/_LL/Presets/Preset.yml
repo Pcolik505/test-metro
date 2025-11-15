@@ -1,0 +1,10 @@
+- type: startingGear
+  id: LLSubwayBum
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitLoungewear
+    shoes: N14ClothingShoesRags
+    outerClothing: N14ClothingOuterCoatDuster
+    belt: ClothingBeltStorageWaistbag
+    id: N14Wallet
+    pocket1: LLMetruble100
+    pocket2: CombatKnife

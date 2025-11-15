@@ -1,2 +1,9 @@
 - type: playTimeTracker
   id: JobMetroResident
+
+- type: playTimeTracker
+  id: JobMachinist
+
+- type: playTimeTracker
+  id: JobBastard
+
