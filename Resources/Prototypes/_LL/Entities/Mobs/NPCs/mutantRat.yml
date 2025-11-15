@@ -81,8 +81,3 @@
       amount: 5
     - id: N14MaterialRawLeather1
       amount: 1
-  - type: Tag
-    tags:
-    - Rat
-    - Mutant
-    - Animal

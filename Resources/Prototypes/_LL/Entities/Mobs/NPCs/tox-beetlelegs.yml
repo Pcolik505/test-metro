@@ -1,27 +1,27 @@
 - type: entity
-  name: Жук-Паук
-  id: LLSmallBeetlelegs
+  name: Токсичный Жук-Паук
+  id: LLBeetlelegsTox
   parent: N14MobBaseHostile
-  description: Эти жители заброшенных туннелей и других укромных уголков, которых сейчас в нашем мире хоть отбавляй, очень злобные, быстрые, сильные и хорошо бронированные твари.
+  description: Более токсичная тварь чем свои собратья, но медлительная и слабая из за своих токсичных желёз.
   components:
   - type: Sprite
     drawdepth: Mobs
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: default
-      sprite: _LL/Entities/Mobs/NPCs/beetlelegs-small.rsi
+      sprite: _LL/Entities/Mobs/NPCs/tox-beetlelegs.rsi
   - type: Damageable
     damageContainer: Biological
     damageModifierSet: N14ToughAnimal
   - type: Bloodstream
     bloodSolution: Bloodstream
     bloodReagent: FluorosulfuricAcid
-    bloodMaxVolume: 100
+    bloodMaxVolume: 150
   - type: Armor
     modifiers:
       coefficients:
-        Slash: 0.8
-        Piercing: 0.8
+        Slash: 0.4
+        Piercing: 0.4
         Radiation: 0.0
   - type: MobState
     allowedStates:
@@ -31,7 +31,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      60: Critical
+      70: Critical
       80: Dead
   - type: DamageStateVisuals
     states:
@@ -51,14 +51,14 @@
     wideAnimation: WeaponArcClaw
     damage:
       types:
-        Slash: 2
-        Poison: 2
-        Radiation: 3
+        Slash: 1
+        Poison: 15
+        Radiation: 1
     range: 1.5
-    attackRate: 1.0
+    attackRate: 0.8
   - type: MovementSpeedModifier
-    baseWalkSpeed: 3.0
-    baseSprintSpeed: 4.5
+    baseWalkSpeed: 2.5
+    baseSprintSpeed: 2
   - type: Fixtures
     fixtures:
       fix1:
@@ -76,6 +76,8 @@
   - type: Butcherable
     spawned:
     - id: N14FoodMeatRadscorpion
-      amount: 2
+      amount: 5
     - id: N14MaterialAntChitin1
-      amount: 2
+      amount: 5
+    - id: ToxinChemistryBottle
+      amount: 1

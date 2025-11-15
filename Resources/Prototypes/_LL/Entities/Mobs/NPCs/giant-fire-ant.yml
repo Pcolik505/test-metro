@@ -84,8 +84,3 @@
       prob: 0.5
     - id: N14FoodMeatRadRaw
       amount: 3
-  - type: Tag
-    tags:
-    - Ant
-    - Mutant
-    - Fire

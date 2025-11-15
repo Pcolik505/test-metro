@@ -80,6 +80,3 @@
       amount: 5
     - id: N14MaterialRawLeather1
       amount: 10
-  - type: Tag
-    tags:
-    - Ghoul
