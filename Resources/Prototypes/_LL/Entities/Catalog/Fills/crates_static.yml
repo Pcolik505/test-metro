@@ -23,10 +23,6 @@
         - MidImpassable
         - LowImpassable
   - type: Pullable
-  - type: Tag
-    tags:
-      - Structure
-      - LootContainer
   - type: DamageOtherOnHit
     damage:
       types:
@@ -70,7 +66,7 @@
   parent: MetroLootShelf
   id: LLBoxFullTitanium
   name: старый ящик
-  suffix: титановые пластины metro
+  suffix: статичный титановые пластины metro
   description: в нём явно, что-то будет.
   components:
   - type: Sprite
@@ -86,7 +82,7 @@
   parent: MetroLootShelf
   id: LLBoxFullChainmail
   name: старый ящик
-  suffix: кольчуга metro
+  suffix: статичный кольчуга metro
   description: в нём явно, что-то будет.
   components:
   - type: Sprite
@@ -102,7 +98,7 @@
   parent: MetroLootShelf
   id: LLBoxFullAsbestos
   name: старый ящик
-  suffix: асбестовая ткань metro
+  suffix: статичный асбестовая ткань metro
   description: в нём явно, что-то будет.
   components:
   - type: Sprite
@@ -118,7 +114,7 @@
   parent: MetroLootShelf
   id: LLBoxFullFiberglass
   name: старый ящик
-  suffix: стеклоткань metro
+  suffix: статичный стеклоткань metro
   description: в нём явно, что-то будет.
   components:
   - type: Sprite
@@ -134,7 +130,7 @@
   parent: MetroLootShelf
   id: LLBoxFullAramid
   name: старый ящик
-  suffix: арамидные волокна metro
+  suffix: статичный арамидные волокна metro
   description: в нём явно, что-то будет.
   components:
   - type: Sprite
@@ -150,7 +146,7 @@
   parent: MetroLootShelf
   id: LLBoxFullEmbroidery
   name: старый ящик
-  suffix: кожа нитки ткань metro
+  suffix: статичный кожа нитки ткань metro
   description: в нём явно, что-то будет.
   components:
   - type: Sprite
@@ -170,7 +166,7 @@
   parent: MetroLootShelf
   id: LLBoxFullGunpowder
   name: старый ящик
-  suffix: порох metro
+  suffix: статичный порох metro
   description: в нём явно, что-то будет.
   components:
   - type: Sprite
@@ -186,7 +182,7 @@
   parent: MetroLootShelf
   id: LLBoxFullSulfurPowder
   name: старый ящик
-  suffix: сера metro
+  suffix: статичный сера metro
   description: в нём явно, что-то будет.
   components:
   - type: Sprite
@@ -203,7 +199,7 @@
   parent: MetroLootShelf
   id: LLBoxFullTitanium2
   name: старый ящик
-  suffix: титановые пластины metro
+  suffix: статичный титановые пластины metro
   description: в нём явно, что-то будет.
   components:
   - type: Sprite
@@ -219,7 +215,7 @@
   parent: MetroLootShelf
   id: LLBoxFullChainmail2
   name: старый ящик
-  suffix: кольчуга metro
+  suffix: статичный кольчуга metro
   description: в нём явно, что-то будет.
   components:
   - type: Sprite
@@ -235,7 +231,7 @@
   parent: MetroLootShelf
   id: LLBoxFullAsbestos2
   name: старый ящик
-  suffix: асбестовая ткань metro
+  suffix: статичный асбестовая ткань metro
   description: в нём явно, что-то будет.
   components:
   - type: Sprite
@@ -251,7 +247,7 @@
   parent: MetroLootShelf
   id: LLBoxFullFiberglass2
   name: старый ящик
-  suffix: стеклоткань metro
+  suffix: статичный стеклоткань metro
   description: в нём явно, что-то будет.
   components:
   - type: Sprite
@@ -267,7 +263,7 @@
   parent: MetroLootShelf
   id: LLBoxFullAramid2
   name: старый ящик
-  suffix: арамидные волокна metro
+  suffix: статичный арамидные волокна metro
   description: в нём явно, что-то будет.
   components:
   - type: Sprite
@@ -283,7 +279,7 @@
   parent: MetroLootShelf
   id: LLBoxFullEmbroidery2
   name: старый ящик
-  suffix: кожа нитки ткань metro
+  suffix: статичный кожа нитки ткань metro
   description: в нём явно, что-то будет.
   components:
   - type: Sprite
@@ -303,7 +299,7 @@
   parent: MetroLootShelf
   id: LLBoxFullGunpowder2
   name: старый ящик
-  suffix: порох metro
+  suffix: статичный порох metro
   description: в нём явно, что-то будет.
   components:
   - type: Sprite
@@ -319,7 +315,7 @@
   parent: MetroLootShelf
   id: LLBoxFullSulfurPowder2
   name: старый ящик
-  suffix: сера metro
+  suffix: статичный сера metro
   description: в нём явно, что-то будет.
   components:
   - type: Sprite
