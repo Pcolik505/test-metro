@@ -1,0 +1,23 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: LLUSSPSergeant
+  name: униформа сержанта красной армиии
+  description: Пыльная униформа сержанта красной армии. Представляет из себя комплект в виде простых камуфляжных брюк, а также зимней гимнастёрки, к которой пришиты погоны сержанта. Кажется, кто угодно в ней походил бы на грозного начальника. 
+  components:
+  - type: Sprite
+    sprite: _LL/Clothing/USSP/sergeant.rsi
+  - type: Clothing
+    equipDelay: 1.5
+    unequipDelay: 1.5
+    
+- type: entity
+  parent: ClothingUniformBase
+  id: LLUSSPLieutenant
+  name: униформа лейтинанта красной армии
+  description: Пыльная униформа лейтинанта красной армии. Представляет из себя комплект в виде простых камуфляжных брюк, а также зимней гимнастёрки, к которой пришиты погоны лейтинанта. Кажется, кто угодно в ней походил бы на грозного начальника. 
+  components:
+  - type: Sprite
+    sprite: _LL/Clothing/USSP/lieutenant.rsi
+  - type: Clothing
+    equipDelay: 1.5
+    unequipDelay: 1.5
