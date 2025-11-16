@@ -4,6 +4,8 @@
   parent: N14MobBaseHostile
   description: Нет ума штурмуй дома!
   components:
+  - type: Item
+    size: Tiny
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -61,6 +63,15 @@
   - type: HTN
     rootTask:
       task: N14HostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
   - type: Butcherable
     spawned:
     - id: GrenadeDummy
