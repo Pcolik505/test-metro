@@ -10,7 +10,7 @@
       tags:
         - LLCartridge762х54R
     proto: LLCartridge762х54R
-    capacity: 60
+    capacity: 25
   - type: Item
     size: Small
   - type: ContainerContainer
@@ -39,6 +39,7 @@
 - type: entity
   parent: BaseMagazineBox762х54R
   id: MagazineBox762х54RImprovised
+  name: коробка самодельных патрон (7.62х54Rmm)
   suffix: самодельные
   components:
   - type: BallisticAmmoProvider
@@ -51,6 +52,7 @@
 - type: entity
   parent: MagazineBox762х54RImprovised
   id: MagazineBox762х54RImprovisedEmpty
+  name: пустая коробка самодельных патрон (7.62х54Rmm)
   suffix: самодельные, пустой
   components:
   - type: BallisticAmmoProvider

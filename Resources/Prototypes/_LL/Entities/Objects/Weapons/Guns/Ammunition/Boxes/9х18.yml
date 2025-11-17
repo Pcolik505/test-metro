@@ -39,6 +39,7 @@
 - type: entity
   parent: BaseMagazineBox9х18
   id: MagazineBox9х18Improvised
+  name: коробка самодельных патрон (9х18mm)
   suffix: самодельные
   components:
   - type: BallisticAmmoProvider
@@ -51,6 +52,7 @@
 - type: entity
   parent: MagazineBox9х18Improvised
   id: MagazineBox9х18ImprovisedEmpty
+  name: пустая коробка самодельных патрон (9х18mm)
   suffix: самодельные, пустой
   components:
   - type: BallisticAmmoProvider

@@ -209,6 +209,8 @@
     sprite: /Textures/_Nuclear14/Objects/Misc/crafting_material.rsi
     state: ore_fertilizer
   - type: Material
+    id: Fertilizer
+    name: fertilizer
   - type: PhysicalComposition
     materialComposition:
       Fertilizer: 50

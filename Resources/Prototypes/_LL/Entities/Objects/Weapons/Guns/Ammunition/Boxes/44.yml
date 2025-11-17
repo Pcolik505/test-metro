@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseMagazineBox44
   id: LLMagazineBox44Improvised
-  name: коробка патрон (.44)
+  name: коробка самодельных патрон (.44mm)
   suffix: самодельные
   components:
   - type: BallisticAmmoProvider
@@ -15,7 +15,7 @@
 - type: entity
   parent: LLMagazineBox44Improvised
   id: LLMagazineBox44ImprovisedEmpty
-  name: коробка патрон (.44)
+  name: пустая коробка самодельных патрон (.44mm)
   suffix: самодельные, пустой
   components:
   - type: BallisticAmmoProvider

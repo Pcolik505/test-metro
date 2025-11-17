@@ -1,3 +1,14 @@
+# Материалы
+
+- type: latheRecipe
+  id: N14Gunpowder1
+  result: N14Gunpowder1
+  completetime: 1
+  materials:
+    Sulfur: 20
+    Coal: 100
+    MaterialFertilizer: 10
+    
 - type: latheRecipe
   id: LLMaterialBrassCartridge1
   result: LLMaterialBrassCartridge1
@@ -167,3 +178,106 @@
     LLBrassCartridge: 100
     N14Gunpowder: 20
     N14Iron: 20
+
+# Коробки патрон, полные (60 гильз + 12 пороха + 12 железа)
+
+- type: latheRecipe
+  id: LLMagazineBox45Improvised
+  result: LLMagazineBox45Improvised
+  completetime: 10
+  materials:
+    Cardboard: 100
+    LLBrassCartridge: 3200
+    N14Gunpowder: 640
+    N14Iron: 640
+
+- type: latheRecipe
+  id: LLMagazineBox44Improvised
+  result: LLMagazineBox44Improvised
+  completetime: 10
+  materials:
+    Cardboard: 100
+    LLBrassCartridge: 6000
+    N14Gunpowder: 1200
+    N14Iron: 1200
+
+- type: latheRecipe
+  id: LLMagazineBox20gaugeImprovised
+  result: LLMagazineBox20gaugeImprovised
+  completetime: 10
+  materials:
+    Cardboard: 100
+    LLBrassCartridge: 3000
+    N14Gunpowder: 600
+    N14Iron: 600
+
+- type: latheRecipe
+  id: LLMagazineBox12gaugeImprovised
+  result: LLMagazineBox12gaugeImprovised
+  completetime: 10
+  materials:
+    Cardboard: 100
+    LLBrassCartridge: 3000
+    N14Gunpowder: 600
+    N14Iron: 600
+
+- type: latheRecipe
+  id: MagazineBox762х25Improvised
+  result: MagazineBox762х25Improvised
+  completetime: 10
+  materials:
+    Cardboard: 100
+    LLBrassCartridge: 6000
+    N14Gunpowder: 1200
+    N14Iron: 1200
+
+- type: latheRecipe
+  id: MagazineBox762х38Improvised
+  result: MagazineBox762х38Improvised
+  completetime: 10
+  materials:
+    Cardboard: 100
+    LLBrassCartridge: 6000
+    N14Gunpowder: 1200
+    N14Iron: 1200
+
+- type: latheRecipe
+  id: MagazineBox762x39Improvised
+  result: MagazineBox762x39Improvised
+  completetime: 10
+  materials:
+    Cardboard: 100
+    LLBrassCartridge: 6000
+    N14Gunpowder: 1200
+    N14Iron: 1200
+    
+- type: latheRecipe
+  id: MagazineBox762х54RImprovised
+  result: MagazineBox762х54RImprovised
+  completetime: 10
+  materials:
+    Cardboard: 100
+    LLBrassCartridge: 6000
+    N14Gunpowder: 1200
+    N14Iron: 1200
+
+- type: latheRecipe
+  id: MagazineBox545х39Improvised
+  result: MagazineBox545х39Improvised
+  completetime: 10
+  materials:
+    Cardboard: 100
+    LLBrassCartridge: 6000
+    N14Gunpowder: 1200
+    N14Iron: 1200
+
+- type: latheRecipe
+  id: MagazineBox9х18Improvised
+  result: MagazineBox9х18Improvised
+  completetime: 10
+  materials:
+    Cardboard: 100
+    LLBrassCartridge: 6000
+    N14Gunpowder: 1200
+    N14Iron: 1200
+    

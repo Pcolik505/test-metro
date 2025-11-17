@@ -1,6 +1,6 @@
 - type: entity
   id: LLShellShotgun20Improvised
-  name: самодельный патрон (20 дробь)
+  name: самодельный ружейный патрон (20 дробь)
   parent: N14BaseShell20Shotgun
   components:
   - type: Sprite

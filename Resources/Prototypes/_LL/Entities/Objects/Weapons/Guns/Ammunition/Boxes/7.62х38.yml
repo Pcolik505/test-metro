@@ -39,6 +39,7 @@
 - type: entity
   parent: BaseMagazineBox762х38
   id: MagazineBox762х38Improvised
+  name: коробка самодельных патрон (7.62х38mm)
   suffix: самодельные
   components:
   - type: BallisticAmmoProvider
@@ -51,6 +52,7 @@
 - type: entity
   parent: MagazineBox762х38Improvised
   id: MagazineBox762х38ImprovisedEmpty
+  name: пустая коробка самодельных патрон (7.62х38mm)
   suffix: самодельные, пустой
   components:
   - type: BallisticAmmoProvider

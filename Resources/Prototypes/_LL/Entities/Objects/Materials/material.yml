@@ -486,3 +486,68 @@
   spawn: N14JunkTincan
   maxCount: 1
   itemSize: 1
+
+- type: entity
+  parent: N14MaterialBasePowder
+  id: MaterialFertilizer
+  suffix: Крафт
+  name: удобрение
+  description: Органическое удобрение для улучшения роста растений.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Objects/Misc/Sacks/daesack2.rsi
+    state: icon
+  - type: Item
+    size: Small
+  - type: Stack  
+    stackType: MaterialFertilizer
+    count: 1
+  - type: PhysicalComposition 
+    materialComposition:
+      MaterialFertilizer: 100
+  - type: SolutionContainerManager
+    solutions:
+      powder:
+        maxVol: 100
+        reagents:
+        - ReagentId: Fertilizer
+          Quantity: 100
+  - type: Material
+    id: MaterialFertilizer
+    name: MaterialFertilizer
+  - type: ExaminableSolution 
+    solution: powder
+  - type: DrainableSolution   
+    solution: powder
+  - type: RefillableSolution 
+    solution: powder
+  - type: DrawableSolution    
+    solution: powder
+  - type: SolutionTransfer   
+    maxTransferAmount: 100
+    minTransferAmount: 5
+    canChangeTransferAmount: true
+  - type: Extractable        
+    grindableSolutionName: powder
+      
+- type: material
+  id: MaterialFertilizer
+  stackEntity: MaterialFertilizer
+  unit: materials-unit-materialfertilizer
+  name: Удобрение
+  icon: 
+    sprite: _Nuclear14/Objects/Misc/Sacks/daesack2.rsi
+    state: icon
+  color: "#32CD32"
+  price: 0.1
+
+- type: stack
+  id: MaterialFertilizer
+  name: Удобрение
+  icon: 
+    sprite: _Nuclear14/Objects/Misc/Sacks/daesack2.rsi
+    state: icon
+  spawn: MaterialFertilizer1
+  maxCount: 1
+  itemSize: 1
+ 

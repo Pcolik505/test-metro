@@ -121,15 +121,18 @@
       - Sheet
       - RawMaterial
       - Ingot
-      - N14Gunpowder
       - LLBrassCartridge
       - N14Iron
+      - Brass
+      - Ore
+      - Scrap
   - type: Lathe
     idleState: icon
     runningState: icon
     staticRecipes:
     # Материалы
     - LLMaterialBrassCartridge1
+    - N14Gunpowder1
     # Пустые коробки
     - LLMagazineBox45ImprovisedEmpty
     - LLMagazineBox44ImprovisedEmpty
@@ -141,6 +144,17 @@
     - MagazineBox762х54RImprovisedEmpty
     - MagazineBox545х39ImprovisedEmpty
     - MagazineBox9х18ImprovisedEmpty
+    # Полные коробки
+    - LLMagazineBox45Improvised
+    - LLMagazineBox44Improvised
+    - LLMagazineBox20gaugeImprovised
+    - LLMagazineBox12gaugeImprovised
+    - MagazineBox762х25Improvised
+    - MagazineBox762х38Improvised
+    - MagazineBox762x39Improvised
+    - MagazineBox762х54RImprovised
+    - MagazineBox545х39Improvised
+    - MagazineBox9х18Improvised
     # Патроны
     - LLCraftShellShotgun20Improvised
     - LLCraftShellShotgun12Improvised
@@ -342,7 +356,7 @@
 - type: entity
   parent: N14WorkbenchBase
   id: N14WorkbenchMetal
-  description: Верстак для создания базовых компанентов. #LL
+  description: Верстак для создания базовых компонентов. #LL
   name: верстак для компонентов #LL
   components:
   - type: Construction
