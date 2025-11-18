@@ -316,6 +316,8 @@
   - type: Sprite
     state: coal
   - type: Material
+    id: Coal
+    name: coal
   - type: Extractable
     grindableSolutionName: coal
   - type: SolutionContainerManager

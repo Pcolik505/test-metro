@@ -101,6 +101,8 @@
   name: fertilizer sack
   description: A sack for storing fertilizer.
   components:
+  - type: Material
+    id: FertilizerEmpty
   - type: Sprite
     sprite: _Nuclear14/Objects/Misc/Sacks/daesack2.rsi
     state: icon
@@ -109,7 +111,7 @@
   - type: Construction
     graph: N14SackFertilizer
     node: sack
-
+   
 - type: entity
   parent: N14SackFertilizer
   id: N14SackFertilizerFull
@@ -124,3 +126,5 @@
         reagents:
         - ReagentId: Fertilizer
           Quantity: 100
+
+

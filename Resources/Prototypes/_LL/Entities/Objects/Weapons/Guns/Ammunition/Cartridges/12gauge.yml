@@ -1,6 +1,6 @@
 - type: entity
   id: LLShellShotgun12Improvised
-  name: самодельный патрон (12 дробь)
+  name: самодельный ружейный патрон (12 дробь)
   parent: N14BaseShell12Shotgun
   components:
   - type: Sprite

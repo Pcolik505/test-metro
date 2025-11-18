@@ -103,7 +103,10 @@
         reagents:
         - ReagentId: Sulfur
           Quantity: 10
-
+  - type: Material
+    id: Sulfur
+    name: sulfur
+    
 - type: entity
   parent: SulfurPowder
   id: SulfurPowder10

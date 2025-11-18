@@ -39,6 +39,7 @@
 - type: entity
   parent: BaseMagazineBox545х39
   id: MagazineBox545х39Improvised
+  name: коробка самодельных патрон (5.45х39mm)
   suffix: самодельные
   components:
   - type: BallisticAmmoProvider
@@ -47,3 +48,13 @@
     layers:
     - state: improvised
       map: ["enum.GunVisualLayers.Base"]
+
+- type: entity
+  parent: MagazineBox545х39Improvised
+  id: MagazineBox545х39ImprovisedEmpty
+  name: пустая коробка самодельных патрон (5.45х39mm)
+  suffix: самодельные, пустой
+  components:
+  - type: BallisticAmmoProvider
+    proto: LLCartridge545х39Improvised
+    capacity: 0

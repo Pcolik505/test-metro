@@ -9,7 +9,7 @@
       tags:
         - N14Cartridge44Magnum
     proto: N14Cartridge44Magnum
-    capacity: 32
+    capacity: 60
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container

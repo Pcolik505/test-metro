@@ -5,17 +5,7 @@
     Buy:
       огнестрел:
       - proto: N14WeaponPistol9mm
-        price: 90
-      - proto: N14WeaponPistol45Colt
-        price: 110
-      - proto: N14WeaponRevolver45-70Hunter
-        price: 250
-      - proto: LLWeaponSMGBastard
-        price: 350
-      - proto: LLWeaponSMGPPSh
-        price: 525
-      - proto: N14WeaponShotgunSawedOff
-        price: 400
+        price: 125
       ближнее:
       - proto: SurvivalKnife
         price: 35
@@ -29,36 +19,16 @@
         price: 20
       магазины:
       - proto: LLMagazine9х18Pistol
-        price: 25
-      - proto: N14MagazinePistol45
-        price: 35
-      - proto: LLMagazine545х39Bastard
-        price: 45
-      - proto: LLMagazine762х259PPSh
-        price: 75
-      - proto: MagazinePistolSubMachineGun
-        price: 85
-      - proto: LLMagazine762x39Ak
-        price: 95
+        price: 50
       боеприпасы:
       - proto: MagazineBox9х18
-        price: 45
-      - proto: MagazineBox45
-        price: 65
-      - proto: MagazineBox545х39
         price: 90
-      - proto: MagazineBox762х25
-        price: 100
-      - proto: MagazineBox762x39
-        price: 180
-      - proto: MagazineBox762х38
-        price: 180
+      - proto: MagazineBox545х39
+        price: 175
       - proto: MagazineBox762х54R
-        price: 220
-      - proto: MagazineBox12gauge
-        price: 160
-      - proto: MagazineBox20gauge
-        price: 220
+        price: 320
+      - proto: MagazineBox9х18Improvised
+        price: 35        
       шляпы:
       - proto: N14ClothingHeadHatEnclavePeacekeeperCap
         price: 10
@@ -147,6 +117,10 @@
       - proto: ClothingUniformJumpsuitRecruitNT
         price: 20
       - proto: UniformScrubsColorCyan
+        price: 20
+      - proto: LLUSSPSergeant
+        price: 20
+      - proto: LLUSSPLieutenant
         price: 20
       плащи:
       - proto: N14ClothingNeckCloakGhillie
@@ -349,27 +323,29 @@
         price: 15
       - proto: N14Multitool
         price: 15
-
+  
     Sell:
       огнестрел:
-      - proto: N14WeaponPistol9mm
-        price: 50
-      - proto: N14WeaponRevolver45-70Hunter
-        price: 100
       - proto: LLWeaponSMGBastard
-        price: 100
+        price: 50
+      - proto: N14WeaponPistol9mm
+        price: 25
+      - proto: N14WeaponRevolver45-70Hunter
+        price: 150
+      - proto: LLWeaponSMGBastard
+        price: 150
       - proto: LLWeaponSMGPPSh
-        price: 100
+        price: 200
       - proto: WeaponSubMachineGunTypewriter
-        price: 100
+        price: 150
       - proto: WeaponRifleAk
-        price: 100
+        price: 250
       - proto: WeaponSniperMosin
-        price: 100
+        price: 200
       - proto: N14WeaponShotgunLever
-        price: 100
+        price: 150
       - proto: N14WeaponShotgunSawedOff
-        price: 100
+        price: 150
       продовольствие:
       - proto: FoodTinPeaches
         price: 15
@@ -529,15 +505,13 @@
       - proto: N14MaterialRawLeather1
         price: 1
       - proto: N14FoodMeatRadRaw
+        price: 15
+      - proto: N14FoodMeatRadscorpion
+        price: 15
+      - proto: N14FoodMeatRadscorpionCooked
         price: 20
       - proto: N14FoodMeatCooked
-        price: 25
-      - proto: N14FoodMeatRadscorpion
         price: 20
-      - proto: N14FoodMeatRadscorpionCooked
-        price: 25
-      - proto: ToxinChemistryBottle
-        price: 25
       медицина:
       - proto: Portafib
         price: 50
@@ -560,7 +534,7 @@
 - type: entity
   id: LLMetroMat
   name: МетроМат
-  description: Все ресурсы, что будут проданы тут, пойдут на развитие следуйщих станции.
+  description: Все ресурсы, что будут проданы тут, пойдут на развитие следующих станции.
   suffix: metro
   components:
   - type: NcStore

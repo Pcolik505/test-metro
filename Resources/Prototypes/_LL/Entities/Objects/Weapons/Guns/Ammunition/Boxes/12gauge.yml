@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseMagazineBox12gauge
   id: LLMagazineBox12gaugeImprovised
-  name: коробка патрон (12 дробь)
+  name: коробка самодельных ружейных патрон (12 дробь)
   suffix: самодельные
   components:
   - type: BallisticAmmoProvider
@@ -11,3 +11,13 @@
     layers:
     - state: improvised
       map: ["enum.GunVisualLayers.Base"]
+
+- type: entity
+  parent: LLMagazineBox12gaugeImprovised
+  id: LLMagazineBox12gaugeImprovisedEmpty
+  name: пустая коробка самодельных ружейных патрон (12 дробь)
+  suffix: самодельные, пустой
+  components:
+  - type: BallisticAmmoProvider
+    proto: LLShellShotgun12Improvised
+    capacity: 0

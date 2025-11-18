@@ -9,7 +9,7 @@
       tags:
         - N14CartridgePistol45
     proto: N14CartridgePistol45
-    capacity: 75
+    capacity: 32
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
