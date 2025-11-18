@@ -1,0 +1,46 @@
+- type: entity
+  name: мясо обёрнутое в кожу
+  parent: N14FoodMeatBase
+  id: LLFoodSkinWrappedMeat
+  description: Ничего так не защищает мясо от микробов и внешнего воздействия так, как кожа, верно? Вы являетесь прямым доказательством работоспособности этого способа презервации.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - meaty
+  - type: Sprite
+    sprite: _LL/Objects/Consumable/Food/skin_wrapped_meat.rsi
+    layers:
+    - state: icon
+  - type: Item
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 8
+  - type: Food
+    trash: 
+    - LLFoodSkinWrappedMeatTrash
+  - type: Perishable
+    rotAfter: 1800
+    molsPerSecondPerUnitMass: 0
+  - type: RotInto
+    entity: FoodMeatRotten
+    stage: 1
+  - type: Construction
+    graph: MeatSteakRadscorpion 
+    node: LLLeather 
+    defaultTarget: LLLeather
+
+- type: entity
+  parent: FoodPacketTrash
+  id: LLFoodSkinWrappedMeatTrash
+  name: кожанная обёртка
+  description: Вся в мясном соку. Бесполезна.
+  components:
+  - type: Sprite
+    scale: 0.75, 0.75
+    sprite: _LL/Objects/Consumable/Food/skin_wrapped_meat.rsi
+    layers:
+    - state: trash

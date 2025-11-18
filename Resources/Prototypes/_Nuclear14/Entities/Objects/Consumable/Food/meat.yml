@@ -562,7 +562,7 @@
   - type: Construction
     graph: MeatSteakRadscorpion
     node: SteakCooked
-    defaultTarget: SteakCooked
+#    defaultTarget: LLLeather #LL
 
 - type: entity
   name: cooked radchicken meat

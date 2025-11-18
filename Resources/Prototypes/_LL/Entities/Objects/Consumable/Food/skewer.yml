@@ -1,0 +1,76 @@
+- type: entity
+  name: сырой лемминг на шампуре
+  parent: FoodKebabSkewer
+  id: LLFoodFototoxischKebabRaw
+  description: Некогда живой, бегающий по станциям Лемминг, но уже насаженный на шампур. Жестокая шутка выживания.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - meaty
+  - type: Sprite
+    sprite: _LL/Objects/Consumable/Food/Skewer/fototoxisch.rsi
+    state: 
+    layers:
+    - state: skewer-fototoxisch
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 7
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 2
+        - ReagentId: Toxin
+          Quantity: 5
+    node: start
+  - type: AtmosExposed
+  - type: Temperature
+    currentTemperature: 290
+  - type: InternalTemperature
+    thickness: 0.02
+    area: 0.02
+    conductivity: 0.43
+  - type: Construction
+    graph: LLFototoxischKebabGraph 
+    node: fototoxischkebab
+  - type: Perishable
+    rotAfter: 900
+    molsPerSecondPerUnitMass: 0
+  - type: RotInto
+    entity: FoodKebabSkewer
+    stage: 1
+
+- type: entity
+  name: лемминг на шампуре
+  parent: FoodKebabSkewer
+  id: LLFoodFototoxischKebab
+  description: Если достаточно наловчиться, то это можно использовать как булаву.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - meaty
+  - type: Sprite
+    sprite: _LL/Objects/Consumable/Food/Skewer/fototoxisch.rsi
+    state: 
+    layers:
+    - state: skewer-fototoxisch-cooked
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 7
+        - ReagentId: Protein
+          Quantity: 7
+        - ReagentId: Toxin
+          Quantity: 1
+  - type: Construction
+    graph: LLFototoxischKebabGraph 
+    node: fototoxischkebabcooked 
+    defaultTarget: fototoxischkebabcooked
+  - type: Perishable
+    rotAfter: 900
+    molsPerSecondPerUnitMass: 0
+  - type: RotInto
+    entity: FoodKebabSkewer
+    stage: 1

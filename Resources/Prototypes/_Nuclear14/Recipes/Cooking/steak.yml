@@ -132,7 +132,15 @@
       steps:
       - minTemperature: 305
   - node: SteakCooked
-    entity: N14FoodMeatRadscorpionCooked
+    entity: N14FoodMeatRadscorpionCooked 
+    edges:
+      - to: LLLeather #LL change start
+        steps:
+        - material: Leather
+          amount: 2
+          doAfter: 3
+  - node: LLLeather
+    entity: LLFoodSkinWrappedMeat #LL change end
 
 - type: constructionGraph
   id: MeatSteakYaoguai
@@ -178,6 +186,14 @@
       - minTemperature: 305
   - node: MeatCooked
     entity: N14FoodMeatCooked
+    edges:
+      - to: LLLeather #LL change start
+        steps:
+        - material: Leather
+          amount: 2
+          doAfter: 3
+  - node: LLLeather
+    entity: LLFoodSkinWrappedMeat #LL change end
 
 - type: constructionGraph
   id: MeatMirelurkClaw

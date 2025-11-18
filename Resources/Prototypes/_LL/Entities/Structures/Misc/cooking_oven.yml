@@ -1,0 +1,85 @@
+- type: entity
+  id: LLCookingOven
+  parent: BaseStructure
+  name: печь для готовки
+  description: It's magic.
+  components:
+  - type: InteractionOutline #it's sad, actually
+  - type: Microwave
+    capacity: 10
+    startCookingSound:
+      path: "/Audio/Effects/door_close.ogg"
+    foodDoneSound:
+      path: "/Audio/Items/hiss.ogg"
+    clickSound:
+      path: "/Audio/Effects/fire.ogg"
+    itemBreakSound:
+      path: "/Audio/Weapons/Guns/Hits/snap.ogg"
+    loopingSound:
+      path: "/Audio/Effects/sizzle.ogg"
+    explosionChance: 0
+    lightningChance: 0
+    malfunctionInterval: 0
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.PowerDeviceVisuals.VisualState:
+        enum.MicrowaveVisualizerLayers.Base:
+          Idle: { state: "icon" }
+          Cooking: { state: "icon_cooking" }
+        enum.MicrowaveVisualizerLayers.BaseUnlit:
+          Idle: { state: "icon" }
+          Cooking: { state: "icon_cooking" }
+  - type: ActivatableUI
+    key: enum.MicrowaveUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.MicrowaveUiKey.Key:
+        type: MicrowaveBoundUserInterface
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 300
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+  - type: Sprite
+    sprite: _LL/Structures/Misc/cooking_oven.rsi
+    drawdepth: SmallObjects
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.MicrowaveVisualizerLayers.Base"]
+    - state: icon
+      map: ["enum.MicrowaveVisualizerLayers.BaseUnlit"]
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Breakage"]
+  - type: ContainerContainer
+    containers:
+      microwave_entity_container: !type:Container
+  - type: EmptyOnMachineDeconstruct
+    containers:
+    - microwave_entity_container
+  - type: ApcPowerReceiver
+    powerLoad: 0
+  - type: PointLight
+    radius: 2
+    energy: 2
+    color: "#FFC90C"
+  - type: AmbientSound
+    volume: -5
+    range: 5
+    sound:
+      path: /Audio/Ambience/Objects/fireplace.ogg
