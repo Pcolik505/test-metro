@@ -1,0 +1,17 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-4.0",
+    "copyright": "Made by anitosina (discord) for Metro14",
+    "size": {
+        "x": 50,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "base"
+        },
+        {
+            "name": "bolt-open"
+        }
+    ]
+}

@@ -1,5 +1,5 @@
 - type: entity
-  id: PelletShotgun12
+  id: LLPelletShotgun12Improvised
   name: pellet (12 gauge)
   categories: [ HideSpawnMenu ]
   parent: BaseBullet
@@ -10,14 +10,14 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 9 #LL
+        Piercing: 7
 
 - type: entity
-  id: PelletShotgun12Spread
+  id: LLPelletShotgun12SpreadImprovised
   categories: [ HideSpawnMenu ]
   parent: PelletShotgun12
   components:
   - type: ProjectileSpread
-    proto: PelletShotgun12
+    proto: LLPelletShotgun12Improvised
     count: 6
     spread: 20
