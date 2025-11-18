@@ -69,7 +69,8 @@
   - type: Sprite
     sprite: Objects/Weapons/Guns/Snipers/bolt_gun_wood.rsi
   - type: Gun
-    fireRate: 0.75
+    projectileSpeed: 70 #LL
+    fireRate: 1 #LL
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto

@@ -1,0 +1,73 @@
+- type: constructionGraph
+  id: LLShelvesGraph
+  start: start
+  graph:
+    - node: start
+      actions:
+        - !type:DestroyEntity {}
+      edges:
+        - to: ShelfMetal
+          completed:
+            - !type:SnapToGrid { }
+          steps:
+            - material: MetalRod
+              amount: 16
+            - material: Steel
+              amount: 8
+            - tag: Screw
+              icon:
+                sprite: _Nuclear14/Objects/Misc/crafting_junk.rsi
+                state: screw
+              name: винт
+              doAfter: 1
+            - tag: Screw
+              icon:
+                sprite: _Nuclear14/Objects/Misc/crafting_junk.rsi
+                state: screw
+              name: винт
+              doAfter: 1
+            - tag: Screw
+              icon:
+                sprite: _Nuclear14/Objects/Misc/crafting_junk.rsi
+                state: screw
+              name: винт
+              doAfter: 1
+            - tag: Screw
+              icon:
+                sprite: _Nuclear14/Objects/Misc/crafting_junk.rsi
+                state: screw
+              name: винт
+              doAfter: 10
+        - to: ShelfWood
+          completed:
+            - !type:SnapToGrid { }
+          steps:
+            - material: MetalRod
+              amount: 16
+            - material: WoodPlank
+              amount: 8
+            - tag: Screw
+              icon:
+                sprite: _Nuclear14/Objects/Misc/crafting_junk.rsi
+                state: screw
+              name: винт
+            - tag: Screw
+              icon:
+                sprite: _Nuclear14/Objects/Misc/crafting_junk.rsi
+                state: screw
+              name: винт
+            - tag: Screw
+              icon:
+                sprite: _Nuclear14/Objects/Misc/crafting_junk.rsi
+                state: screw
+              name: винт
+            - tag: Screw
+              icon:
+                sprite: _Nuclear14/Objects/Misc/crafting_junk.rsi
+                state: screw
+              name: винт
+              doAfter: 10
+    - node: ShelfMetal
+      entity: N14ShelfMetal
+    - node: ShelfWood
+      entity: N14ShelfWood

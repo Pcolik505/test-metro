@@ -1,0 +1,61 @@
+# Bowls
+
+- type: entity
+  name: котелок
+  parent: ReagentContainerBase
+  id: LLFoodPot
+  description: В нём можно приготовить большинство блюд из меньшинства продуктов метро.
+  components:
+  - type: Item
+    size: Normal
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 60 # 1.7 l = 59.9657 oz
+  - type: Sprite
+    sprite: _LL/Objects/Consumable/Food/pot.rsi
+    layers:
+    - state: icon
+  - type: Drink
+    useSound:
+      path: /Audio/Items/drink.ogg
+  - type: MixableSolution
+    solution: food
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 5
+  - type: Openable
+    closeable: true
+    sound:
+      path: /Audio/Weapons/Guns/Misc/arrow_nock.ogg
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.OpenableVisuals.Opened:
+        enum.OpenableVisuals.Layer:
+          True: {state: "icon-open"}
+          False: {state: "icon"}
+  - type: SolutionTransfer
+    canChangeTransferAmount: true
+  - type: UserInterface
+    interfaces:
+      enum.TransferAmountUiKey.Key:
+        type: TransferAmountBoundUserInterface
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpillBehavior { }
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          N14Scrap1:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]

@@ -10,7 +10,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 8
+        Piercing: 9
 
 - type: entity
   id: LLPelletShotgun20SpreadImprovised

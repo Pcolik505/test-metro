@@ -1,0 +1,20 @@
+- type: constructionGraph
+  id: LLFototoxischKebabGraph
+  start: fototoxisch
+  graph:
+  - node: fototoxisch
+    edges:
+      - to: fototoxischkebab
+        steps:
+          - tag: Skewer
+  - node: fototoxischkebab
+    entity: LLFoodFototoxischKebabRaw
+    edges:
+    - to: fototoxischkebabcooked
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 305
+  - node: fototoxischkebabcooked
+    entity: LLFoodFototoxischKebab

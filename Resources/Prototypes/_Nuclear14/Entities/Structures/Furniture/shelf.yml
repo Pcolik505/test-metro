@@ -187,6 +187,10 @@
   - type: Transform
     anchored: true
     noRot: false
+  - type: Construction
+    graph: LLShelvesGraph 
+    node: ShelfWood
+    defaultTarget: ShelfWood
         
 - type: entity
   parent: N14ShelfWood
@@ -303,6 +307,10 @@
             max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+  - type: Construction
+    graph: LLShelvesGraph 
+    node: ShelfMetal
+    defaultTarget: ShelfMetal
         
         
 - type: entity
