@@ -1,0 +1,12 @@
+- type: entity
+  parent: N14IDNCRDogtag
+  id: LLTokenMachinist
+  name: жетон
+  description: Идентификационный жетон.
+  suffix: Машинист
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Objects/Misc/identification.rsi
+    state: ncrdogtag
+  - type: PresetIdCard
+    job: Machinist

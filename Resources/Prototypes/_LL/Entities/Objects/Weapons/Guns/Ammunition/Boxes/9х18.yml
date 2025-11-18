@@ -10,7 +10,7 @@
       tags:
         - LLCartridge9х18
     proto: LLCartridge9х18
-    capacity: 60
+    capacity: 30
   - type: Item
     size: Small
   - type: ContainerContainer

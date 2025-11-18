@@ -39,6 +39,19 @@
       - LLSmallBeetlelegs
 
 - type: entity
+  name: Спавнер Токсичный Жук-Паук
+  id: LLSpawnerMobBeetlelegsTox
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - LLBeetlelegsTox
+
+- type: entity
   name: Спавнер Лемминг
   id: LLSpawnerMobFototoxisch
   parent: MarkerBase

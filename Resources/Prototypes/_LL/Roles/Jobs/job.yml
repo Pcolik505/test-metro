@@ -4,7 +4,7 @@
   name: Житель Метро
   components:
     - type: Icon
-      state: survivor
+      state: MetroResident
     - type: RandomHumanoidAppearance
       randomizeName: true
     - type: Loadout
@@ -12,3 +12,33 @@
     - type: NpcFactionMember
       factions:
       - Metro
+
+- type: entity
+  parent: N14MobHumanFollowers
+  id: LLMobHumanMachinist
+  name: Машинист
+  components:
+    - type: Icon
+      state: MetroResident
+    - type: RandomHumanoidAppearance
+      randomizeName: true
+    - type: Loadout
+      prototypes: [LLMachinist]
+    - type: NpcFactionMember
+      factions:
+      - Metro
+
+- type: entity
+  parent: N14MobHumanFollowers
+  id: LLMobHumanBastard
+  name: Ублюдок
+  components:
+    - type: Icon
+      state: MetroResident
+    - type: RandomHumanoidAppearance
+      randomizeName: true
+    - type: Loadout
+      prototypes: [LLBastard]
+    - type: NpcFactionMember
+      factions:
+      - Bandit

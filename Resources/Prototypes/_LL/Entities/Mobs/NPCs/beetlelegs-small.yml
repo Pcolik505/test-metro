@@ -73,12 +73,18 @@
   - type: HTN
     rootTask:
       task: N14HostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
   - type: Butcherable
     spawned:
     - id: N14FoodMeatRadscorpion
       amount: 2
     - id: N14MaterialAntChitin1
       amount: 2
-  - type: Tag
-    tags:
-    - Beetlelegs

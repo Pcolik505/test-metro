@@ -10,7 +10,7 @@
       tags:
         - LLCartridge762x39
     proto: LLCartridge762x39
-    capacity: 60
+    capacity: 30
   - type: Item
     size: Small
   - type: ContainerContainer

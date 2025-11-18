@@ -1,0 +1,86 @@
+# When adding new food also add to random spawner located in Resources\Prototypes\Entities\Markers\Spawners\Random\Food_Drinks\food_meal.yml
+
+- type: entity
+  parent: FoodBase
+  id: LLFoodPotBase
+  abstract: true
+  components:
+  - type: Item
+    size: Normal
+  - type: Food
+    trash: 
+    - LLFoodPot
+    utensil: Spoon
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 20
+  - type: Sprite
+    sprite: Objects/Consumable/Food/bowl.rsi
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 5
+  - type: Spillable
+    solution: food
+  - type: MeleeWeapon
+    soundNoDamage:
+      path: "/Audio/Effects/Fluids/splat.ogg"
+    damage:
+      types:
+        Blunt: 0
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Tag
+    tags:
+    - Soup
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpillBehavior { }
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          N14Scrap1:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  name: котелок с тушёными грибами
+  parent: LLFoodPotBase
+  id: LLFoodStewedMushrooms
+  description: Быстро портятся. Лучше, чем есть сырые грибы и выблевать себе желудок. 
+  components:
+  - type: FlavorProfile
+    flavors:
+      - mushroom
+  - type: Sprite
+    sprite: _LL/Objects/Consumable/Food/pot.rsi
+    layers:
+    - state: icon-open
+    - state: mushrooms
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 19
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 15
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Perishable
+    rotAfter: 300
+    molsPerSecondPerUnitMass: 0
+  - type: RotInto
+    entity: LLFoodPot
+    stage: 1

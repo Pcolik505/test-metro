@@ -10,7 +10,7 @@
       tags:
         - LLCartridge762х38
     proto: LLCartridge762х38
-    capacity: 60
+    capacity: 30
   - type: Item
     size: Small
   - type: ContainerContainer

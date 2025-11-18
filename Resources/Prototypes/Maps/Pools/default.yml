@@ -1,7 +1,8 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
+   - LLMetro
   #- Wave1
   # - Sunnyvale
-  - Snowyvale
-  - Wendover
+  #- Snowyvale
+  #- Wendover

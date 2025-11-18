@@ -167,46 +167,50 @@
   abstract: true
   id: LLBunchJunkFillResupply
   components:
+        - id: MaterialCardboard
+          prob: 0.35
+        - id: N14Gunpowder10
+          prob: 0.35
         - id: N14MaterialThread1
-          prob: 0.1
+          prob: 0.35
         - id: N14JunkCookpot
-          prob: 0.1
+          prob: 0.35
         - id: N14ScrapElectronic1
-          prob: 0.1
+          prob: 0.35
         - id: MaterialCloth10
-          prob: 0.1
+          prob: 0.35
         - id: N14ScrapSteel1
-          prob: 0.5
+          prob: 0.35
         - id: N14ScrapLead1
-          prob: 0.1
+          prob: 0.35
         - id: N14ScrapCopper1
-          prob: 0.1
+          prob: 0.35
         - id: MaterialCloth1
-          prob: 0.1
+          prob: 0.35
         - id: N14ScrapBrass1
-          prob: 0.1
+          prob: 0.35
         - id: N14ScrapGold1
-          prob: 0.1
+          prob: 0.35
         - id: N14Scrap1
           prob: 0.5
         - id: N14JunkComponentGearLarge
-          prob: 0.1
+          prob: 0.35
         - id: N14JunkComponentScrew
-          prob: 0.1
+          prob: 0.35
         - id: N14JunkComponentGearSmall
-          prob: 0.1
+          prob: 0.35
         - id: N14IronOre1
-          prob: 0.1
+          prob: 0.35
         - id: N14GoldOre1
-          prob: 0.1
+          prob: 0.35
         - id: N14CopperOre1
-          prob: 0.1
+          prob: 0.35
         - id: N14LeadOre1
-          prob: 0.1
+          prob: 0.35
         - id: N14SilverOre1
-          prob: 0.1
+          prob: 0.35
         - id: SulfurOre1
-          prob: 0.1
+          prob: 0.35
         - id: N14JunkComponentSensor
           prob: 0.1
         - id: N14JunkComponentMainboard
@@ -451,3 +455,18 @@
           prob: 0.05
         - id: MagazineBox12gauge
           prob: 0.05
+        - id: MagazineBox44
+          prob: 0.05
+        - id: MagazineBox45
+          prob: 0.05
+        - id: LLClothingHeadHatSteelHelmetBroken
+          prob: 0.05
+        - id: LLClothingHeadHatSteelHelmet
+          prob: 0.05
+        - id: LLClothingHeadHatSteelHelmetCross
+          prob: 0.05
+        - id: LLClothingHeadHatSteelHelmetStar
+          prob: 0.05
+        - id: LLClothingHeadHatSteelHelmetWinter
+          prob: 0.05
+

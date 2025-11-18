@@ -1,0 +1,27 @@
+- type: microwaveMealRecipe
+  id: LLRecipeFototoxischKebab1
+  name: лемминг на шампуре
+  result: LLFoodFototoxischKebab
+  time: 20
+  solids:
+    LLFoodFototoxischKebabRaw: 1
+
+- type: microwaveMealRecipe
+  id: LLRecipeFototoxischKebab2
+  name: лемминг на шампуре
+  result: LLFoodFototoxischKebab
+  time: 20
+  solids:
+    FoodKebabSkewer: 1
+    LLFototoxisch: 1
+
+- type: microwaveMealRecipe
+  id: LLRecipeStewedMushrooms
+  name: тушёные грибы
+  result: LLFoodStewedMushrooms
+  time: 30
+  reagents:
+    Water: 15
+  solids:
+    N14FloraProduceWildCaveFungus: 3
+    LLFoodPot: 1

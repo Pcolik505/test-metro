@@ -1,0 +1,38 @@
+- type: entity
+  parent: BaseWeaponSniper
+  id: LLWeaponSniperTripleShot
+  name: трёхзарядая винтовка.
+  description: Способна на два выстрела за две секунды.
+  components:
+  - type: Item
+    sprite: _LL/Objects/Weapons/Guns/Snipers/three_shot_gun-inhands.rsi
+    size: Huge
+    shape:
+    - 0,0,4,1
+  - type: Clothing
+    sprite: _LL/Objects/Weapons/Guns/Snipers/three_shot_gun-inhands.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: Sprite
+    sprite: _LL/Objects/Weapons/Guns/Snipers/three_shot_gun-icon.rsi
+  - type: Wieldable
+  - type: GunWieldBonus
+    minAngle: -18
+    maxAngle: -27
+  - type: Gun
+    minAngle: 21
+    maxAngle: 32
+    fireRate: 1
+    projectileSpeed: 60
+    soundGunshot:
+      collection: N14SniperHuntingGunshot
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - LLCartridge762х54R
+    capacity: 3
+    proto: LLCartridge762х54R
+  - type: FollowDistance
+    backStrength: 3

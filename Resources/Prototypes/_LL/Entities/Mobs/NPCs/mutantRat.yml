@@ -75,14 +75,18 @@
   - type: HTN
     rootTask:
       task: N14HostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
   - type: Butcherable
     spawned:
     - id: N14FoodMeatRadRaw
       amount: 5
     - id: N14MaterialRawLeather1
       amount: 1
-  - type: Tag
-    tags:
-    - Rat
-    - Mutant
-    - Animal

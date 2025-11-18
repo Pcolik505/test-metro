@@ -7,6 +7,15 @@
   - type: HTN
     rootTask:
       task: N14RangedHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -84,8 +93,3 @@
       prob: 0.5
     - id: N14FoodMeatRadRaw
       amount: 3
-  - type: Tag
-    tags:
-    - Ant
-    - Mutant
-    - Fire

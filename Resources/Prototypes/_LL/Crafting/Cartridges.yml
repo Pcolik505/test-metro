@@ -10,81 +10,108 @@
     MaterialFertilizer: 10
     
 - type: latheRecipe
-  id: LLMaterialBrassCartridge1
-  result: LLMaterialBrassCartridge1
+  id: LLMaterialBrassCartridge
+  result: LLMaterialBrassCartridge
   completetime: 1
   materials:
     N14Brass: 10
 
-# коробки для патрон
+# коробки патрон
 
 - type: latheRecipe
-  id: LLMagazineBox45ImprovisedEmpty
-  result: LLMagazineBox45ImprovisedEmpty
-  completetime: 1
+  id: LLMagazineBox45Improvised
+  result: LLMagazineBox45Improvised
+  completetime: 15
   materials:
     Cardboard: 100
+    LLBrassCartridge: 3000
+    N14Gunpowder: 3000
+    N14Iron: 2000
 
 - type: latheRecipe
-  id: LLMagazineBox44ImprovisedEmpty
-  result: LLMagazineBox44ImprovisedEmpty
-  completetime: 1
+  id: LLMagazineBox44Improvised
+  result: LLMagazineBox44Improvised
+  completetime: 15
   materials:
     Cardboard: 100
+    LLBrassCartridge: 3000
+    N14Gunpowder: 3000
+    N14Iron: 2000
 
 - type: latheRecipe
-  id: LLMagazineBox20gaugeImprovisedEmpty
-  result: LLMagazineBox20gaugeImprovisedEmpty
-  completetime: 1
+  id: LLMagazineBox20gaugeImprovised
+  result: LLMagazineBox20gaugeImprovised
+  completetime: 15
   materials:
     Cardboard: 100
+    LLBrassCartridge: 3000
+    N14Gunpowder: 3000
+    N14Iron: 2000
 
 - type: latheRecipe
-  id: LLMagazineBox12gaugeImprovisedEmpty
-  result: LLMagazineBox12gaugeImprovisedEmpty
-  completetime: 1
+  id: LLMagazineBox12gaugeImprovised
+  result: LLMagazineBox12gaugeImprovised
+  completetime: 15
   materials:
     Cardboard: 100
+    LLBrassCartridge: 3000
+    N14Gunpowder: 3000
+    N14Iron: 2000
 
 - type: latheRecipe
-  id: MagazineBox762х25ImprovisedEmpty
-  result: MagazineBox762х25ImprovisedEmpty
-  completetime: 1
+  id: MagazineBox762х25Improvised
+  result: MagazineBox762х25Improvised
+  completetime: 15
   materials:
     Cardboard: 100
+    LLBrassCartridge: 3000
+    N14Gunpowder: 3000
+    N14Iron: 2000
 
 - type: latheRecipe
-  id: MagazineBox762х38ImprovisedEmpty
-  result: MagazineBox762х38ImprovisedEmpty
-  completetime: 1
+  id: MagazineBox762х38Improvised
+  result: MagazineBox762х38Improvised
+  completetime: 15
   materials:
     Cardboard: 100
+    LLBrassCartridge: 3000
+    N14Gunpowder: 3000
+    N14Iron: 2000
 
 - type: latheRecipe
-  id: MagazineBox762x39ImprovisedEmpty
-  result: MagazineBox762x39ImprovisedEmpty
-  completetime: 1
+  id: MagazineBox762x39Improvised
+  result: MagazineBox762x39Improvised
+  completetime: 15
   materials:
     Cardboard: 100
+    LLBrassCartridge: 3000
+    N14Gunpowder: 3000
+    N14Iron: 2000
 
 - type: latheRecipe
-  id: MagazineBox762х54RImprovisedEmpty
-  result: MagazineBox762х54RImprovisedEmpty
-  completetime: 1
+  id: MagazineBox762х54RImprovised
+  result: MagazineBox762х54RImprovised
+  completetime: 15
   materials:
     Cardboard: 100
+    LLBrassCartridge: 3000
+    N14Gunpowder: 3000
+    N14Iron: 2000
 
 - type: latheRecipe
-  id: MagazineBox545х39ImprovisedEmpty
-  result: MagazineBox545х39ImprovisedEmpty
-  completetime: 1
+  id: MagazineBox545х39Improvised
+  result: MagazineBox545х39Improvised
+  completetime: 15
   materials:
     Cardboard: 100
+    LLBrassCartridge: 3000
+    N14Gunpowder: 3000
+    N14Iron: 2000
 
 - type: latheRecipe
-  id: MagazineBox9х18ImprovisedEmpty
-  result: MagazineBox9х18ImprovisedEmpty
-  completetime: 1
+  id: MagazineBox9х18Improvised
+  result: MagazineBox9х18Improvised
+  completetime: 15
   materials:
     Cardboard: 100
 

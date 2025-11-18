@@ -1,5 +1,5 @@
 - type: entity
-  name: периодический спавн упырь
+  name: Периодический спавн упырь
   id: LLGhoulTimedSpawner
   parent: MarkerBase
   components:
@@ -15,7 +15,7 @@
     spawnRadius: 5.0
 
 - type: entity
-  name: периодический спавн Жук-Паук
+  name: Периодический спавн Жук-Паук
   id: LLBeetlelegsTimedSpawner
   parent: MarkerBase
   components:
@@ -31,7 +31,7 @@
     spawnRadius: 5.0
 
 - type: entity
-  name: периодический спавн Жук-Паук # маленький
+  name: Периодический спавн Жук-Паук # маленький
   id: LLSmallBeetlelegsTimedSpawner
   suffix: маленький
   parent: MarkerBase
@@ -48,7 +48,24 @@
     spawnRadius: 5.0
 
 - type: entity
-  name: периодический спавн лемминг
+  name: Периодический спавн Токсичный Жук-Паук
+  id: LLBeetlelegsToxTimedSpawner
+  suffix: маленький
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+    - state: ai
+  - type: TimedSpawner
+    prototypes:
+      - LLBeetlelegsTox
+    interval: 5
+    maxCount: 10
+    spawnRadius: 5.0
+
+- type: entity
+  name: Периодический спавн лемминг
   id: LLFototoxischTimedSpawner
   parent: MarkerBase
   components:
@@ -64,7 +81,7 @@
     spawnRadius: 5.0
 
 - type: entity
-  name: периодический спавн крыса-мутант
+  name: Периодический спавн крыса-мутант
   id: LLMutantRatTimedSpawner
   parent: MarkerBase
   components:
@@ -80,7 +97,7 @@
     spawnRadius: 5.0
 
 - type: entity
-  name: периодический спавн огненный муравей-мутант
+  name: Периодический спавн огненный муравей-мутант
   id: LLGiantFireAntTimedSpawner
   parent: MarkerBase
   components:

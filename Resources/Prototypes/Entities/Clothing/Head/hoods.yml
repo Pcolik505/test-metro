@@ -152,7 +152,7 @@
     modifiers:
       coefficients:
         Heat: 0.95
-        Radiation: 0.65
+        Radiation: 0.85 #LL
   - type: BreathMask
   - type: HideLayerClothing
     slots:

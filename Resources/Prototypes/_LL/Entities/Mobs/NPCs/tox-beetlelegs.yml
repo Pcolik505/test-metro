@@ -1,0 +1,92 @@
+- type: entity
+  name: Токсичный Жук-Паук
+  id: LLBeetlelegsTox
+  parent: N14MobBaseHostile
+  description: Более токсичная тварь чем свои собратья, но медлительная и слабая из за своих токсичных желёз.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: default
+      sprite: _LL/Entities/Mobs/NPCs/tox-beetlelegs.rsi
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: N14ToughAnimal
+  - type: Bloodstream
+    bloodSolution: Bloodstream
+    bloodReagent: FluorosulfuricAcid
+    bloodMaxVolume: 150
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.4
+        Piercing: 0.4
+        Radiation: 0.0
+  - type: MobState
+    allowedStates:
+      - Alive
+      - Critical
+      - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      70: Critical
+      80: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: default
+      Critical:
+        Base: crit
+      Dead:
+        Base: dead
+  - type: MeleeWeapon
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: AlienClaw
+    angle: 60
+    animation: WeaponArcClaw
+    wideAnimation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 1
+        Poison: 15
+        Radiation: 1
+    range: 1.5
+    attackRate: 0.8
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2.5
+    baseSprintSpeed: 2
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+            radius: 0.25
+        density: 100
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: HTN
+    rootTask:
+      task: N14HostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+  - type: Butcherable
+    spawned:
+    - id: N14FoodMeatRadscorpion
+      amount: 5
+    - id: N14MaterialAntChitin1
+      amount: 5
+    - id: ToxinChemistryBottle
+      amount: 1

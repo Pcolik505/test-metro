@@ -163,7 +163,7 @@
   description: An asteroid.
   components:
   - type: OreVein
-    oreChance: 0.44
+    oreChance: 0.55 #LL
     oreRarityPrototypeId: RandomOreDistributionStandard
   - type: Damageable # Corvax-Change
     damageContainer: StructuralInorganic
@@ -176,6 +176,7 @@
         behaviors:
           - !type:DoActsBehavior
             acts: ["Destruction"]
+
 
 - type: entity
   id: SteelRock

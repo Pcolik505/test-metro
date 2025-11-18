@@ -16,9 +16,6 @@
   - type: Food
     trash: 
     - LLCannedFishTrash
-  - type: Tag
-    tags:
-    - Fish
 
 - type: entity
   parent: FoodTinBaseTrash
@@ -71,10 +68,6 @@
   - type: Food
     trash: 
     - LLCannedStewTrash
-  - type: Tag
-    tags:
-    - Meat
-    - Soup
 
 - type: entity
   parent: FoodTinBaseTrash
@@ -99,11 +92,6 @@
   - type: Food
     trash: 
     - LLCannedCaviarTrash
-  - type: Tag
-    tags:
-    - Salty
-    - Fish
-    - Strange
 
 - type: entity
   parent: FoodTinBaseTrash

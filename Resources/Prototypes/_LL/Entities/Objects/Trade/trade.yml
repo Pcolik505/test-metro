@@ -297,11 +297,6 @@
         price: 40
       - proto: ClothingBeltUtility
         price: 40
-      защитная одежда:
-      - proto: ClothingOuterSuitRad
-        price: 500
-      - proto: LLClothingOuterHiveVest
-        price: 500
       электроника:
       - proto: PowerCellHighPrinted
         price: 5
@@ -370,14 +365,16 @@
         price: 15
       - proto: DrinkWaterBottleFull
         price: 10
-      - proto: FoodMushroom
-        price: 5
       - proto: DrinkVodkaBottleFull
         price: 25
       - proto: N14FloraProduceWildCaveFungus
         price: 2
       - proto: N14FloraProduceWildCaveFungusRad
         price: 1
+      - proto: FoodMushroom
+        price: 5
+      - proto: FoodPotato
+        price: 5
       сигареты:
       - proto: N14CigarettePackRepublics
         price: 5
@@ -505,6 +502,8 @@
       - proto: SulfurPowder1
         price: 8
       мутанина:
+      - proto: N14MaterialRawLeather1
+        price: 1
       - proto: N14FoodMeatRadRaw
         price: 15
       - proto: N14FoodMeatRadscorpion

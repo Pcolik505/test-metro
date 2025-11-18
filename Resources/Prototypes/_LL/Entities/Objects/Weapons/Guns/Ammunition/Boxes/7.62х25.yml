@@ -10,7 +10,7 @@
       tags:
         - LLCartridge762х25
     proto: LLCartridge762х25
-    capacity: 60
+    capacity: 30
   - type: Item
     size: Small
   - type: ContainerContainer
@@ -26,7 +26,7 @@
 
 # Boxes
 - type: entity
-  parent: BaseMagazineBox762х25 
+  parent: BaseMagazineBox762х25
   id: MagazineBox762х25
   components:
   - type: BallisticAmmoProvider
@@ -37,7 +37,7 @@
       map: ["enum.GunVisualLayers.Base"]
 
 - type: entity
-  parent: BaseMagazineBox762х25 
+  parent: BaseMagazineBox762х25
   id: MagazineBox762х25Improvised
   name: коробка самодельных патрон (7.62х25mm)
   suffix: самодельные

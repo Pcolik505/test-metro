@@ -1,0 +1,13 @@
+- type: entity
+  parent: N14MachineComputerMainframe
+  id: LLMachineComputerMainframeBroken
+  name: mainframe
+  description: Probably the biggest computer you've ever seen. Looks really dirty and broken.
+  components:
+  - type: Sprite
+    sprite: _LL/Structures/Machines/mainframe-broken.rsi
+    snapCardinals: true
+    layers:
+    - state: mainframe
+    - state: mainframe_on
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
