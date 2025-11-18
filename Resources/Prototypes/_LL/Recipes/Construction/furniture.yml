@@ -1,0 +1,37 @@
+- type: construction
+  name: металлическая полка
+  id: LLNShelfMetal
+  graph: LLShelvesGraph
+  startNode: start
+  targetNode: ShelfMetal
+  category: construction-category-furniture
+  description: Холодная металлическая полка. Время не пощадило ее.
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  hide: false
+  canRotate: true
+  icon:
+    sprite: _Nuclear14/Structures/Furniture/64x96_furniture.rsi
+    state: metal_shelf
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: деревянная полка
+  id: LLShelfWood
+  graph: LLShelvesGraph
+  startNode: start
+  targetNode: ShelfWood
+  category: construction-category-furniture
+  description: Пыльная старая полка. Время стерло с нее следы прошлого.
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  hide: false
+  canRotate: true
+  icon:
+    sprite: _Nuclear14/Structures/Furniture/64x96_furniture.rsi
+    state: wood_shelf
+  conditions:
+    - !type:TileNotBlocked
